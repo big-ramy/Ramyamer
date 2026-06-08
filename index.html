@@ -3,1085 +3,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="رامي عامر | السيرة الذاتية والخبرات" />
-    <meta property="og:description" content="سيرة ذاتية تفاعلية تعرض خبرة تمتد لأكثر من 9 سنوات في القطاع المصرفي، المبيعات، وتطوير البرمجيات." />
-    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-    <meta property="og:url" content="https://big-ramy.github.io/Ramyamer" />
-    <meta property="og:type" content="profile" />
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="رامي عامر | السيرة الذاتية والخبرات">
-    <meta name="twitter:description" content="سيرة ذاتية تفاعلية تعرض خبرة تمتد لأكثر من 9 سنوات في القطاع المصرفي، المبيعات، وتطوير البرمجيات.">
-    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-
-    <meta property="og:title" content="Ramy Amer | Professional CV & Experience" />
-    <meta property="og:description" content="An interactive resume showcasing 9+ years of experience in the banking sector, sales, and software development." />
-    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-    <meta property="og:url" content="https://big-ramy.github.io/Ramyamer" />
-    <meta property="og:type" content="profile" />
+    <title data-en="Eng. Ramy Amer | CV" data-ar="المهندس رامي عامر | السيرة الذاتية"></title>
     
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ramy Amer | Professional CV & Experience">
-    <meta name="twitter:description" content="An interactive resume showcasing 9+ years of experience in the banking sector, sales, and software development.">
-    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-    
-    <title data-en="Ramy Hesham Amer" data-ar="رامي هشام عامر"></title>
-    <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
-        /* CSS Variables for consistent colors */
         :root {
-            --primary-color: #007bff; /* Bootstrap Primary Blue */
-            --secondary-color: #6c757d; /* Bootstrap Secondary Grey */
-            --accent-color: #28a745; /* Example: A green accent color */
-            --light-bg: #f8f9fa; /* Bootstrap Light */
-            --dark-bg: #343a40; /* Bootstrap Dark */
-            --white-color: #fff;
-            --dark-color: #212529; /* Bootstrap Dark */
-            --shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Standard light shadow */
-            --shadow-hover: 0 0.75rem 2rem rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+            --primary: #1a3c6d;
+            --secondary: #c5a059;
+            --light-bg: #f4f6f9;
+            --dark-text: #2d3436;
+            --gray-text: #636e72;
+            --white: #ffffff;
+            --a4-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
-        /* Base body styles */
         body {
-            font-family: 'Tajawal', sans-serif; /* Default font for Arabic */
-            color: var(--dark-color);
-            line-height: 1.7; /* Improved readability for body text */
-            background-color: var(--light-bg); /* Consistent light background */
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            transition: background-color 0.3s ease; /* Smooth transition for body if background changes */
-        }
-
-        /* Language specific fonts and direction */
-        .arabic-content {
-            direction: rtl;
-            text-align: right;
+            background-color: var(--light-bg);
             font-family: 'Tajawal', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.8;
+            overflow-x: hidden;
         }
 
         .english-content {
+            font-family: 'Montserrat', sans-serif;
             direction: ltr;
             text-align: left;
-            font-family: 'Roboto', sans-serif; /* Consistent English font */
         }
 
-        /* Ensure Bootstrap components inherit direction */
-        .container, .row, .col-md-4, .col-md-8, .col-md-12, .d-flex, .mb-4, .mb-3, .mt-3, .me-2, .ms-auto {
-            direction: inherit;
-            text-align: inherit;
+        .arabic-content {
+            direction: rtl;
+            text-align: right;
         }
 
-        /* Navbar style - Enhanced for professionalism and attractiveness */
+        /* Navbar */
         .navbar {
-            background-color: var(--white-color);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced, elegant shadow */
-            padding: 0.8rem 0; /* Slightly less vertical padding for a sleeker look */
-            transition: all 0.3s ease; /* Smooth transition for potential changes */
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 1rem 0;
         }
-
         .navbar-brand {
-            font-family: 'Montserrat', sans-serif; /* Professional font for brand */
-            font-size: 1.9rem; /* Slightly larger brand name */
-            font-weight: 700;
-            color: var(--dark-color) !important;
-            transition: color 0.3s ease, transform 0.2s ease;
+            font-weight: 800;
+            color: var(--primary) !important;
+            font-size: 1.5rem;
         }
-        .navbar-brand:hover {
-            color: var(--primary-color) !important;
-            transform: scale(1.02); /* Slight scale on hover */
-        }
-
-        .navbar-nav .nav-link {
-            color: var(--secondary-color) !important;
-            margin-left: 25px; /* More space between links in RTL */
-            margin-right: 0;
-            font-weight: 500;
-            transition: color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
-            position: relative; /* For underline effect */
-            padding-bottom: 7px; /* Space for underline */
-        }
-
-        body[dir="ltr"] .navbar-nav .nav-link {
-            margin-left: 0;
-            margin-right: 25px; /* More space between links in LTR */
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: var(--primary-color) !important;
-            transform: translateY(-3px); /* More noticeable lift on hover */
-        }
-
-        .navbar-nav .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 3px; /* Thicker underline */
-            background-color: var(--primary-color);
-            transition: width 0.3s ease-out;
-            border-radius: 2px;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-        }
-
-        /* Language switcher button in navbar */
-        #language-switcher {
-            font-size: 1rem; /* Larger font */
-            padding: 0.6rem 1.2rem; /* More comfortable padding */
-            border-radius: 8px; /* More rounded corners */
-            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        .nav-link {
             font-weight: 600;
+            color: var(--gray-text) !important;
+            transition: color 0.3s;
         }
-        #language-switcher.btn-primary:hover {
-            background-color: #0056b3 !important; /* Darker blue on hover */
-            transform: scale(1.05); /* Slight scale on hover */
+        .nav-link:hover { color: var(--secondary) !important; }
+
+        /* A4 Page Container */
+        .a4-container {
+            max-width: 210mm;
+            background: var(--white);
+            margin: 3rem auto;
+            box-shadow: var(--a4-shadow);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
         }
-        #language-switcher.btn-secondary {
-             background-color: #6c757d;
-             color: white;
+
+        /* Hero Header inside A4 */
+        .resume-header {
+            background: linear-gradient(135deg, var(--primary) 0%, #0f2442 100%);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+            position: relative;
         }
-        #language-switcher.btn-secondary:hover {
-            background-color: #5a6268 !important; /* Darker grey on hover */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary);
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
+        }
+        .profile-img:hover {
             transform: scale(1.05);
         }
+        .job-title {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            letter-spacing: 1px;
+        }
 
-        /* Hero Section - Maintaining original background and refining text for dual language */
-        .hero-section {
-            background: url(ramybackground-Recovered.webp) center center;
-                background-size: 1530px 440px; /* Original fixed size */
-            color: var(--white-color);
-            padding: 120px 0; /* Vertical padding */
-            text-align: center;
+        /* Section Styling */
+        .resume-section {
+            padding: 2.5rem 3rem;
+            border-bottom: 1px solid #eee;
+        }
+        .resume-section:last-child { border-bottom: none; }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .section-title i {
+            color: var(--secondary);
+        }
+
+        /* Timeline / Experience */
+        .experience-item {
             position: relative;
-            overflow: hidden;
-            display: flex; /* Centers content vertically and horizontally */
+            padding-right: 2rem; /* RTL default */
+            margin-bottom: 2rem;
+            border-right: 2px solid var(--secondary);
+        }
+        .english-content .experience-item {
+            padding-right: 0;
+            padding-left: 2rem;
+            border-right: none;
+            border-left: 2px solid var(--secondary);
+        }
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: var(--secondary);
+            border-radius: 50%;
+            top: 5px;
+            right: -9px; /* RTL */
+        }
+        .english-content .experience-item::before {
+            right: auto;
+            left: -9px;
+        }
+        .exp-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .exp-meta {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        /* Buttons */
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            color: white;
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+        .chat-toggle {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 450px; /* Adjusted min-height for better balance */
-            box-sizing: border-box;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(26, 60, 109, 0.4);
+            transition: transform 0.3s;
         }
-
-        .hero-section::before {
-            content: '';
+        .chat-toggle:hover { transform: scale(1.1); }
+        
+        .chat-box {
             position: absolute;
-            top: 0;
-            left: 0;
+            bottom: 80px;
             right: 0;
-            bottom: 0;
-            background: rgb(32 107 183 / 47%); /* Your original dark blue transparent overlay */
-            z-index: 0;
-        }
-
-        .hero-section .container {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            padding: 0 15px;
-            animation: fadeIn 1s ease-out forwards; /* Apply fade-in to the container itself */
-        }
-
-        /* Hero Content Styling - Text refinement for dual language */
-        .hero-section h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3.2rem; /* Adjusted for better fit and dual language */
-            font-weight: 700;
-            text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
-            margin-bottom: 15px;
-            line-height: 1.2;
-            transform: translateY(0); /* Ensure no leftover transform from previous animations */
-            opacity: 1;
-        }
-
-        .hero-section .lead {
-            font-size: 1.4rem; /* Adjusted for better fit and dual language */
-            font-weight: 400;
-            max-width: 700px;
-            margin: 0 auto 25px auto;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .hero-skills {
-            font-size: 1rem; /* Significantly smaller for skill list consistency */
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.9);
-            max-width: 750px;
-            margin: 0 auto;
-            line-height: 1.6;
-            padding: 0 10px;
-            letter-spacing: 0.2px;
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        /* Language specific span styling for dual-language display */
-        .arabic-text, .english-text {
-            display: inline-block;
-            white-space: nowrap; /* Prevent breaking in the middle of a language part */
-            padding: 0 6px; /* Small padding for separation */
-            /* No explicit transform or opacity transition here, let parent animation handle it */
-        }
-
-        /* Ensure correct text direction within mixed content */
-        html[dir="ltr"] .hero-skills .arabic-text {
-            direction: rtl;
-            unicode-bidi: isolate;
-        }
-        html[dir="ltr"] .hero-skills .english-text {
-            direction: ltr;
-            unicode-bidi: isolate;
-        }
-
-        html[dir="rtl"] .hero-section h1 .arabic-text,
-        html[dir="rtl"] .hero-section .lead .arabic-text {
-            direction: rtl;
-            unicode-bidi: isolate;
-        }
-        html[dir="rtl"] .hero-section h1 .english-text,
-        html[dir="rtl"] .hero-section .lead .english-text {
-            direction: ltr;
-            unicode-bidi: isolate;
-        }
-
-        html[dir="rtl"] .hero-skills {
-            text-align: center;
-        }
-        html[dir="rtl"] .hero-skills .arabic-text {
-            direction: rtl;
-            unicode-bidi: isolate;
-        }
-        html[dir="rtl"] .hero-skills .english-text {
-            direction: ltr;
-            unicode-bidi: isolate;
-        }
-
-        /* Fade-in animation for hero content, applied to .container */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-
-        /* Section Titles - More modern and elegant */
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--dark-color);
-            margin-bottom: 60px;
-            text-align: center;
-            position: relative;
-            padding-bottom: 15px;
-            transition: color 0.3s ease; /* Smooth transition */
-        }
-        .section-title:hover {
-            color: var(--primary-color);
-        }
-
-        .section-title::after {
-            content: '';
-            width: 100px;
-            height: 5px;
-            background: var(--primary-color);
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 3px;
-            transition: width 0.3s ease, background 0.3s ease; /* Smooth transition */
-        }
-        .section-title:hover::after {
-            width: 120px; /* Slightly expand underline on hover */
-        }
-
-
-        /* Section Padding */
-        .py-5 {
-            padding-top: 3rem !important;
-            padding-bottom: 3rem !important;
-        }
-        .bg-light {
-            background-color: var(--light-bg) !important;
-        }
-
-
-        /* Card Styling - Enhanced visual appeal with transform */
-        .card {
-            margin-bottom: 25px; /* More spacing between cards */
-            border: none;
+            width: 320px;
+            background: white;
             border-radius: 12px;
-            box-shadow: var(--shadow-light);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            display: none;
             overflow: hidden;
-            transition: all 0.3s ease-in-out;
+            border: 1px solid #eee;
         }
-        .card:hover {
-            transform: translateY(-10px) scale(1.01); /* More pronounced lift and slight scale on hover */
-            box-shadow: var(--shadow-hover); /* Stronger shadow on hover */
+        .chat-header {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
         }
-        .card-title {
-            font-size: 1.5rem; /* Larger card titles */
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
+        .chat-body {
+            padding: 20px;
+            height: 250px;
+            overflow-y: auto;
+            background: #f9f9f9;
         }
-        .card-text.text-muted {
-            font-size: 1rem; /* Slightly larger muted text */
-            margin-bottom: 15px;
+        .chat-msg {
+            background: var(--white);
+            padding: 12px;
+            border-radius: 8px;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
-        .card-body ul {
-            padding-right: 25px; /* Adjust padding for RTL lists */
-            list-style: disc;
-            margin-bottom: 0;
+        .chat-footer {
+            padding: 10px;
+            background: white;
+            border-top: 1px solid #eee;
         }
-        .card-body ul li {
-            margin-bottom: 8px;
-            font-size: 0.98rem; /* Slightly larger list item font */
-            transition: color 0.2s ease, transform 0.2s ease;
-        }
-        .card-body ul li:hover {
-            color: var(--dark-color);
-            transform: translateX(5px); /* Slight horizontal shift on hover */
-        }
-        /* Ensure LTR lists have correct padding */
-        body[dir="ltr"] .card-body ul {
-            padding-left: 25px;
-            padding-right: 0;
-        }
-
-
-        /* List Group Items (Skills, Certificates, Contact) - Enhanced with transform */
-        .list-group-item {
-            font-size: 1.15rem; /* Larger list items */
-            padding: 15px 0; /* More vertical padding */
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            background-color: transparent !important;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-        .list-group-item:hover {
-            background-color: rgba(0, 0, 0, 0.05); /* More visible subtle hover effect */
-            transform: translateX(8px); /* Noticeable shift on hover */
-        }
-
-        .list-group-item:last-child {
-            border-bottom: none;
-        }
-
-        .list-group-item strong {
-            color: var(--primary-color);
-            font-weight: 600; /* Bolder strong text */
-        }
-
-/* Profile Picture - Centering and Circular shape with professional transforms */
-/* Profile Picture - Centering and Circular shape with professional transforms */
-.profile-image-shared {
-    object-fit: cover;
-    object-position: center top;
-    width: 200px; /* Control size */
-    height: 200px; /* Must be same as width for perfect circle */
-    border: 6px solid var(--primary-color);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%; /* Make it perfectly circular */
-
-    /* ----- الحالة الطبيعية (مرئية بحجمها وموضعها الطبيعي) ----- */
-    /* الصورة تبدأ ظاهرة بشكل طبيعي وتأثيرها سيكون من خلال JavaScript بإضافة/إزالة فئة */
-    opacity: 1; 
-    transform: scale(1) translateY(0); 
-    
-    /* ----- انتقال سلس لجميع التأثيرات (للظهور والهوفر) ----- */
-    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-/* فئة جديدة: تجعل الصورة مخفية ومتحولة في البداية بواسطة JavaScript */
-/* هذه الفئة تُطبق بواسطة JS عند التحميل، وتُزال بواسطة Observer */
-.profile-image-shared.js-initial-hide {
-    opacity: 0;
-    transform: scale(0.8) translateY(20px);
-}
-
-/* ----- تأثيرات Transform عند الهوفر (تبقى كما هي) ----- */
-.profile-image-shared:hover {
-    transform: scale(1.08) rotate(3deg); /* تكبير بنسبة 8% ودوران 3 درجات */
-    box-shadow: 0 0 40px rgba(0, 50, 100, 0.6), 0 0 20px rgba(0, 0, 0, 0.5); /* ظل أقوى وأكثر عمقًا بلون مميز */
-    border-color: var(--accent-color); /* تغيير لون الحدود عند التمرير */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .profile-image-shared {
-        width: 140px; /* Smaller size on mobile */
-        height: 140px;
-        border-width: 4px; /* Thinner border on mobile */
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    }
-    .profile-image-shared:hover {
-        transform: scale(1.05) rotate(2deg); /* Reduce effect on smaller screens */
-        box-shadow: 0 0 25px rgba(0, 50, 100, 0.5), 0 0 10px rgba(0, 0, 0, 0.4);
-    }
-    .profile-image-shared.js-initial-hide { /* التأثير الأولي للموبايل */
-        transform: scale(0.8) translateY(20px);
-    }
-}
-
-
-        /* Footer */
-        .footer {
-            background: var(--dark-bg);
-            color: var(--white-color);
-            padding: 2rem 0; /* More padding */
-            font-size: 0.95rem; /* Slightly larger font */
-            border-top: 5px solid var(--primary-color); /* Add a top border for distinction */
-        }
-        .footer p {
-            margin-bottom: 0; /* Remove default paragraph margin */
-        }
-
-
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 992px) {
-            .hero-section h1 {
-                font-size: 2.8rem;
-            }
-            .hero-section .lead {
-                font-size: 1.3rem;
-            }
-            .hero-skills {
-                font-size: 0.95rem;
-            }
-            .navbar-nav .nav-link {
-                margin-left: 15px; /* Reduce spacing on tablets */
-                margin-right: 15px;
-            }
-            #language-switcher {
-                font-size: 0.9rem;
-                padding: 0.4rem 0.9rem;
-            }
-            .section-title {
-                font-size: 2.2rem;
-            }
-            .card-title {
-                font-size: 1.3rem;
-            }
+        .chat-input {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            outline: none;
         }
 
         @media (max-width: 768px) {
-            .hero-section {
-                padding: 80px 0;
-                min-height: 350px;
-                top: 0; /* Remove top offset on mobile */
-                background-size: cover; /* Allow background to cover on small screens for better flexibility */
-            }
-            .hero-section h1 {
-                font-size: 2rem;
-            }
-            .hero-section .lead {
-                font-size: 1rem;
-            }
-            .hero-skills {
-                font-size: 0.85rem;
-                white-space: normal; /* Allow text to wrap on small screens */
-            }
-            .hero-skills .arabic-text,
-            .hero-skills .english-text {
-                display: block; /* Each language on its own line */
-                padding: 3px 0;
-            }
-            .hero-skills .arabic-text {
-                margin-bottom: 3px;
-            }
-            .hero-skills .english-text {
-                margin-top: 3px;
-            }
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 30px;
-            }
-            .section-title::after {
-                width: 50px;
-                height: 4px;
-            }
-            .card-title {
-                font-size: 1.1rem;
-            }
-            .list-group-item {
-                font-size: 0.9rem;
-            }
-            .py-5 {
-                padding-top: 1.5rem !important;
-                padding-bottom: 1.5rem !important;
-            }
-            .rounded-circle {
-                width: 140px; /* Smaller size on mobile */
-                height: 140px;
-                border-width: 4px; /* Thinner border on mobile */
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            }
-            .navbar {
-                padding: 0.5rem 0; /* Even less padding on mobile */
-            }
-            .navbar-nav .nav-link {
-                margin-left: 0;
-                margin-right: 0;
-                text-align: center;
-                padding-bottom: 8px; /* More padding for mobile menu items */
-                font-size: 1rem;
-            }
-            .navbar-nav .nav-link::after {
-                left: 50%; /* Center underline on mobile */
-                transform: translateX(-50%);
-            }
-            .navbar-brand {
-                font-size: 1.4rem;
-            }
-            #language-switcher {
-                padding: 0.3rem 0.7rem;
-                font-size: 0.85rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .hero-section {
-                min-height: 280px;
-                padding: 50px 0;
-            }
-            .hero-section h1 {
-                font-size: 1.6rem;
-            }
-            .hero-section .lead {
-                font-size: 0.9rem;
-            }
-            .hero-skills {
-                font-size: 0.75rem;
-            }
+            .a4-container { margin: 0; border-radius: 0; }
+            .resume-section { padding: 1.5rem; }
+            .chat-widget { bottom: 20px; right: 20px; }
+            .chat-box { width: 280px; }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">رامي عامر / Ramy Amer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-code-branch me-2"></i> 
+                <span class="arabic-content">المهندس رامي عامر</span>
+                <span class="english-content d-none">Eng. Ramy Amer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" data-en="ABOUT" data-ar="عني">عني</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience" data-en="EXPERIENCE" data-ar="الخبرة">الخبرة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills" data-en="SKILLS" data-ar="المهارات">المهارات</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#education" data-en="EDUCATION" data-ar="المؤهلات">المؤهلات</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#certificates" data-en="CERTIFICATES" data-ar="الشهادات">الشهادات</a>
+                        <a href="https://wa.me/966557957877" target="_blank" class="btn btn-whatsapp mx-3">
+                            <i class="fab fa-whatsapp"></i> 
+                            <span class="arabic-content">تواصل معي</span>
+                            <span class="english-content d-none">Contact Me</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="Portfolio.HTML"  data-en="Portfolio" data-ar="معرض الأعمال">معرض الأعمال</a>
-                    </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="Ramy C.V (2).pdf" target="_blank" data-en="Download CV" data-ar="تحميل السيرة الذاتية">تحميل السيرة الذاتية</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-sm btn-primary ms-2" id="language-switcher" data-en-text="العربية" data-ar-text="English">English</button>
+                        <button class="btn btn-outline-primary btn-sm" id="lang-btn">English</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>
-                        <span class="arabic-text">رامي عامر</span> / <span class="english-text">Ramy Amer</span>
-                    </h1>
-                    <p class="lead">
-                        <span class="arabic-text">ممثل مبيعات مصرفي</span> / <span class="english-text">Banker Sales Representative</span>
-                    </p>
-                    <p class="hero-skills">
-                        <span class="arabic-text">المبيعات المباشرة وإدارة المبيعات | مهارات التعامل مع الآخرين وخدمة العملاء | تحليل وحل المشكلات</span>
-                        <br class="d-md-none"> <span class="english-text">Direct Sales & Sales Management | Interpersonal & Customer Service Skills | Analysis & Problem Solving</span>
-                    </p>
+    <div class="a4-container" data-aos="fade-up">
+        
+        <header class="resume-header">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Eng. Ramy" class="profile-img"> <div class="arabic-content">
+                <h1 class="fw-bold mb-1">المهندس / رامي عامر</h1>
+                <div class="job-title">مدير تطوير الأعمال والأتمتة | خبير نمو وتسويق</div>
+                <p class="mt-3 text-light" style="max-width: 600px; margin: auto;">
+                    مزيج استثنائي يجمع بين قوة المبيعات في القطاع المصرفي، والقيادة في التسويق المؤسسي، والقدرة الفائقة على أتمتة العمليات (Automation) وتطوير الأنظمة لزيادة الكفاءة ومضاعفة الأرباح.
+                </p>
+            </div>
+
+            <div class="english-content d-none">
+                <h1 class="fw-bold mb-1">Eng. Ramy Amer</h1>
+                <div class="job-title">Business Development & Automation Manager</div>
+                <p class="mt-3 text-light" style="max-width: 600px; margin: auto;">
+                    An exceptional blend of banking sales expertise, corporate marketing leadership, and advanced automation skills to streamline operations, drive growth, and maximize profitability.
+                </p>
+            </div>
+            
+            <div class="mt-4 d-flex justify-content-center gap-4 text-light">
+                <span><i class="fa-solid fa-phone text-warning"></i> 0557957877</span>
+                <span><i class="fa-solid fa-location-dot text-warning"></i> Madinah, KSA</span>
+                <span><i class="fa-solid fa-envelope text-warning"></i> ramyheshamamer@gmail.com</span>
+            </div>
+        </header>
+
+        <section class="resume-section">
+            <div class="arabic-content">
+                <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> المسار المهني والخبرات</h2>
+                
+                <div class="experience-item" data-aos="fade-right">
+                    <div class="exp-title">مدير التسويق وتطوير الأعمال</div>
+                    <div class="exp-meta">مؤسسة أوكرة للمقاولات العامة والصناعة | أكتوبر 2025 – حتى الآن</div>
+                    <ul>
+                        <li>إدارة الحملات التسويقية وتطوير الهوية البصرية لقطاع صناعة الأثاث والتوريدات الفندقية والمقاولات.</li>
+                        <li>بناء أنظمة مبيعات مؤتمتة (Automated Sales Funnels) للتواصل مع العملاء المستهدفين في قطاع الضيافة B2B.</li>
+                        <li>استقطاب عقود التأثيث الفندقي الضخمة عبر دمج التحليل السوقي مع الحلول التقنية الحديثة.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item" data-aos="fade-right">
+                    <div class="exp-title">أخصائي تمويل ومتابعة</div>
+                    <div class="exp-meta">شركة منازل العصرية للتطوير والاستثمار العقاري | سبتمبر 2023 – حتى الآن</div>
+                    <ul>
+                        <li>إدارة العقود وجداول الحجوزات لمشروع درة المدينة، وربطها بأنظمة البنوك بنجاح.</li>
+                        <li>أتمتة المراسلات (إرسال مئات الرسائل التسويقية يومياً بذكاء) مما ساهم في مضاعفة المبيعات بنسبة 100% خلال 5 أشهر فقط.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item" data-aos="fade-right">
+                    <div class="exp-title">ممثل مبيعات مصرفية</div>
+                    <div class="exp-meta">بنك الإمارات دبي الوطني | يونيو 2021 – يونيو 2023</div>
+                    <ul>
+                        <li>بناء محافظ عملاء قوية وتقديم حلول ائتمانية وتمويلية متكاملة لقطاع الأفراد والشركات.</li>
+                        <li>تحقيق التارجت البيعي بامتياز عبر المبيعات الميدانية والتسويق الهاتفي والرقمي.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="english-content d-none">
+                <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+                
+                <div class="experience-item" data-aos="fade-left">
+                    <div class="exp-title">Marketing & Business Development Manager</div>
+                    <div class="exp-meta">Ukra Contracting & Industry | Oct 2025 – Present</div>
+                    <ul>
+                        <li>Directing marketing strategies and brand identity for furniture manufacturing and hotel supplies.</li>
+                        <li>Implementing automated B2B sales funnels to secure large-scale hotel furnishing contracts.</li>
+                        <li>Integrating modern tech solutions with market analysis to drive business growth.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item" data-aos="fade-left">
+                    <div class="exp-title">Finance & Follow-up Specialist</div>
+                    <div class="exp-meta">Modern Homes Real Estate | Sep 2023 – Present</div>
+                    <ul>
+                        <li>Managed contracts and financing workflows for the Durrat Al-Madina project.</li>
+                        <li>Automated daily marketing outreach, achieving a 100% sales increase within 5 months.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item" data-aos="fade-left">
+                    <div class="exp-title">Banking Sales Representative</div>
+                    <div class="exp-meta">Emirates NBD Bank | Jun 2021 – Jun 2023</div>
+                    <ul>
+                        <li>Promoted financing and credit solutions across public and private sectors.</li>
+                        <li>Consistently met and exceeded sales targets through proactive field and digital sales.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <div class="arabic-content">
-            <section id="about" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">عني</h2>
-                    <div class="row align-items-center">
-                        <div class="col-md-4 text-center">
-                            <img src="ramyamerfor.webp" class="img-fluid rounded-circle mb-3 profile-image-shared" id="arabic-profile-img" alt="صورتك الشخصية">
-                        </div>
-                        <div class="col-md-8">
-                            <p>أنا محترف لدي أكثر من تسع سنوات من الخبرة في القطاع المصرفي والتجزئة. لقد عملت في أدوار مختلفة مثل أمين صندوق، بائع، مشرف، وممثل مبيعات. لدي سجل حافل بتحقيق أهداف المبيعات، وتقديم خدمة عملاء ممتازة، وإدارة الفرق. لقد اكتسبت أيضًا مهارات ومعرفة في منتجات القروض المختلفة، وبطاقات الائتمان، وخدمات التمويل. أنا بارع في مهارات الحاسوب، برامج التصميم، البريد الإلكتروني، برامج الأوفيس، تطوير المواقع باستخدام الذكاء الاصطناعي والإنترنت. كما يمكنني الكتابة بسرعة باللغة العربية بمعدل 40 كلمة في الدقيقة.</p>
-                            <h3 class="mt-4">الهدف الوظيفي</h3>
-                            <p>الحصول على منصب مليء بالتحديات والمجزية في القطاع المصرفي أو التجزئة حيث يمكنني الاستفادة من مهاراتي وخبرتي في خدمة العملاء، المبيعات، والإدارة.</p>
-                        </div>
-                    </div>
+        <section class="resume-section bg-light">
+            <div class="arabic-content">
+                <h2 class="section-title"><i class="fa-solid fa-microchip"></i> المهارات التقنية والأتمتة</h2>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> تطوير أنظمة الرد الآلي المتقدمة وبرمجيات المبيعات (Sales Bots).</div>
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> ربط العمليات وتسلسلها عبر أدوات الأتمتة (n8n, APIs).</div>
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> إجادة لغات البرمجة الحديثة (Python, JavaScript, React).</div>
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> إدارة قواعد البيانات وبناء واجهات المستخدم لحلول الأعمال.</div>
                 </div>
-            </section>
+            </div>
 
-            <section  class="bg-light py-5">
-                <div class="container">
-                    <h2 id="experience" class="section-title">الخبرة العملية</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">شركة منازل العصرية للتطوير والاستثمار العقاري</h5>
-                                    <p class="card-text text-muted mb-2">أخصائي تمويل ومتابعة | سبتمبر 2023 حتى الآن</p>
-                                     <ul>
-                                        <li>عملت معهم في مشروع درة المدينة التابع لوزارة الإسكان.</li>
-                                        <li>أنشأت جداول الحجوزات، وقمت بمتابعتها، وربطتها بالبنوك لتنفيذ طلبات التمويل العقاري للمستفيدين من الدعم السكني، ومتابعتها حتى مرحلة الموافقة النهائية.</li>
-                                        <li>إصدار العقود بين المستفيدين والشركة وإنشاء جداول لكل عقد يتم تنفيذه.</li>
-                                        <li>تمكنت، من خلال مهاراتي وخبرتي، من إنشاء نموذج للعقد الإلكتروني عن طريق إضافة بيانات الوحدات والمستفيدين في كل من العقود والجداول التي أنشأتها.</li>
-                                        <li>أرسلت أكثر من 300 رسالة يوميًا عبر واتساب إلى عملاء مختلفين تحتوي على عروض ومعلومات عن المنتجات.</li>
-                                        <li>بهذا، تمكنت من توفير الوقت وتحقيق مبيعات أكثر بنسبة 100% من مبيعات العام السابق في 5 أشهر فقط.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">بنك الإمارات دبي الوطني</h5>
-                                    <p class="card-text text-muted mb-2">ممثل مبيعات | يونيو 2021 - يونيو 2023</p>
-                                     <ul>
-                                        <li>قمت بزيارة المكاتب، الجهات الحكومية، المراكز الصحية، المستشفيات، والشركات الخاصة للترويج لمنتجات التمويل وبطاقات الائتمان.</li>
-                                        <li>بنيت علاقات مع العملاء وتواصلت معهم بانتظام لإطلاعهم على أحدث العروض والمنتجات.</li>
-                                        <li>ملأت طلبات العملاء وقدمتها إلى قسم الائتمان بعد التحقق من أهليتهم وفقًا لسياسة البنك.</li>
-                                        <li>تابعت الطلبات لضمان رضا العملاء والموافقة.</li>
-                                        <li>تواصلت مع العملاء عبر الهاتف لعرض منتجات وخدمات جديدة وشرح ميزاتها وفوائدها.</li>
-                                        <li>أرسلت أكثر من 300 رسالة يوميًا عبر واتساب إلى عملاء مختلفين تحتوي على عروض ومعلومات عن المنتجات.</li>
-                                        <li>أكملت طلبات العملاء والمستندات عبر واتساب وسلمتها إلى الفرع للموافقة النهائية.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">لاند مارك العربية (هوم سنتر)</h5>
-                                    <p class="card-text text-muted mb-2">مشرف | مارس 2017 - يونيو 2021</p>
-                                     <ul>
-                                        <li>أشرفت على جميع الأقسام وتأكدت من توافر المنتجات لزيادة المبيعات.</li>
-                                        <li>أرسلت طلبات إلى المستودع للمنتجات الأكثر طلبًا واستلمتها وقمت بجردها.</li>
-                                        <li>عينت الموظفين لعرض المنتجات ووضع أسعار واضحة عليها.</li>
-                                        <li>راقبت أداء المبيعات من خلال التقارير اليومية من الإدارة ونظام الكاشير.</li>
-                                        <li>حللت بيانات المبيعات لتحديد اتجاهات وفرص المبيعات للتحسين.</li>
-                                        <li>أجريت اجتماعات وتدريبات يومية مع الموظفين لمساعدتهم على تحقيق مبيعات أعلى من خلال شرح ميزات وفوائد المنتجات وبيع المنتجات المتقاطعة.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">هايبر بنده</h5>
-                                    <p class="card-text text-muted mb-2">بائع إلكترونيات | يناير 2015 - ديسمبر 2016</p>
-                                     <ul>
-                                        <li>رحبت بالعملاء وقدمت لهم أحدث المنتجات الإلكترونية التي تتناسب مع اهتماماتهم.</li>
-                                        <li>شرحت ميزات وفوائد المنتجات واقترحت منتجات إضافية تكمل مشترياتهم.</li>
-                                        <li>رافقت العملاء إلى الكاشير وتأكدت من استلامهم لمنتجاتهم بحالة جديدة وجيدة.</li>
-                                        <li>شكرت العملاء ودعوتهم للزيارة مرة أخرى قريبًا.</li>
-                                        <li>أرسلت طلبات إلى المستودع للمنتجات الأكثر طلبًا واستلمتها وقمت بجردها.</li>
-                                        <li>عرضت المنتجات في أماكنها المخصصة في صالة العرض بأسعارها.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">هايبر بنده</h5>
-                                    <p class="card-text text-muted mb-2">أمين صندوق | يناير 2014 - ديسمبر 2014</p>
-                                     <ul>
-                                        <li>استلمت الودائع النقدية وقمت بتشغيل آلة تسجيل النقد.</li>
-                                        <li>رحبت بالعملاء بابتسامة ورسالة ترحيب.</li>
-                                        <li>حسبت المنتجات التي اشتروها وقمت بتحصيل المدفوعات منهم.</li>
-                                        <li>وازنت درج النقد في نهاية اليوم وسلمت ودائعي.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="english-content d-none">
+                <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Technical & Automation Skills</h2>
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Developing advanced Sales Bots and AI automated systems.</div>
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Workflow automation and API integrations (n8n).</div>
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Proficiency in modern stacks (Python, JavaScript, React).</div>
+                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Database management and business UI development.</div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="skills" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">المهارات</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">المبيعات المباشرة وإدارة المبيعات</li>
-                                <li class="list-group-item">مهارات التعامل مع الآخرين وخدمة العملاء</li>
-                                <li class="list-group-item">مهارات التحليل وحل المشكلات</li>
-                                <li class="list-group-item">القدرة على تعدد المهام</li>
-                                 <li class="list-group-item">القدرة على الإجابة على حجم كبير من المكالمات و/أو رسائل البريد الإلكتروني يوميًا</li>
-                                  <li class="list-group-item">القدرة على إيجاد الجانب الإيجابي في أي موقف</li>
-                                   <li class="list-group-item">البرامج الحاسوبية وبرامج التصميم والبريد الإلكتروني وبرامج الأوفيس وتطوير المواقع باستخدام الذكاء الاصطناعي والإنترنت</li>
-                                    <li class="list-group-item">الكتابة بسرعة باللغة العربية بمعدل 40 كلمة في الدقيقة</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    </div>
 
-             <section id="education" class="bg-light py-5">
-                <div class="container">
-                    <h2 class="section-title">المؤهلات العلمية</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">الثانوية</h5>
-                                    <p class="card-text text-muted mb-2">مدرسة ثانوية من مصر | 2003-2004</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="chat-widget">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <span class="arabic-content">المساعد الذكي للمهندس رامي</span>
+                <span class="english-content d-none">Eng. Ramy's AI Assistant</span>
+                <i class="fa-solid fa-xmark" style="cursor:pointer;" onclick="toggleChat()"></i>
+            </div>
+            <div class="chat-body">
+                <div class="chat-msg">
+                    <span class="arabic-content">
+                        مرحباً! 👋 أنا المساعد الافتراضي (المدعوم بالذكاء الاصطناعي). يسعدني أن أحدثك عن خبرات المهندس رامي في قيادة المبيعات، وتطوير مشاريع الأتمتة، وأنظمة التسويق المبرمجة لرفع كفاءة الأعمال... كيف يمكنني مساعدتك اليوم؟
+                    </span>
+                    <span class="english-content d-none">
+                        Hello! 👋 I am the AI Virtual Assistant. I'd be happy to tell you about Eng. Ramy's expertise in sales leadership, automation projects, and programmed marketing systems... How can I help you today?
+                    </span>
                 </div>
-            </section>
-
-             <section id="certificates" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">الشهادات والدورات</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>شهادة اجتياز الاختبار المهني في أساسيات الخدمات المصرفية للأفراد الإصدار 2 من الأكاديمية المالية السعودية:</strong> تظهر هذه الشهادة أن لدي المعرفة والمهارات اللازمة لتقديم الخدمات المصرفية للعملاء الأفراد، مثل فتح الحسابات، إصدار البطاقات، تقديم القروض، وإدارة الودائع.
-                                </li>
-                                 <li class="list-group-item">
-                                    <strong>شهادة مكافحة غسيل الأموال من بنك الإمارات دبي الوطني:</strong> تبين هذه الشهادة أنني أكملت التدريب والتقييم على سياسات وإجراءات منع وكشف أنشطة غسيل الأموال وتمويل الإرهاب، وكذلك الامتثال للقوانين واللوائح ذات الصلة.
-                                </li>
-                                 <li class="list-group-item">
-                                    <strong>شهادة الكفاءة في التدريب داخل صالة العرض من لاند مارك العربية:</strong> تثبت هذه الشهادة أن لدي القدرة والخبرة على تدريب وتوجيه موظفي المبيعات الآخرين في صالة العرض، باستخدام أساليب وتقنيات فعالة لتحسين أدائهم ورضا العملاء.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="bg-light py-5">
-                <div class="container">
-                    <h2 class="section-title">اتصل بي</h2>
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <p class="text-center">يمكنك التواصل معي عبر:</p>
-                            <ul class="list-group list-group-flush text-center">
-                                <li class="list-group-item">الهاتف: +966-5400-700-93</li>
-                                <li class="list-group-item">البريد الإلكتروني: ramyheshamamer@gmail.com</li>
-                                <li class="list-group-item">العنوان: 42394 Ranuna Dist., MEDINA</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input arabic-content" placeholder="اكتب رسالتك هنا... (سيتم تفعيل الربط قريباً)">
+                <input type="text" class="chat-input english-content d-none" placeholder="Type here... (API coming soon)">
+            </div>
         </div>
-
-        <div class="english-content d-none">
-            <section id="about-en" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">About Me</h2>
-                     <div class="row align-items-center">
-                        <div class="col-md-4 text-center">
-                        <img src="ramyamerfor.webp" class="img-fluid rounded-circle mb-3 profile-image-shared" id="english-profile-img" alt="Your Photo">
-                        </div>
-                        <div class="col-md-8">
-                            <p>I am a professional with more than nine years of experience in the banking and retail sector. I have worked in various roles such as cashier, salesperson, supervisor, and sales representative. I have a proven track record of achieving sales targets, providing excellent customer service, and managing teams. I have also acquired skills and knowledge in different loan products, credit cards, and financing services. I am proficient in computer skills, design programs, email, office programs, websites development by AI and internet. I can also type fast in Arabic at 40 words per minute.</p>
-                             <h3 class="mt-4">Objective</h3>
-                             <p>To obtain a challenging and rewarding position in the banking or retail sector where I can utilize my skills and experience in customer service, sales, and management.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience-en" class="bg-light py-5">
-                <div class="container">
-                    <h2 class="section-title">Work Experience</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">MODERN HOMES REAL ESTATE DEVELOPMENT AND INVESTMENT</h5>
-                                    <p class="card-text text-muted mb-2">Finance and Follow-up Specialist | Sep 2023 till now</p>
-                                     <ul>
-                                        <li>Worked with them in the Durrat Al-Madina project of the Ministry of Housing.</li>
-                                        <li>Created reservation schedules, followed them up, and linked them with banks to implement real estate financing requests for housing support beneficiaries, following them up to the final approval stage.</li>
-                                        <li>Issuing contracts between the beneficiaries and the company and creating schedules for every contract that is implemented.</li>
-                                        <li>I was able, through my skills and experience, to create a model for the electronic contract by adding Units and beneficiaries data in each of the contracts and schedules that I created.</li>
-                                        <li>Sent more than 300 messages daily via WhatsApp to different customers with offers and product information.</li>
-                                        <li>With this, I was able to save time and implement 100% more sales than the previous year's sales in just 5 months.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">EMIRATES NBD BANK</h5>
-                                    <p class="card-text text-muted mb-2">Sales Representative | Jun 2021 - Jun 2023</p>
-                                     <ul>
-                                        <li>Visited offices, government agencies, health centers, hospitals, and private companies to promote financing products and credit cards.</li>
-                                        <li>Built relationships with customers and communicated with them regularly to update them on the latest offers and products.</li>
-                                        <li>Filled out customer applications and submitted them to the credit department after verifying their eligibility according to the bank's policy.</li>
-                                        <li>Followed up on the applications to ensure customer satisfaction and approval.</li>
-                                        <li>Contacted customers by phone to offer new products and services and explain their features and benefits.</li>
-                                        <li>Sent more than 300 messages daily via WhatsApp to different customers with offers and product information.</li>
-                                        <li>Completed customer requests and documents via WhatsApp and delivered them to the branch for final approval.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">LANDMARK ARABIA (HOME CENTRE)</h5>
-                                    <p class="card-text text-muted mb-2">Supervisor | Mar 2017 - Jun 2021</p>
-                                     <ul>
-                                        <li>Supervised all departments and ensured the availability of products to increase sales.</li>
-                                        <li>Sent requests to the warehouse for the most demanded products and received and inventoried them.</li>
-                                        <li>Assigned employees to display the products and put clear prices on them.</li>
-                                        <li>Monitored sales performance through daily reports from the management and the cashier system.</li>
-                                        <li>Analyzed sales data to identify sales trends and opportunities for improvement.</li>
-                                        <li>Conducted daily meetings and trainings with employees to help them achieve higher sales by explaining product features and benefits and cross-selling products.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">HYPER PANDA</h5>
-                                    <p class="card-text text-muted mb-2">Electronics Salesperson | Jan 2015 - Dec 2016</p>
-                                     <ul>
-                                        <li>Welcomed customers and presented them with the latest electronic products that matched their interests.</li>
-                                        <li>Explained product features and benefits and suggested additional products that complemented their purchase.</li>
-                                        <li>Accompanied customers to the cashier and ensured they received their products in new and good condition.</li>
-                                        <li>Thanked customers and invited them to visit again soon.</li>
-                                        <li>Sent requests to the warehouse for the most requested products and received and inventoried them.</li>
-                                        <li>Displayed the products in their designated places in the showroom with their prices.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">HYPER PANDA</h5>
-                                    <p class="card-text text-muted mb-2">Cashier | Jan 2014 - Dec 2014</p>
-                                     <ul>
-                                        <li>Received cash deposits and operated the cash register machine.</li>
-                                        <li>Greeted customers with a smile and a welcome message.</li>
-                                        <li>Calculated the products they bought and collected payments from them.</li>
-                                        <li>Balanced the cash drawer at the end of the day and handed over my deposits.</li>
-                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills-en" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">Skills</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Direct sales and sales management</li>
-                                <li class="list-group-item">Interpersonal and customer service skills</li>
-                                <li class="list-group-item">Analytical and problem solving skills</li>
-                                <li class="list-group-item">Multitasking</li>
-                                 <li class="list-group-item">Ability to answer a high volume of calls and/or emails daily</li>
-                                  <li class="list-group-item">Ability to find the positive in any situation</li>
-                                   <li class="list-group-item">Computer skills, design programs, email, office programs, websites development by AI and internet</li>
-                                    <li class="list-group-item">Fast typing in Arabic (40 wpm)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-             <section id="education-en" class="bg-light py-5">
-                <div class="container">
-                    <h2 class="section-title">Education History</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Secondary School</h5>
-                                    <p class="card-text text-muted mb-2">Secondary School from Egypt | 2003-2004</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-             <section id="certificates-en" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">Certificates and Courses</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <strong>Certificate of passing the professional test in the basics of retail banking version 2 from the Saudi Financial Academy:</strong> This certificate demonstrates that I have the knowledge and skills to provide banking services to individual customers, such as opening accounts, issuing cards, offering loans, and managing deposits.
-                                </li>
-                                 <li class="list-group-item">
-                                    <strong>Certificate of anti-money laundering from Emirates NBD Bank:</strong> This certificate shows that I have completed the training and assessment on the policies and procedures of preventing and detecting money laundering and terrorist financing activities, as well as complying with the relevant laws and regulations.
-                                </li>
-                                 <li class="list-group-item">
-                                    <strong>Certificate of proficiency in training within the showroom from Landmark Arabia:</strong> This certificate proves that I have the ability and experience to train and coach other sales staff in the showroom, using effective methods and techniques to improve their performance and customer satisfaction.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact-en" class="bg-light py-5">
-                <div class="container">
-                    <h2 class="section-title">Contact Me</h2>
-                    <div class="row">
-                        <div class="col-md-8 mx-auto">
-                            <p class="text-center">You can contact me via:</p>
-                            <ul class="list-group list-group-flush text-center">
-                                <li class="list-group-item">Phone: +966-5400-700-93</li>
-                                <li class="list-group-item">Email: ramyheshamamer@gmail.com</li>
-                                <li class="list-group-item">Address: 42394 Ranuna Dist., MEDINA</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="chat-toggle" onclick="toggleChat()">
+            <i class="fa-solid fa-robot"></i>
         </div>
-    </main>
-
-    <footer class="footer text-center">
-         <div class="container">
-            <p>&copy; 2023 Ramy Amer. All rights reserved.</p>
-         </div>
-    </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const arabicContent = document.querySelector('.arabic-content');
-            const englishContent = document.querySelector('.english-content');
-            const switcherButton = document.getElementById('language-switcher');
-            const htmlTag = document.documentElement;
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        // Initialize Animations
+        AOS.init({ duration: 800, once: true });
 
-            // تحديد الصور الشخصية باستخدام IDs الجديدة
-            const arabicProfileImage = document.getElementById('arabic-profile-img');
-            const englishProfileImage = document.getElementById('english-profile-img');
+        // Language Switcher Logic
+        const langBtn = document.getElementById('lang-btn');
+        const arElements = document.querySelectorAll('.arabic-content');
+        const enElements = document.querySelectorAll('.english-content');
+        let currentLang = 'ar';
 
-            // وظيفة لتهيئة Intersection Observer لصورة معينة
-            function setupProfileImageObserver(imageElement) {
-                if (!imageElement) return; // تأكد من وجود العنصر
-
-                // إضافة الفئة التي تخفي الصورة وتحولها في البداية (إذا لم تكن موجودة بالفعل)
-                imageElement.classList.add('js-initial-hide');
-
-                const observerOptions = {
-                    root: null, // viewport as the root
-                    rootMargin: '0px',
-                    threshold: 0.2 // Trigger when 20% of the image is visible
-                };
-
-                const observerCallback = (entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            // العنصر أصبح مرئيًا
-                            entry.target.classList.remove('js-initial-hide'); // إزالة الفئة لتشغيل التأثير
-                            observer.unobserve(entry.target); // إيقاف المراقبة بعد الظهور مرة واحدة
-                        }
-                    });
-                };
-
-                const observer = new IntersectionObserver(observerCallback, observerOptions);
-                observer.observe(imageElement); // ابدأ المراقبة
+        langBtn.addEventListener('click', () => {
+            if(currentLang === 'ar') {
+                arElements.forEach(el => el.classList.add('d-none'));
+                enElements.forEach(el => el.classList.remove('d-none'));
+                document.documentElement.dir = 'ltr';
+                document.documentElement.lang = 'en';
+                langBtn.textContent = 'العربية';
+                currentLang = 'en';
+            } else {
+                enElements.forEach(el => el.classList.add('d-none'));
+                arElements.forEach(el => el.classList.remove('d-none'));
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'ar';
+                langBtn.textContent = 'English';
+                currentLang = 'ar';
             }
-
-            // Function to update content and links based on current language
-            function updateContentLanguage(lang) {
-                const isArabic = lang === 'ar';
-
-                htmlTag.lang = lang;
-                htmlTag.dir = isArabic ? 'rtl' : 'ltr';
-
-                // Show/hide language-specific content blocks
-                arabicContent.classList.toggle('d-none', !isArabic);
-                englishContent.classList.toggle('d-none', isArabic);
-
-                switcherButton.textContent = isArabic ? switcherButton.dataset.arText : switcherButton.dataset.enText;
-                switcherButton.classList.toggle('btn-primary', isArabic);
-                switcherButton.classList.toggle('btn-secondary', !isArabic);
-
-                navLinks.forEach(link => {
-                    const targetText = isArabic ? link.dataset.ar : link.dataset.en;
-                    const originalHref = link.getAttribute('href');
-                    let newHref = originalHref;
-
-                    if (originalHref && originalHref.startsWith('#')) {
-                        let baseId = originalHref.replace(/-en$/, '');
-                        if (isArabic) {
-                            newHref = baseId;
-                        } else {
-                            newHref = baseId + '-en';
-                        }
-                    }
-                    link.textContent = targetText;
-                    link.setAttribute('href', newHref);
-                });
-
-                // عند تبديل اللغة، قم بتهيئة مراقب الصورة في القسم الذي أصبح مرئياً
-                if (isArabic && arabicProfileImage) {
-                    setupProfileImageObserver(arabicProfileImage);
-                } else if (!isArabic && englishProfileImage) {
-                    setupProfileImageObserver(englishProfileImage);
-                }
-            }
-
-            switcherButton.addEventListener('click', function() {
-                const targetLang = htmlTag.lang === 'ar' ? 'en' : 'ar';
-                updateContentLanguage(targetLang);
-            });
-
-            // التهيئة الأولية عند تحميل الصفحة
-            // قم بتهيئة المراقب للصورة الأولى (الافتراضية) في البداية
-            if (htmlTag.lang === 'ar' && arabicProfileImage) {
-                setupProfileImageObserver(arabicProfileImage);
-            } else if (htmlTag.lang === 'en' && englishProfileImage) {
-                setupProfileImageObserver(englishProfileImage);
-            }
-
-
-            document.querySelectorAll('.navbar-nav .nav-link[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
         });
+
+        // Chat Widget Toggle
+        function toggleChat() {
+            const chatBox = document.getElementById('chatBox');
+            if(chatBox.style.display === 'none' || chatBox.style.display === '') {
+                chatBox.style.display = 'block';
+            } else {
+                chatBox.style.display = 'none';
+            }
+        }
     </script>
 </body>
 </html>

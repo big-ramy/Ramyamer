@@ -3,32 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-en="Eng. Ramy Amer | CV" data-ar="المهندس رامي عامر | السيرة الذاتية"></title>
+    
+    <meta property="og:title" content="رامي عامر | السيرة الذاتية والخبرات" />
+    <meta property="og:description" content="سيرة ذاتية تفاعلية تعرض خبرة تمتد لأكثر من 9 سنوات في القطاع المصرفي، المبيعات، وتطوير البرمجيات." />
+    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
+    <meta property="og:url" content="https://big-ramy.github.io/Ramyamer" />
+    <meta property="og:type" content="profile" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="رامي عامر | السيرة الذاتية والخبرات">
+    <meta name="twitter:description" content="سيرة ذاتية تفاعلية تعرض خبرة تمتد لأكثر من 9 سنوات in the banking sector, sales, and software development.">
+    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
+
+    <meta property="og:title" content="Ramy Amer | Professional CV & Experience" />
+    <meta property="og:description" content="An interactive resume showcasing 9+ years of experience in the banking sector, sales, and software development." />
+    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
+    <meta property="og:url" content="https://big-ramy.github.io/Ramyamer" />
+    <meta property="og:type" content="profile" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ramy Amer | Professional CV & Experience">
+    <meta name="twitter:description" content="An interactive resume showcasing 9+ years of experience in the banking sector, sales, and software development.">
+    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
+    
+    <title data-en="Ramy Hesham Amer" data-ar="رامي هشام عامر"></title>
+    <link rel="icon" href="favicon.png" type="image/png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         :root {
-            --primary: #1a3c6d;
-            --secondary: #c5a059;
+            --primary-color: #0f2442; 
+            --secondary-color: #c5a059; 
+            --accent-color: #007bff; 
             --light-bg: #f4f6f9;
-            --dark-text: #2d3436;
-            --gray-text: #636e72;
+            --text-dark: #1f2937;
+            --text-light: #f3f4f6;
             --white: #ffffff;
-            --a4-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.2);
         }
 
         body {
-            background-color: var(--light-bg);
             font-family: 'Tajawal', sans-serif;
-            color: var(--dark-text);
-            line-height: 1.8;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
             overflow-x: hidden;
         }
 
@@ -43,216 +68,193 @@
             text-align: right;
         }
 
-        /* Navbar */
+        /* المظهر الاحترافي لـ الهيدر والنافبار المتجاوب */
         .navbar {
-            background: var(--white);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            padding: 1rem 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            padding: 0.8rem 0;
+            transition: all 0.4s ease;
         }
+
         .navbar-brand {
+            font-size: 1.6rem;
             font-weight: 800;
-            color: var(--primary) !important;
-            font-size: 1.5rem;
-        }
-        .nav-link {
-            font-weight: 600;
-            color: var(--gray-text) !important;
-            transition: color 0.3s;
-        }
-        .nav-link:hover { color: var(--secondary) !important; }
-
-        /* A4 Page Container */
-        .a4-container {
-            max-width: 210mm;
-            background: var(--white);
-            margin: 3rem auto;
-            box-shadow: var(--a4-shadow);
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Hero Header inside A4 */
-        .resume-header {
-            background: linear-gradient(135deg, var(--primary) 0%, #0f2442 100%);
-            color: var(--white);
-            padding: 3rem 2rem;
-            text-align: center;
-            border-bottom: 5px solid var(--secondary);
-            position: relative;
-        }
-        .profile-img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid var(--secondary);
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            transition: transform 0.4s ease;
-        }
-        .profile-img:hover {
-            transform: scale(1.05);
-        }
-        .job-title {
-            color: var(--secondary);
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-top: 0.5rem;
-            letter-spacing: 1px;
-        }
-
-        /* Section Styling */
-        .resume-section {
-            padding: 2.5rem 3rem;
-            border-bottom: 1px solid #eee;
-        }
-        .resume-section:last-child { border-bottom: none; }
-        
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
+            color: var(--primary-color) !important;
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
         }
-        .section-title i {
-            color: var(--secondary);
+        
+        .brand-icon {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
         }
 
-        /* Timeline / Experience */
-        .experience-item {
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 600;
+            margin: 0 12px;
             position: relative;
-            padding-right: 2rem; /* RTL default */
-            margin-bottom: 2rem;
-            border-right: 2px solid var(--secondary);
+            transition: all 0.3s ease;
         }
-        .english-content .experience-item {
-            padding-right: 0;
-            padding-left: 2rem;
-            border-right: none;
-            border-left: 2px solid var(--secondary);
+
+        .navbar-nav .nav-link:hover {
+            color: var(--accent-color) !important;
+            transform: translateY(-2px);
         }
-        .experience-item::before {
+
+        .navbar-nav .nav-link::after {
             content: '';
             position: absolute;
-            width: 16px;
-            height: 16px;
-            background: var(--secondary);
-            border-radius: 50%;
-            top: 5px;
-            right: -9px; /* RTL */
+            width: 0;
+            height: 3px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--secondary-color);
+            transition: width 0.3s ease;
+            border-radius: 2px;
         }
-        .english-content .experience-item::before {
-            right: auto;
-            left: -9px;
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
         }
-        .exp-title {
-            font-size: 1.2rem;
+
+        /* الهمبرغر منيو الاحترافي المخصص للأجهزة الذكية */
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .custom-toggler-icon {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            transition: transform 0.3s ease;
+        }
+        .navbar-toggler[aria-expanded="true"] .custom-toggler-icon {
+            transform: rotate(90deg);
+            color: var(--secondary-color);
+        }
+
+        #language-switcher {
             font-weight: 700;
-            color: var(--primary);
+            border-radius: 8px;
+            padding: 0.5rem 1.4rem;
+            background: var(--primary-color);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
         }
-        .exp-meta {
-            font-size: 0.9rem;
-            color: var(--gray-text);
-            margin-bottom: 10px;
-            font-weight: 500;
+        #language-switcher:hover {
+            transform: scale(1.05);
+            background: var(--secondary-color);
         }
 
-        /* Buttons */
-        .btn-whatsapp {
-            background-color: #25D366;
-            color: white;
-            font-weight: 600;
-            padding: 10px 25px;
-            border-radius: 30px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .btn-whatsapp:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
-            color: white;
-        }
-
-        /* Chat Widget */
-        .chat-widget {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-        }
-        .chat-toggle {
-            width: 60px;
-            height: 60px;
-            background-color: var(--primary);
-            color: white;
-            border-radius: 50%;
+        /* Hero Section المتجاوب والمميز بنمط تقني مدمج */
+        .hero-section {
+            background: url('ramybackground-Recovered.webp') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            min-height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            cursor: pointer;
-            box-shadow: 0 10px 25px rgba(26, 60, 109, 0.4);
-            transition: transform 0.3s;
-        }
-        .chat-toggle:hover { transform: scale(1.1); }
-        
-        .chat-box {
-            position: absolute;
-            bottom: 80px;
-            right: 0;
-            width: 320px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            display: none;
-            overflow: hidden;
-            border: 1px solid #eee;
-        }
-        .chat-header {
-            background: var(--primary);
-            color: white;
-            padding: 15px;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-        }
-        .chat-body {
-            padding: 20px;
-            height: 250px;
-            overflow-y: auto;
-            background: #f9f9f9;
-        }
-        .chat-msg {
-            background: var(--white);
-            padding: 12px;
-            border-radius: 8px;
-            border-bottom-right-radius: 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-        .chat-footer {
-            padding: 10px;
-            background: white;
-            border-top: 1px solid #eee;
-        }
-        .chat-input {
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            padding: 8px 15px;
-            font-size: 0.9rem;
-            outline: none;
+            color: var(--text-light);
+            text-align: center;
+            padding: 100px 0 60px 0;
         }
 
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(15, 36, 66, 0.9) 0%, rgba(11, 24, 43, 0.75) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 950px;
+            padding: 0 20px;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(197, 160, 89, 0.15);
+            color: var(--secondary-color);
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-section h1 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .hero-section h1 span {
+            color: var(--secondary-color);
+        }
+
+        .hero-section .lead {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+            color: #e5e7eb;
+        }
+
+        /* بطاقات المهارات التسويقية والتقنية في الهيرو (تم إبعاد مهارة العقود كلياً هنا) */
+        .hero-skills-chips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 2rem;
+        }
+
+        .skill-chip {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .skill-chip:hover {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3);
+        }
+
+        @media (max-width: 992px) {
+            .hero-section h1 { font-size: 3rem; }
+            .hero-section .lead { font-size: 1.25rem; }
+        }
         @media (max-width: 768px) {
-            .a4-container { margin: 0; border-radius: 0; }
-            .resume-section { padding: 1.5rem; }
-            .chat-widget { bottom: 20px; right: 20px; }
-            .chat-box { width: 280px; }
+            .navbar { background: var(--white); }
+            .hero-section { min-height: 70vh; padding-top: 120px; }
+            .hero-section h1 { font-size: 2.4rem; }
+            .skill-chip { font-size: 0.85rem; padding: 8px 16px; }
         }
     </style>
 </head>
@@ -260,209 +262,434 @@
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="fa-solid fa-code-branch me-2"></i> 
+            <a class="navbar-brand" href="#home">
+                <i class="fa-solid fa-bolt brand-icon"></i>
                 <span class="arabic-content">المهندس رامي عامر</span>
                 <span class="english-content d-none">Eng. Ramy Amer</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered custom-toggler-icon"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a href="https://wa.me/966557957877" target="_blank" class="btn btn-whatsapp mx-3">
-                            <i class="fab fa-whatsapp"></i> 
-                            <span class="arabic-content">تواصل معي</span>
-                            <span class="english-content d-none">Contact Me</span>
-                        </a>
+                        <a class="nav-link" href="#about" data-en="About Me" data-ar="عني">عني</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-primary btn-sm" id="lang-btn">English</button>
+                        <a class="nav-link" href="#experience" data-en="Experience" data-ar="الخبرات العملية">الخبرات العملية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" data-en="Skills" data-ar="المهارات">المهارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education" data-en="Education" data-ar="المؤهلات العلمية">المؤهلات العلمية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates" data-en="Certificates" data-ar="الشهادات والدورات">الشهادات والدورات</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="Portfolio.HTML" data-en="Portfolio" data-ar="معرض الأعمال">معرض الأعمال</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="Ramy C.V (2).pdf" target="_blank" data-en="Download CV" data-ar="تحميل السيرة الذاتية">تحميل السيرة الذاتية</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <button id="language-switcher" data-en-text="العربية" data-ar-text="English">English</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="a4-container" data-aos="fade-up">
-        
-        <header class="resume-header">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Eng. Ramy" class="profile-img"> <div class="arabic-content">
-                <h1 class="fw-bold mb-1">المهندس / رامي عامر</h1>
-                <div class="job-title">مدير تطوير الأعمال والأتمتة | خبير نمو وتسويق</div>
-                <p class="mt-3 text-light" style="max-width: 600px; margin: auto;">
-                    مزيج استثنائي يجمع بين قوة المبيعات في القطاع المصرفي، والقيادة في التسويق المؤسسي، والقدرة الفائقة على أتمتة العمليات (Automation) وتطوير الأنظمة لزيادة الكفاءة ومضاعفة الأرباح.
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content mx-auto" data-aos="zoom-in">
+                <div class="tech-badge" data-en="< Marketing Strategy & Sales AI Automation />" data-ar="< الإستراتيجيات التسويقية وأتمتة المبيعات بالذكاء الاصطناعي />">
+                    &lt; الإستراتيجيات التسويقية وأتمتة المبيعات بالذكاء الاصطناعي /&gt;
+                </div>
+                
+                <h1 class="arabic-content">المهندس رامي <span>عامر</span></h1>
+                <h1 class="english-content d-none">Eng. Ramy <span>Amer</span></h1>
+                
+                <p class="lead arabic-content">
+                    مدير تطوير الأعمال والأتمتة وخبير النمو والتسويق الرقمي المؤسسي.<br>
+                    أقود الخطط التسويقية المبتكرة المدمجة بحلول البرمجة وهندسة الأتمتة لتعظيم انتشار الشركات ومضاعفة معدلات البيع.
                 </p>
+                <p class="lead english-content d-none">
+                    Business Development & Automation Manager | Corporate Growth & Digital Marketing Expert.<br>
+                    Driving innovative marketing strategies integrated with coding solutions and automation engineering to maximize business reach and multiply sales velocity.
+                </p>
+
+                <div class="hero-skills-chips arabic-content">
+                    <div class="skill-chip"><i class="fa-solid fa-bullseye me-2"></i> إدارة التسويق الإستراتيجي</div>
+                    <div class="skill-chip"><i class="fa-solid fa-funnel-dollar me-2"></i> هندسة النمو ومضاعفة المبيعات</div>
+                    <div class="skill-chip"><i class="fa-solid fa-robot me-2"></i> أتمتة الأنظمة التسويقية الرقمية</div>
+                    <div class="skill-chip"><i class="fa-solid fa-laptop-code me-2"></i> برمجيات وحلول الأعمال الذكية</div>
+                </div>
+                
+                <div class="hero-skills-chips english-content d-none">
+                    <div class="skill-chip"><i class="fa-solid fa-bullseye me-2"></i> Strategic Marketing Management</div>
+                    <div class="skill-chip"><i class="fa-solid fa-funnel-dollar me-2"></i> Growth Engineering & Sales Multiplication</div>
+                    <div class="skill-chip"><i class="fa-solid fa-robot me-2"></i> Digital Marketing Automation</div>
+                    <div class="skill-chip"><i class="fa-solid fa-laptop-code me-2"></i> Intelligent Software & Business Solutions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        <div class="bg-white p-4 p-md-5 mx-auto rounded-4 shadow-lg" style="max-width: 210mm;" data-aos="fade-up">
+
+            <div class="arabic-content">
+                
+                <section id="about" class="py-4 border-bottom">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-user-tie me-2 text-warning"></i> نبذة عني</h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-4 mb-md-0">
+                            <img src="ramyamerfor.webp" class="img-fluid rounded-circle border border-4 border-primary shadow-sm" style="width: 200px; height: 200px; object-fit: cover;" id="arabic-profile-img" alt="رامي عامر">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="fs-6 lh-lg text-secondary">
+                                أنا محترف لدي أكثر من تسع سنوات من الخبرة في القطاع المصرفي والتجزئة، والآن في إدارة التسويق وتطوير الأعمال. عملت في أدوار مختلفة مثل أمين صندوق، بائع، مشرف، وممثل مبيعات. لدي سجل حافل بتحقيق أهداف المبيعات، وتقديم خدمة عملاء ممتازة، وإدارة الفرق. اكتسبت مهارات ومعرفة في منتجات القروض وبطاقات الائتمان، وأنا بارع في مهارات الحاسوب، تطوير المواقع والأتمتة باستخدام الذكاء الاصطناعي، واستغلال التقنيات الحديثة لمضاعفة المبيعات. كما يمكنني الكتابة بسرعة باللغة العربية بمعدل 40 كلمة في الدقيقة.
+                            </p>
+                            <h4 class="mt-4 text-dark fw-bold">الهدف الوظيفي</h4>
+                            <p class="text-secondary lh-lg">
+                                الحصول على منصب مليء بالتحديات والمجزية في قطاع تطوير الأعمال والمبيعات حيث يمكنني الاستفادة من مهاراتي وخبرتي في التسويق، خدمة العملاء، الإدارة، والحلول التقنية المبتكرة.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="py-5 border-bottom">
+                    <h2 class="text-primary fw-bold mb-5 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-briefcase me-2 text-warning"></i> الخبرة العملية والإنجازات</h2>
+                    
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right">
+                        <div class="card-body border-end border-4 border-primary rounded pe-4">
+                            <h4 class="card-title fw-bold text-dark">مؤسسة أوكرة للمقاولات العامة والصناعة</h4>
+                            <h6 class="text-primary fw-bold mb-2">مدير تسويق <span class="text-muted fw-normal">| أكتوبر 2025 – حتى الآن</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>إدارة وتوجيه الحملات التسويقية لتوسيع الحصة السوقية في قطاع صناعة الأثاث والتوريدات الفندقية والمقاولات.</li>
+                                <li>استغلال تقنيات الذكاء الاصطناعي المتقدمة في صياغة عقود قانونية محكمة وخالية تماماً من الثغرات لحماية مصالح المؤسسة.</li>
+                                <li><strong>إنجاز استثنائي:</strong> بفضل المهارة التسويقية وتوظيف العقود الذكية، نجحت في اقتناص وتوقيع عقد ضخم بقيمة <strong>3.5 مليون ريال سعودي</strong> مع شركة <strong>لمار الأولى للإستثمار والتطوير العقاري</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="100">
+                        <div class="card-body border-end border-4 border-warning rounded pe-4">
+                            <h5 class="card-title fw-bold text-dark">شركة منازل العصرية للتطوير والاستثمار العقاري</h5>
+                            <h6 class="text-primary fw-bold mb-2">أخصائي تمويل ومتابعة <span class="text-muted fw-normal">| سبتمبر 2023 – حتى الآن</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>عملت في مشروع درة المدينة التابع لوزارة الإسكان، وأنشأت جداول الحجوزات وربطتها بالبنوك لتنفيذ طلبات التمويل العقاري.</li>
+                                <li>إصدار العقود بين المستفيدين والشركة، وإنشاء نموذج للعقد الإلكتروني عبر إضافة البيانات برمجياً.</li>
+                                <li>أرسلت أكثر من 300 رسالة تسويقية يومياً عبر واتساب بذكاء، مما وفر الوقت وحقق زيادة في المبيعات بنسبة <strong>100%</strong> مقارنة بالعام السابق في 5 أشهر فقط.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="200">
+                        <div class="card-body border-end border-4 border-secondary rounded pe-4">
+                            <h5 class="card-title fw-bold text-dark">بنك الإمارات دبي الوطني</h5>
+                            <h6 class="text-primary fw-bold mb-2">ممثل مبيعات <span class="text-muted fw-normal">| يونيو 2021 – يونيو 2023</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>الترويج لمنتجات التمويل وبطاقات الائتمان للجهات الحكومية والخاصة والمستشفيات.</li>
+                                <li>التواصل اليومي وإرسال عروض ترويجية لأكثر من 300 عميل يومياً وإكمال الطلبات للحصول على الموافقات النهائية.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="card-body border-end border-4 border-secondary rounded pe-4">
+                            <h5 class="card-title fw-bold text-dark">لاند مارك العربية (هوم سنتر)</h5>
+                            <h6 class="text-primary fw-bold mb-2">مشرف <span class="text-muted fw-normal">| مارس 2017 – يونيو 2021</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>الإشراف على الأقسام ومراقبة أداء المبيعات من خلال التقارير اليومية وأنظمة الكاشير.</li>
+                                <li>إجراء اجتماعات وتدريبات يومية مع الموظفين لرفع مستوى المبيعات وبيع المنتجات المتقاطعة (Cross-selling).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="400">
+                        <div class="card-body border-end border-4 border-secondary rounded pe-4">
+                            <h5 class="card-title fw-bold text-dark">هايبر بنده</h5>
+                            <h6 class="text-primary fw-bold mb-2">بائع إلكترونيات <span class="text-muted fw-normal">| يناير 2015 – ديسمبر 2016</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>تقديم وشرح أحدث المنتجات الإلكترونية للعملاء بناءً على اهتماماتهم واقتراح منتجات إضافية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills" class="py-5">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-gears me-2 text-warning"></i> المهارات</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-3" data-aos="zoom-in"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-bullseye text-secondary me-2"></i> الإدارة والتسويق الإستراتيجي</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="100"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-comments-dollar text-secondary me-2"></i> المبيعات المباشرة والتفاوض</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="200"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-laptop-code text-secondary me-2"></i> الذكاء الاصطناعي وتطوير المواقع</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="300"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-users text-secondary me-2"></i> خدمة العملاء وإدارة العلاقات</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="400"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-keyboard text-secondary me-2"></i> سرعة الطباعة (40 كلمة/دقيقة)</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="500"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-brain text-secondary me-2"></i> التحليل وحل المشكلات المعقدة</div></div>
+                    </div>
+                </section>
             </div>
 
+
             <div class="english-content d-none">
-                <h1 class="fw-bold mb-1">Eng. Ramy Amer</h1>
-                <div class="job-title">Business Development & Automation Manager</div>
-                <p class="mt-3 text-light" style="max-width: 600px; margin: auto;">
-                    An exceptional blend of banking sales expertise, corporate marketing leadership, and advanced automation skills to streamline operations, drive growth, and maximize profitability.
-                </p>
+                
+                <section id="about-en" class="py-4 border-bottom">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-user-tie me-2 text-warning"></i> About Me</h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-4 mb-md-0">
+                            <img src="ramyamerfor.webp" class="img-fluid rounded-circle border border-4 border-primary shadow-sm" style="width: 200px; height: 200px; object-fit: cover;" id="english-profile-img" alt="Ramy Amer">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="fs-6 lh-lg text-secondary">
+                                I am a professional with more than nine years of experience in the banking and retail sector, and now in Marketing and Business Development. I have worked in various roles such as cashier, salesperson, supervisor, and sales representative. I have acquired skills and knowledge in different loan products, and I am proficient in computer skills, websites development by AI, and leveraging automation to multiply sales. I can also type fast in Arabic at 40 words per minute.
+                            </p>
+                            <h4 class="mt-4 text-dark fw-bold">Objective</h4>
+                            <p class="text-secondary lh-lg">
+                                To obtain a challenging and rewarding position in business development and sales where I can utilize my skills in marketing, customer service, management, and innovative tech solutions.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience-en" class="py-5 border-bottom">
+                    <h2 class="text-primary fw-bold mb-5 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-briefcase me-2 text-warning"></i> Work Experience</h2>
+                    
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left">
+                        <div class="card-body border-start border-4 border-primary rounded ps-4">
+                            <h4 class="card-title fw-bold text-dark">Ukra Contracting & Industry</h4>
+                            <h6 class="text-primary fw-bold mb-2">Marketing Manager <span class="text-muted fw-normal">| Oct 2025 – Present</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>Directing marketing campaigns to expand market share in the furniture manufacturing and hotel supplies sector.</li>
+                                <li>Leveraging advanced AI technologies to draft tight, loophole-free legal contracts to protect the institution's interests.</li>
+                                <li><strong>Exceptional Achievement:</strong> Successfully negotiated and signed a massive contract worth <strong>3.5 Million SAR</strong> with <strong>Lamar Al Oula for Real Estate Investment and Development</strong>, using marketing acumen and AI-drafted smart contracts.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="100">
+                        <div class="card-body border-start border-4 border-warning rounded ps-4">
+                            <h5 class="card-title fw-bold text-dark">MODERN HOMES REAL ESTATE DEVELOPMENT AND INVESTMENT</h5>
+                            <h6 class="text-primary fw-bold mb-2">Finance and Follow-up Specialist <span class="text-muted fw-normal">| Sep 2023 – Present</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>Worked in the Durrat Al-Madina project, created reservation schedules and linked them with banks for real estate financing.</li>
+                                <li>Created a model for electronic contracts by programmatically adding unit and beneficiary data.</li>
+                                <li>Automated sending 300+ WhatsApp messages daily, achieving a <strong>100%</strong> sales increase compared to the previous year in just 5 months.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="200">
+                        <div class="card-body border-start border-4 border-secondary rounded ps-4">
+                            <h5 class="card-title fw-bold text-dark">EMIRATES NBD BANK</h5>
+                            <h6 class="text-primary fw-bold mb-2">Sales Representative <span class="text-muted fw-normal">| Jun 2021 – Jun 2023</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>Promoted financing products and credit cards to government agencies and private companies.</li>
+                                <li>Sent over 300 messages daily via WhatsApp with offers, completing requests and securing final approvals.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="300">
+                        <div class="card-body border-start border-4 border-secondary rounded ps-4">
+                            <h5 class="card-title fw-bold text-dark">LANDMARK ARABIA (HOME CENTRE)</h5>
+                            <h6 class="text-primary fw-bold mb-2">Supervisor <span class="text-muted fw-normal">| Mar 2017 – Jun 2021</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>Supervised departments and monitored sales performance through daily management reports.</li>
+                                <li>Conducted daily trainings to help staff achieve higher sales through cross-selling.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="400">
+                        <div class="card-body border-start border-4 border-secondary rounded ps-4">
+                            <h5 class="card-title fw-bold text-dark">HYPER PANDA</h5>
+                            <h6 class="text-primary fw-bold mb-2">Electronics Salesperson <span class="text-muted fw-normal">| Jan 2015 – Dec 2016</span></h6>
+                            <ul class="text-secondary lh-lg mt-3">
+                                <li>Explained product features and benefits, suggesting additional complementary products.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills-en" class="py-5">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-gears me-2 text-warning"></i> Skills</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-3" data-aos="zoom-in"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-bullseye text-secondary me-2"></i> Strategic Marketing & Management</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="100"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-comments-dollar text-secondary me-2"></i> Direct Sales & Negotiation</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="200"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-laptop-code text-secondary me-2"></i> AI & Web Development</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="300"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-users text-secondary me-2"></i> Customer Service & Relations</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="400"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-keyboard text-secondary me-2"></i> Fast Arabic Typing (40 WPM)</div></div>
+                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="500"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-brain text-secondary me-2"></i> Analytical & Problem Solving</div></div>
+                    </div>
+                </section>
+            
+                <section id="education" class="py-5 border-bottom">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-graduation-cap me-2 text-warning"></i> المؤهلات</h2>
+                    <div class="card border-0 shadow-sm" data-aos="fade-up">
+                        <div class="card-body border-end border-4 border-primary rounded pe-4">
+                            <h5 class="fw-bold text-dark">الثانوية العامة</h5>
+                            <p class="text-secondary mb-0">مدرسة ثانوية من مصر | 2003 - 2004</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="certificates" class="py-5">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-certificate me-2 text-warning"></i> الشهادات والدورات</h2>
+                    <ul class="list-group list-group-flush" data-aos="fade-up">
+                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
+                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> أساسيات الخدمات المصرفية للأفراد (الإصدار 2)</h6>
+                            <p class="text-secondary lh-lg mb-0">الأكاديمية المالية السعودية. تؤكد إتقان تقديم الخدمات المصرفية، إصدار البطاقات، إدارة الحسابات وتقديم القروض.</p>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
+                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> مكافحة غسيل الأموال وتمويل الإرهاب</h6>
+                            <p class="text-secondary lh-lg mb-0">بنك الإمارات دبي الوطني. إتمام التقييم والتدريب على سياسات كشف الأنشطة غير المشروعة والامتثال للقوانين المالية.</p>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0 px-0">
+                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> الكفاءة في التدريب داخل صالة العرض</h6>
+                            <p class="text-secondary lh-lg mb-0">لاند مارك العربية. إثبات القدرة والخبرة على تدريب وتوجيه فرق المبيعات لتحسين الأداء ورفع مستوى رضا العملاء.</p>
+                        </li>
+                    </ul>
+                </section>
+
+            </div> <div class="english-content d-none">
+                
+                <section id="education-en" class="py-5 border-bottom">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-graduation-cap me-2 text-warning"></i> Education</h2>
+                    <div class="card border-0 shadow-sm" data-aos="fade-up">
+                        <div class="card-body border-start border-4 border-primary rounded ps-4">
+                            <h5 class="fw-bold text-dark">Secondary School</h5>
+                            <p class="text-secondary mb-0">Graduated from Egypt | 2003 - 2004</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="certificates-en" class="py-5">
+                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-certificate me-2 text-warning"></i> Certificates</h2>
+                    <ul class="list-group list-group-flush" data-aos="fade-up">
+                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
+                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> Retail Banking Basics (Version 2)</h6>
+                            <p class="text-secondary lh-lg mb-0">Saudi Financial Academy. Certified in managing accounts, loans, and providing exceptional retail banking services.</p>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
+                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> Anti-Money Laundering (AML)</h6>
+                            <p class="text-secondary lh-lg mb-0">Emirates NBD Bank. Completed comprehensive training on detecting and preventing illicit financial activities.</p>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0 px-0">
+                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> Showroom Training Proficiency</h6>
+                            <p class="text-secondary lh-lg mb-0">Landmark Arabia. Certified in coaching and guiding sales teams to enhance performance and customer satisfaction.</p>
+                        </li>
+                    </ul>
+                </section>
+                
+            </div> </div>
+    </main> <footer class="text-center py-4 text-secondary bg-white border-top">
+        <div class="container">
+            <p class="mb-0 fw-bold">
+                &copy; <span id="currentYear"></span> 
+                <span class="arabic-content">رامي عامر. جميع الحقوق محفوظة. تم التطوير باستخدام أحدث التقنيات والذكاء الاصطناعي.</span>
+                <span class="english-content d-none">Eng. Ramy Amer. All rights reserved. Developed with modern web tech & AI.</span>
+            </p>
+        </div>
+    </footer>
+
+    <div class="chat-widget" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000;">
+        <div class="chat-box shadow-lg rounded-4 overflow-hidden" id="chatBox" style="display: none; width: 340px; background: #fff; border: 1px solid #e5e7eb;">
+            <div class="chat-header d-flex justify-content-between align-items-center p-3" style="background: var(--primary-color); color: white;">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-robot fs-4 text-warning"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold arabic-content">مساعد رامي الذكي</h6>
+                        <h6 class="mb-0 fw-bold english-content d-none">Ramy's AI Assistant</h6>
+                        <small style="font-size: 0.75rem; color: #cbd5e1;">Online (Gemini Ready)</small>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down" style="cursor:pointer;" onclick="toggleChat()"></i>
             </div>
             
-            <div class="mt-4 d-flex justify-content-center gap-4 text-light">
-                <span><i class="fa-solid fa-phone text-warning"></i> 0557957877</span>
-                <span><i class="fa-solid fa-location-dot text-warning"></i> Madinah, KSA</span>
-                <span><i class="fa-solid fa-envelope text-warning"></i> ramyheshamamer@gmail.com</span>
-            </div>
-        </header>
-
-        <section class="resume-section">
-            <div class="arabic-content">
-                <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> المسار المهني والخبرات</h2>
-                
-                <div class="experience-item" data-aos="fade-right">
-                    <div class="exp-title">مدير التسويق وتطوير الأعمال</div>
-                    <div class="exp-meta">مؤسسة أوكرة للمقاولات العامة والصناعة | أكتوبر 2025 – حتى الآن</div>
-                    <ul>
-                        <li>إدارة الحملات التسويقية وتطوير الهوية البصرية لقطاع صناعة الأثاث والتوريدات الفندقية والمقاولات.</li>
-                        <li>بناء أنظمة مبيعات مؤتمتة (Automated Sales Funnels) للتواصل مع العملاء المستهدفين في قطاع الضيافة B2B.</li>
-                        <li>استقطاب عقود التأثيث الفندقي الضخمة عبر دمج التحليل السوقي مع الحلول التقنية الحديثة.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item" data-aos="fade-right">
-                    <div class="exp-title">أخصائي تمويل ومتابعة</div>
-                    <div class="exp-meta">شركة منازل العصرية للتطوير والاستثمار العقاري | سبتمبر 2023 – حتى الآن</div>
-                    <ul>
-                        <li>إدارة العقود وجداول الحجوزات لمشروع درة المدينة، وربطها بأنظمة البنوك بنجاح.</li>
-                        <li>أتمتة المراسلات (إرسال مئات الرسائل التسويقية يومياً بذكاء) مما ساهم في مضاعفة المبيعات بنسبة 100% خلال 5 أشهر فقط.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item" data-aos="fade-right">
-                    <div class="exp-title">ممثل مبيعات مصرفية</div>
-                    <div class="exp-meta">بنك الإمارات دبي الوطني | يونيو 2021 – يونيو 2023</div>
-                    <ul>
-                        <li>بناء محافظ عملاء قوية وتقديم حلول ائتمانية وتمويلية متكاملة لقطاع الأفراد والشركات.</li>
-                        <li>تحقيق التارجت البيعي بامتياز عبر المبيعات الميدانية والتسويق الهاتفي والرقمي.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="english-content d-none">
-                <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
-                
-                <div class="experience-item" data-aos="fade-left">
-                    <div class="exp-title">Marketing & Business Development Manager</div>
-                    <div class="exp-meta">Ukra Contracting & Industry | Oct 2025 – Present</div>
-                    <ul>
-                        <li>Directing marketing strategies and brand identity for furniture manufacturing and hotel supplies.</li>
-                        <li>Implementing automated B2B sales funnels to secure large-scale hotel furnishing contracts.</li>
-                        <li>Integrating modern tech solutions with market analysis to drive business growth.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item" data-aos="fade-left">
-                    <div class="exp-title">Finance & Follow-up Specialist</div>
-                    <div class="exp-meta">Modern Homes Real Estate | Sep 2023 – Present</div>
-                    <ul>
-                        <li>Managed contracts and financing workflows for the Durrat Al-Madina project.</li>
-                        <li>Automated daily marketing outreach, achieving a 100% sales increase within 5 months.</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item" data-aos="fade-left">
-                    <div class="exp-title">Banking Sales Representative</div>
-                    <div class="exp-meta">Emirates NBD Bank | Jun 2021 – Jun 2023</div>
-                    <ul>
-                        <li>Promoted financing and credit solutions across public and private sectors.</li>
-                        <li>Consistently met and exceeded sales targets through proactive field and digital sales.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="resume-section bg-light">
-            <div class="arabic-content">
-                <h2 class="section-title"><i class="fa-solid fa-microchip"></i> المهارات التقنية والأتمتة</h2>
-                <div class="row mt-3">
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> تطوير أنظمة الرد الآلي المتقدمة وبرمجيات المبيعات (Sales Bots).</div>
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> ربط العمليات وتسلسلها عبر أدوات الأتمتة (n8n, APIs).</div>
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> إجادة لغات البرمجة الحديثة (Python, JavaScript, React).</div>
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> إدارة قواعد البيانات وبناء واجهات المستخدم لحلول الأعمال.</div>
-                </div>
-            </div>
-
-            <div class="english-content d-none">
-                <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Technical & Automation Skills</h2>
-                <div class="row mt-3">
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Developing advanced Sales Bots and AI automated systems.</div>
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Workflow automation and API integrations (n8n).</div>
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Proficiency in modern stacks (Python, JavaScript, React).</div>
-                    <div class="col-md-6 mb-3"><i class="fa-solid fa-check text-success me-2"></i> Database management and business UI development.</div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-
-    <div class="chat-widget">
-        <div class="chat-box" id="chatBox">
-            <div class="chat-header">
-                <span class="arabic-content">المساعد الذكي للمهندس رامي</span>
-                <span class="english-content d-none">Eng. Ramy's AI Assistant</span>
-                <i class="fa-solid fa-xmark" style="cursor:pointer;" onclick="toggleChat()"></i>
-            </div>
-            <div class="chat-body">
-                <div class="chat-msg">
-                    <span class="arabic-content">
-                        مرحباً! 👋 أنا المساعد الافتراضي (المدعوم بالذكاء الاصطناعي). يسعدني أن أحدثك عن خبرات المهندس رامي في قيادة المبيعات، وتطوير مشاريع الأتمتة، وأنظمة التسويق المبرمجة لرفع كفاءة الأعمال... كيف يمكنني مساعدتك اليوم؟
+            <div class="chat-body p-3" style="height: 280px; overflow-y: auto; background: #f8fafc;">
+                <div class="chat-msg mb-3 p-3 shadow-sm" style="background: white; border-radius: 12px; border-top-right-radius: 0; font-size: 0.9rem;">
+                    <span class="arabic-content text-dark lh-lg">
+                        مرحباً! 👋 أنا المساعد الافتراضي للمهندس رامي. يسعدني إخبارك أن المهندس رامي ليس فقط خبيراً في المبيعات وتطوير الأعمال، بل يمتلك مشاريع تقنية ضخمة (n8n, Python, API) تحقق معدلات مبيعات مضاعفة وتواصل دائم ومؤتمت مع العملاء باحترافية عالية.<br><br>كيف يمكنني مساعدتك؟ (الربط مع جيميناي سيتم تفعيله قريباً).
                     </span>
-                    <span class="english-content d-none">
-                        Hello! 👋 I am the AI Virtual Assistant. I'd be happy to tell you about Eng. Ramy's expertise in sales leadership, automation projects, and programmed marketing systems... How can I help you today?
+                    <span class="english-content d-none text-dark lh-lg">
+                        Hello! 👋 I am Eng. Ramy's virtual assistant. Did you know he is not just a sales expert, but also builds powerful tech projects (n8n, Python, APIs) to multiply sales and automate client communications?<br><br>How can I assist you today? (Gemini API integration coming soon).
                     </span>
                 </div>
             </div>
-            <div class="chat-footer">
-                <input type="text" class="chat-input arabic-content" placeholder="اكتب رسالتك هنا... (سيتم تفعيل الربط قريباً)">
-                <input type="text" class="chat-input english-content d-none" placeholder="Type here... (API coming soon)">
+            
+            <div class="chat-footer p-2" style="background: white; border-top: 1px solid #e5e7eb;">
+                <div class="input-group">
+                    <input type="text" class="form-control border-0 bg-light rounded-pill px-3" placeholder="اكتب رسالتك..." style="font-size: 0.9rem; box-shadow: none;">
+                    <button class="btn btn-primary rounded-circle ms-2" style="width: 40px; height: 40px; padding: 0;">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="chat-toggle" onclick="toggleChat()">
-            <i class="fa-solid fa-robot"></i>
-        </div>
+        
+        <button class="btn rounded-circle shadow-lg d-flex align-items-center justify-content-center" onclick="toggleChat()" style="width: 65px; height: 65px; background: var(--primary-color); border: 2px solid var(--secondary-color); color: white; font-size: 1.8rem; transition: transform 0.3s ease;">
+            <i class="fa-solid fa-comment-dots"></i>
+        </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
-        // Initialize Animations
-        AOS.init({ duration: 800, once: true });
-
-        // Language Switcher Logic
-        const langBtn = document.getElementById('lang-btn');
-        const arElements = document.querySelectorAll('.arabic-content');
-        const enElements = document.querySelectorAll('.english-content');
-        let currentLang = 'ar';
-
-        langBtn.addEventListener('click', () => {
-            if(currentLang === 'ar') {
-                arElements.forEach(el => el.classList.add('d-none'));
-                enElements.forEach(el => el.classList.remove('d-none'));
-                document.documentElement.dir = 'ltr';
-                document.documentElement.lang = 'en';
-                langBtn.textContent = 'العربية';
-                currentLang = 'en';
-            } else {
-                enElements.forEach(el => el.classList.add('d-none'));
-                arElements.forEach(el => el.classList.remove('d-none'));
-                document.documentElement.dir = 'rtl';
-                document.documentElement.lang = 'ar';
-                langBtn.textContent = 'English';
-                currentLang = 'ar';
-            }
+        // 1. تفعيل حركات الظهور الاحترافية (AOS)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true, // الحركة تحدث مرة واحدة عند النزول
+            offset: 50
         });
 
-        // Chat Widget Toggle
+        // 2. تحديث السنة تلقائياً في الفوتر
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // 3. منطق تغيير اللغة (العربية / الإنجليزية)
+        const langBtn = document.getElementById('language-switcher');
+        const arElements = document.querySelectorAll('.arabic-content');
+        const enElements = document.querySelectorAll('.english-content');
+        
+        langBtn.addEventListener('click', () => {
+            const isAr = document.documentElement.lang === 'ar';
+            
+            if(isAr) {
+                // التحويل إلى الإنجليزية
+                document.documentElement.lang = 'en';
+                document.documentElement.dir = 'ltr';
+                langBtn.textContent = langBtn.getAttribute('data-en-text') || 'العربية';
+                arElements.forEach(el => el.classList.add('d-none'));
+                enElements.forEach(el => el.classList.remove('d-none'));
+            } else {
+                // التحويل إلى العربية
+                document.documentElement.lang = 'ar';
+                document.documentElement.dir = 'rtl';
+                langBtn.textContent = langBtn.getAttribute('data-ar-text') || 'English';
+                enElements.forEach(el => el.classList.add('d-none'));
+                arElements.forEach(el => el.classList.remove('d-none'));
+            }
+            
+            // إعادة إنعاش الحركات لتتناسب مع الاتجاه الجديد
+            setTimeout(() => {
+                AOS.refresh();
+            }, 100);
+        });
+
+        // 4. دالة فتح وإغلاق ويدجت الدردشة
         function toggleChat() {
             const chatBox = document.getElementById('chatBox');
             if(chatBox.style.display === 'none' || chatBox.style.display === '') {
                 chatBox.style.display = 'block';
+                // تفعيل تأثير دخول سريع للدردشة
+                chatBox.animate([
+                    { transform: 'translateY(20px)', opacity: 0 },
+                    { transform: 'translateY(0)', opacity: 1 }
+                ], { duration: 300, easing: 'ease-out' });
             } else {
                 chatBox.style.display = 'none';
             }

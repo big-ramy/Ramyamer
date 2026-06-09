@@ -3,808 +3,681 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-en="Ramy Amer- potfolio" data-ar="رامي عامر - معرض الاعمال ">رامي عامر - معرض الأعمال</title>
+    <title data-en="Ramy Amer - Portfolio" data-ar="رامي عامر - معرض الأعمال">رامي عامر - معرض الأعمال</title>
     <link rel="icon" href="favicon.png" type="image/png">
 
-<meta property="og:title" content="رامي عامر | معرض الأعمال" />
-<meta property="og:description" content="استكشف معرض أعمالي الذي يضم مشاريع مبتكرة في تطوير البرمجيات، أنظمة الويب، وأدوات الأتمتة." />
-<meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-<meta property="og:url" content="https://big-ramy.github.io/Ramyamer/Portfolio.HTML" />
-<meta property="og:type" content="website" />
+    <meta property="og:title" content="رامي عامر | معرض الأعمال" />
+    <meta property="og:description" content="مشاريع مبتكرة في تطوير البرمجيات، أنظمة المبيعات، أتمتة التسويق، والذكاء الاصطناعي." />
+    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
+    <meta property="og:url" content="https://big-ramy.github.io/Ramyamer/Portfolio.HTML" />
+    <meta property="og:type" content="website" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="رامي عامر | معرض الأعمال">
-<meta name="twitter:description" content="استكشف معرض أعمالي الذي يضم مشاريع مبتكرة في تطوير البرمجيات، أنظمة الويب، وأدوات الأتمتة.">
-<meta name="twitter:image" content="https://your-domain.com/images/portfolio-preview.jpg">
-
-<meta property="og:title" content="Ramy Amer | Project Portfolio" />
-<meta property="og:description" content="Explore my portfolio of innovative projects in software development, web systems, and automation tools." />
-<meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-<meta property="og:url" content="https://big-ramy.github.io/Ramyamer/Portfolio.HTML" />
-<meta property="og:type" content="website" />
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ramy Amer | Project Portfolio">
-<meta name="twitter:description" content="Explore my portfolio of innovative projects in software development, web systems, and automation tools.">
-<meta name="twitter:image" content="https://your-domain.com/images/portfolio-preview.jpg">
-
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="رامي عامر | معرض الأعمال">
+    <meta name="twitter:description" content="مشاريع مبتكرة في تطوير البرمجيات وأنظمة المبيعات.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700;800&family=Cairo:wght@600;700&family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* CSS Variables for consistent colors - Matching Personal Page */
         :root {
-            --primary-color: #007bff; /* Bootstrap Primary Blue */
-            --secondary-color: #6c757d; /* Bootstrap Secondary Grey */
-            --accent-color: #28a745; /* Example: A green accent color */
-            --light-bg: #f8f9fa; /* Bootstrap Light */
-            --dark-bg: #343a40; /* Bootstrap Dark */
+            --primary-color: #0f2442;
+            --secondary-color: #c5a059;
+            --accent-color: #007bff;
+            --light-bg: #f4f6f9;
+            --dark-bg: #0f2442;
             --white-color: #fff;
-            --dark-color: #212529; /* Bootstrap Dark */
-            --shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Standard light shadow */
-            --shadow-hover: 0 0.75rem 2rem rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+            --dark-color: #1f2937;
+            --gradient-primary: linear-gradient(135deg, #0f2442 0%, #1a3a6e 100%);
+            --gradient-gold: linear-gradient(135deg, #c5a059 0%, #d4a843 100%);
         }
 
-        /* Base body styles - Matching Personal Page */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Tajawal', sans-serif; /* Default font for Arabic */
-            color: var(--dark-color);
-            line-height: 1.7; /* Improved readability for body text */
-            background-color: var(--light-bg); /* Consistent light background */
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            transition: background-color 0.3s ease; /* Smooth transition for body if background changes */
-        }
-
-        /* Language specific fonts and direction - Matching Personal Page */
-        .arabic-content {
-            direction: rtl;
-            text-align: right;
             font-family: 'Tajawal', sans-serif;
+            color: var(--dark-color);
+            line-height: 1.7;
+            background-color: var(--light-bg);
+            overflow-x: hidden;
         }
 
-        .english-content {
-            direction: ltr;
-            text-align: left;
-            font-family: 'Roboto', sans-serif; /* Consistent English font */
-        }
-        
-        /* Font rules for headings in Arabic content (using Cairo for headers as in your original portfolio) */
-        .arabic-content h1,
-        .arabic-content h2,
-        .arabic-content h3 {
-            font-family: 'Cairo', sans-serif; /* Arabic heading font */
-            font-weight: 700;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--secondary-color); border-radius: 4px; }
 
-        /* Font rules for headings in English content (using Poppins for headers as in your original portfolio) */
-        .english-content h1,
-        .english-content h2,
-        .english-content h3 {
-            font-family: 'Poppins', sans-serif; /* English heading font */
-            font-weight: 700;
-        }
+        .arabic-content { direction: rtl; text-align: right; }
+        .english-content { direction: ltr; text-align: left; font-family: 'Roboto', sans-serif; }
 
-
-        /* Ensure Bootstrap components inherit direction - Matching Personal Page */
-        .container, .row, .col-md-6, .d-flex, .mb-4, .mb-3, .mt-3, .me-2, .ms-auto {
-            direction: inherit;
-            text-align: inherit;
-        }
-
-        /* Navbar style - Enhanced & Matching Personal Page */
         .navbar {
-            background-color: var(--white-color);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced, elegant shadow */
-            padding: 0.8rem 0; /* Slightly less vertical padding for a sleeker look */
-            transition: all 0.3s ease; /* Smooth transition for potential changes */
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            padding: 0.6rem 0;
+            transition: all 0.3s ease;
         }
-
+        .navbar.scrolled { background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); }
         .navbar-brand {
-            font-family: 'Montserrat', sans-serif; /* Professional font for brand */
-            font-size: 1.9rem; /* Slightly larger brand name */
-            font-weight: 700;
-            color: var(--dark-color) !important;
-            transition: color 0.3s ease, transform 0.2s ease;
-        }
-        .navbar-brand:hover {
+            font-size: 1.5rem;
+            font-weight: 800;
             color: var(--primary-color) !important;
-            transform: scale(1.02); /* Slight scale on hover */
+            transition: all 0.3s ease;
         }
-
+        .navbar-brand:hover { transform: scale(1.02); }
         .navbar-nav .nav-link {
-            color: var(--secondary-color) !important;
-            margin-left: 25px; /* More space between links in RTL */
-            margin-right: 0;
-            font-weight: 500;
-            transition: color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
-            position: relative; /* For underline effect */
-            padding-bottom: 7px; /* Space for underline */
+            color: var(--dark-color) !important;
+            font-weight: 600;
+            margin: 0 10px;
+            font-size: 0.9rem;
+            position: relative;
+            transition: all 0.3s ease;
         }
-
-        body[dir="ltr"] .navbar-nav .nav-link {
-            margin-left: 0;
-            margin-right: 25px; /* More space between links in LTR */
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: var(--primary-color) !important;
-            transform: translateY(-3px); /* More noticeable lift on hover */
-        }
-
+        .navbar-nav .nav-link:hover { color: var(--accent-color) !important; transform: translateY(-2px); }
         .navbar-nav .nav-link::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
             width: 0;
-            height: 3px; /* Thicker underline */
-            background-color: var(--primary-color);
-            transition: width 0.3s ease-out;
+            height: 3px;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--secondary-color);
+            transition: width 0.3s ease;
             border-radius: 2px;
         }
-
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-        }
-
-        /* Language switcher button in navbar - Matching Personal Page */
+        .navbar-nav .nav-link:hover::after { width: 100%; }
+        .navbar-nav .nav-link.active { color: var(--secondary-color) !important; }
+        .navbar-nav .nav-link.active::after { width: 100%; }
         #language-switcher {
-            font-size: 1rem; /* Larger font */
-            padding: 0.6rem 1.2rem; /* More comfortable padding */
-            border-radius: 8px; /* More rounded corners */
-            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-            font-weight: 600;
+            font-weight: 700;
+            border-radius: 8px;
+            padding: 0.5rem 1.2rem;
+            background: var(--gradient-primary);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
-        #language-switcher.btn-primary:hover {
-            background-color: #0056b3 !important; /* Darker blue on hover */
-            transform: scale(1.05); /* Slight scale on hover */
-        }
-        #language-switcher.btn-secondary {
-             background-color: #6c757d;
-             color: white;
-        }
-        #language-switcher.btn-secondary:hover {
-            background-color: #5a6268 !important; /* Darker grey on hover */
-            transform: scale(1.05);
-        }
+        #language-switcher:hover { transform: scale(1.05); background: var(--gradient-gold); }
 
-        /* Hero Section - Maintaining original background and refining text for dual language */
         .hero-section {
-            background: url(ramybackground-Recovered.webp) center center;
-            background-size: 1530px 440px; /* Changed to cover for better responsiveness */
-            color: var(--white-color);
-            padding: 120px 0; /* Vertical padding */
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            display: flex; /* Centers content vertically and horizontally */
-            align-items: center;
-            justify-content: center;
-            min-height: 450px; /* Adjusted min-height for better balance */
-            box-sizing: border-box;
-        }
-
+    background: url('ramybackground-Recovered.webp') center 100% no-repeat;
+    background-size: contain;
+    background-color: #0b182b;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    padding: 120px 0 60px 0;
+    overflow: hidden;
+}
         .hero-section::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgb(32 107 183 / 47%); /* Your original dark blue transparent overlay */
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(15, 36, 66, 0.5) 0%, rgba(4, 33, 75, 0.75) 100%);
             z-index: 0;
         }
-
-        .hero-section .container {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            padding: 0 15px;
-            animation: fadeIn 1s ease-out forwards; /* Apply fade-in to the container itself */
-        }
-
-        /* Hero Content Styling - Text refinement */
+        .hero-section .container { position: relative; z-index: 1; }
         .hero-section h1 {
-            font-family: 'Cairo', sans-serif; /* Cairo for Arabic, Poppins for English */
-            font-size: 3.5rem; /* Slightly larger for main title */
+            font-family: 'Cairo', sans-serif;
+            font-size: 3.5rem;
             font-weight: 700;
-            text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+            color: white;
+            text-shadow: 2px 2px 7px rgba(0,0,0,0.7);
             margin-bottom: 15px;
-            line-height: 1.2;
         }
-        .english-content .hero-section h1 {
-            font-family: 'Poppins', sans-serif;
-        }
-
         .hero-section .lead {
-            font-size: 1.6rem; /* Larger lead text */
-            font-weight: 400;
+            font-size: 1.4rem;
+            color: #e5e7eb;
             max-width: 700px;
-            margin: 0 auto 25px auto;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+            margin: 0 auto;
         }
-        /* No hero-skills in this page, so removed. */
 
-
-        /* Section Titles - More modern and elegant - Matching Personal Page */
         .section-title {
-            font-size: 2.5rem; /* Matching Personal Page titles */
-            font-weight: 700;
-            color: var(--dark-color);
-            margin-bottom: 60px; /* Matching Personal Page titles */
-            text-align: center;
-            position: relative;
-            padding-bottom: 15px; /* Space for the underline */
-            transition: color 0.3s ease; /* Smooth transition */
-        }
-        .section-title:hover {
+            font-size: 2.2rem;
+            font-weight: 800;
             color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 15px;
         }
-
         .section-title::after {
             content: '';
-            width: 100px; /* Matching Personal Page underline width */
-            height: 5px; /* Matching Personal Page underline thickness */
-            background: var(--primary-color);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-gold);
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            border-radius: 3px;
-            transition: width 0.3s ease, background 0.3s ease; /* Smooth transition */
+            border-radius: 2px;
         }
-        .section-title:hover::after {
-            width: 120px; /* Slightly expand underline on hover */
+        .section-subtitle {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
         }
+        .section-tag {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .tag-completed { background: #d4edda; color: #155724; }
+        .tag-construction { background: #fff3cd; color: #856404; }
+        .tag-new { background: #cce5ff; color: #004085; }
 
-        /* Section Padding - Matching Personal Page */
-        .py-5 {
-            padding-top: 3rem !important;
-            padding-bottom: 3rem !important;
-        }
-         .bg-light {
-            background-color: var(--light-bg) !important;
-         }
-
-        /* Project Section Styling - Enhanced with Transforms */
         .project-section {
-            padding: 60px 0; /* Consistent padding for project sections */
-            transition: background-color 0.3s ease; /* Smooth transition for alternate background */
+            padding: 60px 0;
+            transition: background-color 0.3s ease;
+        }
+        .project-section:nth-child(odd) { background-color: var(--light-bg); }
+        .project-section:nth-child(even) { background-color: var(--white-color); }
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            height: 100%;
+        }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+        .project-card .card-img-top {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .project-card:hover .card-img-top { transform: scale(1.05); }
+        .project-card .card-body { padding: 1.5rem; }
+        .project-card .card-title { font-weight: 700; color: var(--primary-color); }
+        .project-card .card-text { color: #6c757d; font-size: 0.95rem; }
+        .project-card .btn-outline-primary {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 25px;
+            padding: 0.4rem 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .project-card .btn-outline-primary:hover {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        .project-card .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 1rem 0;
+        }
+        .project-card .tech-stack span {
+            background: #e8ecf1;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-color);
         }
 
-        /* Project Section Styling - Enhanced with Transforms */
-        .project-section {
-            padding: 60px 0; /* Consistent padding for project sections */
-            transition: background-color 0.3s ease; /* Smooth transition for alternate background */
+        .featured-project {
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
         }
+        .featured-project h3 { color: var(--secondary-color); font-weight: 800; }
+        .featured-project .btn-gold {
+            background: var(--gradient-gold);
+            color: var(--primary-color);
+            font-weight: 700;
+            border: none;
+            border-radius: 25px;
+            padding: 0.6rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .featured-project .btn-gold:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3); }
 
-        .project-section:nth-child(odd) {
-            background-color: var(--light-bg); /* Alternate background for sections */
-        }
-         .project-section:nth-child(even) {
-            background-color: var(--white-color); /* Alternate background for sections */
-         }
-
-
-        .project-image {
-            max-width: 90%; /* تصغير حجم الصورة: تم تقليلها من 90% إلى 80% */
-            height: auto;
-            border-radius: 8px;
-            filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.35)); /* Stronger, more elegant shadow */
-            display: block; /* Ensure it's a block element for margin auto */
-            margin: 0 auto 20px auto; /* Center image and add bottom margin */
-            
-            /* ----- تأثيرات التحول والانتقال (للهوفر والظهور) ----- */
-            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* انتقال سلس وأنيق */
-            
-            /* تبدأ الصورة مرئية بالكامل بحجمها وموضعها الطبيعي */
-            opacity: 1; 
-            transform: scale(1) translateY(0);
-        }
-        
-        /* فئة لإخفاء الصورة وتغييرها في البداية (تُضاف بواسطة JS) */
-        .project-image.js-initial-hide-project {
-            opacity: 0;
-            transform: scale(0.9) translateY(30px); /* تبدأ أصغر قليلاً ومزاحة للأسفل */
-        }
-
-        /* ----- تأثيرات Transform عند الهوفر ----- */
-        .project-image:hover {
-            transform: scale(1.05) rotate(1.5deg); /* تكبير بنسبة 5% ودوران 1.5 درجة (أكثر بروزاً) */
-            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.5)); /* ظل أقوى وأكثر عمقًا على الهوفر */
-        }
-        
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            .project-image {
-                max-width: 90%; /* Adjust image size on mobile */
-                margin-bottom: 15px;
-            }
-            .project-image.js-initial-hide-project {
-                transform: scale(0.95) translateY(20px); /* تأثير أقل حدة على الموبايل */
-            }
-            .project-image:hover {
-                transform: scale(1.03) rotate(1deg); /* Reduce effect on mobile */
-                filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
-            }
-        }
-
-        /* Footer - Matching Personal Page */
         .footer {
-            background: var(--dark-bg);
-            color: var(--white-color);
+            background: #0a1628;
+            color: #8899aa;
             padding: 2rem 0;
-            font-size: 0.95rem;
-            border-top: 5px solid var(--primary-color); /* Add a top border for distinction */
+            text-align: center;
         }
-        .footer p {
-            margin-bottom: 0;
+        .footer .social-links a {
+            color: #8899aa;
+            font-size: 1.3rem;
+            margin: 0 10px;
+            transition: all 0.3s ease;
         }
+        .footer .social-links a:hover { color: var(--secondary-color); transform: translateY(-3px); }
 
-        /* Animation for fade-in (e.g., for hero content) */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Responsive adjustments - Matching Personal Page philosophy */
         @media (max-width: 992px) {
-            .hero-section h1 {
-                font-size: 2.8rem;
-            }
-            .hero-section .lead {
-                font-size: 1.3rem;
-            }
-            .navbar-nav .nav-link {
-                margin-left: 15px;
-                margin-right: 15px;
-            }
-            #language-switcher {
-                font-size: 0.9rem;
-                padding: 0.4rem 0.9rem;
-            }
-            .section-title {
-                font-size: 2.2rem;
-            }
-            .project-section .col-md-6 p {
-                font-size: 1.05rem;
-            }
+            .hero-section h1 { font-size: 2.8rem; }
+            .hero-section .lead { font-size: 1.2rem; }
         }
-
         @media (max-width: 768px) {
-            .hero-section {
-                padding: 80px 0;
-                min-height: 350px;
-                background-size: cover;
-            }
-            .hero-section h1 {
-                font-size: 2.2rem;
-            }
-            .hero-section .lead {
-                font-size: 1.1rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 30px;
-            }
-            .section-title::after {
-                width: 50px;
-                height: 4px;
-            }
-            .project-section {
-                padding: 40px 0;
-            }
-            .project-image {
-                max-width: 95%;
-                margin-bottom: 15px;
-            }
-            .project-section .col-md-6 {
-                text-align: center; /* Center text column on mobile */
-            }
-            .project-section .col-md-6 p {
-                font-size: 1rem;
-                margin-bottom: 15px;
-            }
-            .project-section .btn {
-                font-size: 1rem;
-                padding: 0.5rem 1rem;
-            }
-            .navbar {
-                padding: 0.6rem 0;
-            }
-            .navbar-nav .nav-link {
-                margin-left: 0;
-                margin-right: 0;
-                text-align: center;
-                padding-bottom: 8px;
-                font-size: 1rem;
-            }
-            .navbar-nav .nav-link::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            .navbar-brand {
-                font-size: 1.4rem;
-            }
-            #language-switcher {
-                padding: 0.3rem 0.7rem;
-                font-size: 0.85rem;
-            }
+            .hero-section { min-height: 300px; padding: 80px 0; }
+            .hero-section h1 { font-size: 2.2rem; }
+            .section-title { font-size: 1.8rem; }
+            .project-section { padding: 40px 0; }
+            .project-card .card-img-top { height: 180px; }
         }
-
         @media (max-width: 576px) {
-            .hero-section {
-                min-height: 280px;
-                padding: 50px 0;
-            }
-            .hero-section h1 {
-                font-size: 1.6rem;
-            }
-            .hero-section .lead {
-                font-size: 0.9rem;
-            }
+            .hero-section h1 { font-size: 1.8rem; }
+            .hero-section .lead { font-size: 1rem; }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">رامي عامر / Ramy Amer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-bolt text-warning me-2"></i> رامي عامر / Ramy Amer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-en="About" data-ar="عني">عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience" data-en="Experience" data-ar="الخبرة">الخبرة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills" data-en="Skills" data-ar="المهارات">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#education" data-en="Education" data-ar="المؤهلات">المؤهلات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#certificates" data-en="Certificates" data-ar="الشهادات">الشهادات</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" data-en="Portfolio" data-ar="معرض الأعمال">معرض الأعمال</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ramy C.V (2).pdf" target="_blank" data-en="Download CV" data-ar="تحميل السيرة">تحميل السيرة</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about" data-en="About" data-ar="عني">عني</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#experience" data-en="Experience" data-ar="الخبرة">الخبرة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#skills" data-en="Skills" data-ar="المهارات">المهارات</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#education" data-en="Education" data-ar="المؤهلات">المؤهلات</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#certificates" data-en="Certificates" data-ar="الشهادات">الشهادات</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="#" data-en="Portfolio" data-ar="معرض الأعمال">معرض الأعمال</a> 
-                    </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="Ramy C.V (2).pdf" target="_blank" data-en="Download CV" data-ar="تحميل السيرة الذاتية">تحميل السيرة الذاتية</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-sm btn-primary ms-2" id="language-switcher" data-en-text="العربية" data-ar-text="English">English</button>
+                        <button class="btn ms-2" id="language-switcher" data-en-text="العربية" data-ar-text="English">English</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main> 
+    <main>
         <div class="arabic-content">
             <section class="hero-section">
                 <div class="container">
                     <h1>معرض الأعمال</h1>
-                    <p class="lead">استكشف بعض مشاريعي المميزة</p>
+                    <p class="lead">مشاريع مبتكرة في المبيعات، الأتمتة، والتسويق الرقمي</p>
                 </div>
             </section>
 
-            <section id="whatsapp-tool" class="project-section">
+            <section class="project-section">
                 <div class="container">
-                    <h2 class="section-title">برنامج إرسال رسائل واتساب ويب تسويقية</h2>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <img src="whatsapp bulck.webp" class="project-image" alt="صورة برنامج واتساب">
+                    <h2 class="section-title">المشاريع المنجزة</h2>
+                    <p class="section-subtitle">حلول تقنية متكاملة تم تطويرها وتشغيلها بنجاح</p>
+                    <div class="row g-4">
+
+                        <div class="col-lg-6">
+                            <div class="project-card" data-aos="fade-up">
+                                <img src="whatsapp bulck.webp" class="card-img-top" alt="واتساب ماركتنغ">
+                                <div class="card-body">
+                                    <span class="section-tag tag-completed"><i class="fa-solid fa-check-circle me-1"></i> منجز</span>
+                                    <h5 class="card-title">منصة التسويق عبر واتساب</h5>
+                                    <div class="tech-stack">
+                                        <span>JavaScript</span><span>WhatsApp Web</span><span>Automation</span>
+                                    </div>
+                                    <p class="card-text">برنامج قوي لإرسال حملات تسويقية عبر واتساب ويب. يدعم جميع المتصفحات، إرسال آلاف الرسائل يومياً، تخصيص الرسائل، وإرفاق الملفات.</p>
+                                    <a href="https://big-ramy.github.io/whatsapp-sender-/" class="btn btn-outline-primary" target="_blank"><i class="fa-solid fa-external-link-alt me-1"></i> عرض المشروع</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <p>برنامج قوي ومرن لإرسال حملات تسويقية عبر واتساب ويب. يتميز بتوافقه الكامل مع جميع المتصفحات الرئيسية (كروم، فايرفوكس، إيدج)، القدرة على إرسال آلاف الرسائل يوميًا بكفاءة عالية، دعم تخصيص كل رسالة باسم المستلم، وإمكانية إرفاق ملفات متنوعة (صور، مستندات، فيديوهات) لتقديم محتوى غني وجذاب للعملاء.</p>
-                             <a href="https://big-ramy.github.io/whatsapp-sender-/" class="btn btn-primary mt-3">مشاهدة المشروع </a>
+
+                        <div class="col-lg-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                                <img src="resail cvs.webp" class="card-img-top" alt="أداة السيرة الذاتية">
+                                <div class="card-body">
+                                    <span class="section-tag tag-completed"><i class="fa-solid fa-check-circle me-1"></i> منجز</span>
+                                    <h5 class="card-title">منصة بناء السيرة الذاتية</h5>
+                                    <div class="tech-stack">
+                                        <span>HTML/CSS</span><span>JavaScript</span><span>PDF</span>
+                                    </div>
+                                    <p class="card-text">أداة مبتكرة لتصميم سير ذاتية احترافية في دقائق. توفر قوالب عصرية جاهزة مع واجهة بسيطة للتخصيص الكامل.</p>
+                                    <a href="https://big-ramy.github.io/resail/" class="btn btn-outline-primary" target="_blank"><i class="fa-solid fa-external-link-alt me-1"></i> عرض المشروع</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
-            <section id="cv-tool" class="project-section">
+            <section class="project-section bg-light">
                 <div class="container">
-                     <h2 class="section-title">أداة إنشاء السيرة الذاتية</h2>
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-2">
-                             <img src="resail cvs.webp" class="project-image" alt="صورة أداة سيرة ذاتية">
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0 order-md-1">
-                             <p>أداة مبتكرة وسهلة الاستخدام تمكن الأفراد من تصميم وإنشاء سير ذاتية احترافية وجذابة في دقائق. توفر مجموعة متنوعة من القوالب العصرية والجاهزة، مع واجهة بسيطة تسمح بتخصيص جميع التفاصيل بسهولة، مما يساعد المستخدمين على تقديم أنفسهم بأفضل شكل ممكن لجهات التوظيف.</p>
-                             <a href="https://big-ramy.github.io/resail/#why-resail" class="btn btn-primary mt-3">مشاهدة المشروع</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <h2 class="section-title">مشاريع قيد الإنشاء</h2>
+                    <p class="section-subtitle">حلول مستقبلية قيد التطوير</p>
+                    <div class="row g-4">
 
-            <section id="under-construction-ar" class="project-section bg-light">
-                <div class="container">
-                    <h2 class="section-title">مشاريع جاري إنشائها</h2>
-                    
-                    <div class="row align-items-center mb-5">
-                        <div class="col-md-6">
-                            <img src="degetalcontract.webp" class="project-image" alt="صورة مشروع العقود الإلكترونية">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up">
+                                <div class="position-relative" style="background: var(--gradient-primary); height: 220px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-video" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                                    <span class="section-tag tag-new position-absolute" style="top: 10px; right: 10px;"><i class="fa-solid fa-sparkles me-1"></i> جديد</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">مصنع الفيديوهات بالذكاء الاصطناعي</h5>
+                                    <div class="tech-stack">
+                                        <span>Gemini AI</span><span>Python</span><span>n8n</span><span>API</span>
+                                    </div>
+                                    <p class="card-text">نظام متكامل ينتج فيديوهات تلقائية لوسائل التواصل الاجتماعي. يدمج بين n8n للأتمتة، Python لمعالجة البيانات، وGemini AI لإنشاء المحتوى النصي والبصري.</p>
+                                    <button class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-eye me-1"></i> قيد التطوير</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <h3 class="card-title">نظام تسجيل العملاء وإصدار العقود الإلكترونية</h3> 
-                            <p>نظام متكامل لتسهيل عملية تسجيل العملاء وإصدار العقود بشكل رقمي وفوري. يوفر صفحة تسجيل مبسطة للعملاء، ويرتبط بسلاسة بآلية استخراج العقود الإلكترونية بمجرد استكمال التسجيل. النظام مصمم ليكون قابلاً للتوسع بسهولة ليشمل وظائف إضافية مثل إصدار الفواتير الإلكترونية، مما يعزز الكفاءة التشغيلية ويقلل الاعتماد على المستندات الورقية.</p>
-                             <!a href="#" class="btn btn-primary mt-3">مشاهدة المشروع (رابط وهمي)</a>>
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center mb-5">
-                        <div class="col-md-6 order-md-2">
-                             <img src="webcamera_poj.webp" class="project-image" alt="صورة مشروع كاميرا الويب">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="position-relative" style="background: var(--gradient-primary); height: 220px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-robot" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                                    <span class="section-tag tag-new position-absolute" style="top: 10px; right: 10px;"><i class="fa-solid fa-sparkles me-1"></i> جديد</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">البوت الذكي للرد الآلي</h5>
+                                    <div class="tech-stack">
+                                        <span>Gemini AI</span><span>Supabase</span><span>WhatsApp API</span>
+                                    </div>
+                                    <p class="card-text">بوت ذكي للرد على رسائل الصفحة والواتس اب بذاكرة دائمة. يدمج Gemini AI للفهم والرد، وSupabase لحفظ المحادثات والرجوع إليها بدون نسيان.</p>
+                                    <button class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-eye me-1"></i> قيد التطوير</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0 order-md-1">
-                            <h3 class="card-title">أداة التقاط الزوار وحجز المواعيد عبر كاميرا الويب</h3>
-                             <p>أداة تفاعلية تستخدم كاميرا الويب في نقاط التفاعل المادية (مثل المتاجر أو الفعاليات) لالتقاط صور للزوار بشكل آلي، وتقديم واجهة جذابة لهم لحثهم على إدخال بياناتهم الشخصية وحجز المواعيد مباشرة. تساعد هذه الأداة في جمع بيانات العملاء المحتملين وتحسين عملية إدارة المواعيد بطريقة مبتكرة.</p>
-                             <!a href="#" class="btn btn-primary mt-3">مشاهدة المشروع (رابط وهمي)</a>>
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <img src="realstae_proj.webp" class="project-image" alt="صورة مشروع العقارات">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                                <img src="degetalcontract.webp" class="card-img-top" alt="العقود الإلكترونية">
+                                <div class="card-body">
+                                    <span class="section-tag tag-construction"><i class="fa-solid fa-hard-hat me-1"></i> قيد الإنشاء</span>
+                                    <h5 class="card-title">نظام العقود الإلكترونية والتسجيل</h5>
+                                    <div class="tech-stack">
+                                        <span>Supabase</span><span>JavaScript</span><span>PDF</span>
+                                    </div>
+                                    <p class="card-text">نظام متكامل لتسجيل العملاء وإصدار العقود رقمياً. يربط بين صفحة التسجيل وآلية استخراج العقود الإلكترونية فورياً.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <h3 class="card-title">نظام مطابقة طلبات العقارات (بيع وشراء)</h3>
-                            <p>منصة متخصصة في قطاع العقارات تعمل على ربط طلبات البائعين مع اهتمامات المشترين بشكل مباشر وفعال. تقوم بجمع بيانات طلبات بيع العقارات من طرف، وطلبات المشترين من طرف آخر، ومن ثم تقوم بعملية مطابقة ذكية لعرض العقارات المناسبة لكل مشترٍ. النظام في مرحلة تطوير مستمر لإضافة المزيد من الميزات وتحسين دقة المطابقة.</p>
-                             <!a href="#" class="btn btn-primary mt-3">مشاهدة المشروع (رابط وهمي)</a>>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                                <img src="webcamera_poj.webp" class="card-img-top" alt="كاميرا الويب">
+                                <div class="card-body">
+                                    <span class="section-tag tag-construction"><i class="fa-solid fa-hard-hat me-1"></i> قيد الإنشاء</span>
+                                    <h5 class="card-title">أداة التقاط الزوار وحجز المواعيد</h5>
+                                    <div class="tech-stack">
+                                        <span>WebRTC</span><span>Canvas</span><span>JavaScript</span>
+                                    </div>
+                                    <p class="card-text">أداة تفاعلية تستخدم كاميرا الويب لالتقاط صور الزوار وحثهم على إدخال بياناتهم وحجز المواعيد مباشرة.</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                                <img src="realstae_proj.webp" class="card-img-top" alt="مطابقة العقارات">
+                                <div class="card-body">
+                                    <span class="section-tag tag-construction"><i class="fa-solid fa-hard-hat me-1"></i> قيد الإنشاء</span>
+                                    <h5 class="card-title">منصة مطابقة العقارات</h5>
+                                    <div class="tech-stack">
+                                        <span>Database</span><span>Matching</span><span>Algorithm</span>
+                                    </div>
+                                    <p class="card-text">منصة تربط بين البائعين والمشترين في قطاع العقارات عبر نظام مطابقة ذكي يعرض العقارات المناسبة لكل مشترٍ.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
         </div>
 
         <div class="english-content d-none">
-             <section class="hero-section">
+            <section class="hero-section">
                 <div class="container">
                     <h1>Portfolio</h1>
-                    <p class="lead">Explore some of my featured projects</p>
+                    <p class="lead">Innovative projects in sales, automation, and digital marketing</p>
                 </div>
             </section>
 
-            <section id="whatsapp-tool-en" class="project-section">
+            <section class="project-section">
                 <div class="container">
-                    <h2 class="section-title">Powerful WhatsApp Web Marketing Tool</h2>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <img src="whatsapp bulck.webp" class="project-image" alt="WhatsApp Tool Image">
+                    <h2 class="section-title">Completed Projects</h2>
+                    <p class="section-subtitle">Integrated technical solutions successfully developed and deployed</p>
+                    <div class="row g-4">
+
+                        <div class="col-lg-6">
+                            <div class="project-card" data-aos="fade-up">
+                                <img src="whatsapp bulck.webp" class="card-img-top" alt="WhatsApp Marketing">
+                                <div class="card-body">
+                                    <span class="section-tag tag-completed"><i class="fa-solid fa-check-circle me-1"></i> Completed</span>
+                                    <h5 class="card-title">WhatsApp Marketing Platform</h5>
+                                    <div class="tech-stack">
+                                        <span>JavaScript</span><span>WhatsApp Web</span><span>Automation</span>
+                                    </div>
+                                    <p class="card-text">A robust program for running marketing campaigns via WhatsApp Web. Supports all browsers, thousands of daily messages, personalization, and file attachments.</p>
+                                    <a href="https://big-ramy.github.io/whatsapp-sender-/" class="btn btn-outline-primary" target="_blank"><i class="fa-solid fa-external-link-alt me-1"></i> View Project</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <p>A robust and flexible program for running marketing campaigns via WhatsApp Web. It features full compatibility with all major browsers (Chrome, Firefox, Edge), the ability to send thousands of messages daily efficiently, support for personalizing each message with the recipient's name, and the capability to attach various file types (images, documents, videos) to deliver rich and engaging content to customers.</p>
-                            <a href="https://big-ramy.github.io/whatsapp-sender-/" class="btn btn-primary mt-3">View Project</a>
+
+                        <div class="col-lg-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                                <img src="resail cvs.webp" class="card-img-top" alt="CV Builder">
+                                <div class="card-body">
+                                    <span class="section-tag tag-completed"><i class="fa-solid fa-check-circle me-1"></i> Completed</span>
+                                    <h5 class="card-title">CV Building Platform</h5>
+                                    <div class="tech-stack">
+                                        <span>HTML/CSS</span><span>JavaScript</span><span>PDF</span>
+                                    </div>
+                                    <p class="card-text">An intuitive tool for designing professional CVs in minutes. Features modern templates with a simple customization interface.</p>
+                                    <a href="https://big-ramy.github.io/resail/" class="btn btn-outline-primary" target="_blank"><i class="fa-solid fa-external-link-alt me-1"></i> View Project</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
-            <section id="cv-tool-en" class="project-section">
-                <div class="container">
-                     <h2 class="section-title">Innovative CV Creation Tool</h2>
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-2">
-                             <img src="resail cvs.webp" class="project-image" alt="CV Tool Image">
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0 order-md-1">
-                             <p>An intuitive and user-friendly tool enabling individuals to design and generate professional and attractive CVs in minutes. It offers a variety of modern, ready-to-use templates with a simple interface allowing easy customization of all details, helping users present themselves effectively to potential employers.</p>
-                             <a href="https://big-ramy.github.io/resail/" class="btn btn-primary mt-3">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="under-construction-en" class="project-section bg-light">
+            <section class="project-section bg-light">
                 <div class="container">
                     <h2 class="section-title">Projects Under Construction</h2>
+                    <p class="section-subtitle">Future solutions currently in development</p>
+                    <div class="row g-4">
 
-                    <div class="row align-items-center mb-5">
-                        <div class="col-md-6">
-                            <img src="degetalcontract.webp" class="project-image" alt="E-Contracts Image">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up">
+                                <div class="position-relative" style="background: var(--gradient-primary); height: 220px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-video" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                                    <span class="section-tag tag-new position-absolute" style="top: 10px; right: 10px;"><i class="fa-solid fa-sparkles me-1"></i> New</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">AI Video Factory</h5>
+                                    <div class="tech-stack">
+                                        <span>Gemini AI</span><span>Python</span><span>n8n</span><span>API</span>
+                                    </div>
+                                    <p class="card-text">An integrated system for automatic video production for social media. Combines n8n for automation, Python for data processing, and Gemini AI for content creation.</p>
+                                    <button class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-eye me-1"></i> In Development</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <h3 class="card-title">Integrated Customer Onboarding & E-Contract System</h3>
-                            <p>A comprehensive system designed to streamline customer registration and instant digital contract generation. It provides a simple registration page for customers and links seamlessly to an electronic contract generation mechanism upon registration completion. The system is built to be easily scalable to include additional functionalities like electronic invoicing, enhancing operational efficiency and reducing reliance on paper documents.</p>
-                            <a href="#" class="btn btn-primary mt-3">View Project (Placeholder Link)</a>
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center mb-5">
-                        <div class="col-md-6 order-md-2">
-                             <img src="webcamera_poj.webp" class="project-image" alt="Webcam Tool Image">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="position-relative" style="background: var(--gradient-primary); height: 220px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-robot" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                                    <span class="section-tag tag-new position-absolute" style="top: 10px; right: 10px;"><i class="fa-solid fa-sparkles me-1"></i> New</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">AI Smart Reply Bot</h5>
+                                    <div class="tech-stack">
+                                        <span>Gemini AI</span><span>Supabase</span><span>WhatsApp API</span>
+                                    </div>
+                                    <p class="card-text">A smart bot for page and WhatsApp replies with permanent memory. Integrates Gemini AI for understanding and Supabase for conversation history without forgetting.</p>
+                                    <button class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-eye me-1"></i> In Development</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0 order-md-1">
-                            <h3 class="card-title">Interactive Webcam Visitor Engagement Tool</h3>
-                             <p>An interactive tool utilizing a webcam at physical interaction points (like stores or events) to automatically capture visitor images and present them with an engaging interface to prompt them to enter their personal data and book appointments directly. This tool aids in capturing potential customer leads and improving appointment management in an innovative way.</p>
-                             <a href="#" class="btn btn-primary mt-3">View Project (Placeholder Link)</a>
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <img src="realstae_proj.webp" class="project-image" alt="Real Estate Matching Image">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                                <img src="degetalcontract.webp" class="card-img-top" alt="E-Contracts">
+                                <div class="card-body">
+                                    <span class="section-tag tag-construction"><i class="fa-solid fa-hard-hat me-1"></i> Under Construction</span>
+                                    <h5 class="card-title">E-Contract & Registration System</h5>
+                                    <div class="tech-stack">
+                                        <span>Supabase</span><span>JavaScript</span><span>PDF</span>
+                                    </div>
+                                    <p class="card-text">A comprehensive system for customer registration and digital contract generation, linking registration to instant e-contract issuance.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <h3 class="card-title">Advanced Real Estate Matching Platform</h3>
-                            <p>A specialized platform in the real estate sector focused on directly and effectively matching seller requests with buyer interests. It collects data on properties for sale from one side and buyer requirements from the other, then performs intelligent matching to present suitable properties to each buyer. The system is under continuous development to add more features and improve matching accuracy.</p>
-                            <a href="#" class="btn btn-primary mt-3">View Project (Placeholder Link)</a>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                                <img src="webcamera_poj.webp" class="card-img-top" alt="Webcam Tool">
+                                <div class="card-body">
+                                    <span class="section-tag tag-construction"><i class="fa-solid fa-hard-hat me-1"></i> Under Construction</span>
+                                    <h5 class="card-title">Webcam Visitor & Appointment Tool</h5>
+                                    <div class="tech-stack">
+                                        <span>WebRTC</span><span>Canvas</span><span>JavaScript</span>
+                                    </div>
+                                    <p class="card-text">An interactive tool using webcam to capture visitor photos and prompt them to enter data and book appointments directly.</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                                <img src="realstae_proj.webp" class="card-img-top" alt="Real Estate Matching">
+                                <div class="card-body">
+                                    <span class="section-tag tag-construction"><i class="fa-solid fa-hard-hat me-1"></i> Under Construction</span>
+                                    <h5 class="card-title">Real Estate Matching Platform</h5>
+                                    <div class="tech-stack">
+                                        <span>Database</span><span>Matching</span><span>Algorithm</span>
+                                    </div>
+                                    <p class="card-text">A platform connecting sellers and buyers in real estate through an intelligent matching system displaying suitable properties.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
         </div>
     </main>
 
-    <footer class="footer text-center">
-         <div class="container">
-             <p>&copy; 2023 رامي عامر. جميع الحقوق محفوظة. / &copy; 2023 Ramy Amer. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links mb-3">
+                <a href="https://wa.me/966557957877" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/ramy-h-amer/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:ramyheshamamer@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/big-ramy" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="mb-0">&copy; <span id="currentYear"></span> <span class="arabic-content">رامي عامر. جميع الحقوق محفوظة.</span><span class="english-content d-none">Ramy Amer. All rights reserved.</span></p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-         document.addEventListener('DOMContentLoaded', function() {
-             const arabicContent = document.querySelector('.arabic-content');
-             const englishContent = document.querySelector('.english-content');
-             const switcherButton = document.getElementById('language-switcher');
-             const htmlTag = document.documentElement;
-             const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const arabicContent = document.querySelectorAll('.arabic-content');
+        const englishContent = document.querySelectorAll('.english-content');
+        const switcherButton = document.getElementById('language-switcher');
+        const htmlTag = document.documentElement;
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-             // Function to update links based on language
-             const updateNavLinks = (lang) => {
-                 navLinks.forEach(link => {
-                     const arText = link.dataset.ar;
-                     const enText = link.dataset.en;
-                     // Set href for links pointing to index.html sections
-                     let hrefBase = link.getAttribute('href');
-                     let sectionId = '';
+        const updateNavLinks = (lang) => {
+            navLinks.forEach(link => {
+                const arText = link.dataset.ar;
+                const enText = link.dataset.en;
+                if (lang === 'ar' && arText) link.textContent = arText;
+                else if (lang === 'en' && enText) link.textContent = enText;
+            });
+        };
 
-                     // If it's a link to the personal page sections
-                     if (hrefBase.includes('index.html')) {
-                         sectionId = hrefBase.split('#')[1];
-                         if (lang === 'ar') {
-                             link.href = `index.html#${sectionId}`;
-                         } else {
-                             link.href = `index.html#${sectionId}-en`;
-                         }
-                     }
-                     // For "Portfolio" link itself (current page), keep its href as #
-                     if (link.classList.contains('active')) {
-                         link.href = '#';
-                     }
-                     // For CV download link
-                     if (link.getAttribute('href').endsWith('.pdf')) {
-                         // Keep the PDF link as is, it's not language dependent in the URL
-                     }
-                     
-                     // Update text content
-                     if (lang === 'ar' && arText) {
-                         link.textContent = arText;
-                     } else if (lang === 'en' && enText) {
-                         link.textContent = enText;
-                     }
-                 });
-             };
+        const switchLanguage = () => {
+            if (htmlTag.lang === 'ar') {
+                arabicContent.forEach(el => el.classList.add('d-none'));
+                englishContent.forEach(el => el.classList.remove('d-none'));
+                htmlTag.lang = 'en';
+                htmlTag.dir = 'ltr';
+                switcherButton.textContent = switcherButton.dataset.enText || 'العربية';
+                updateNavLinks('en');
+            } else {
+                englishContent.forEach(el => el.classList.add('d-none'));
+                arabicContent.forEach(el => el.classList.remove('d-none'));
+                htmlTag.lang = 'ar';
+                htmlTag.dir = 'rtl';
+                switcherButton.textContent = switcherButton.dataset.arText || 'English';
+                updateNavLinks('ar');
+            }
+        };
 
+        switcherButton.addEventListener('click', switchLanguage);
 
-            // Function to switch language
-// Function to switch language (Corrected Logic)
-            const switchLanguage = () => {
-                 if (htmlTag.lang === 'ar') {
-                    // Switch to English
-                    arabicContent.classList.add('d-none');
-                    englishContent.classList.remove('d-none');
-                    htmlTag.lang = 'en';
-                    htmlTag.dir = 'ltr';
-                    // ✅ التصحيح: عندما تكون الصفحة إنجليزية، يجب أن يظهر على الزر كلمة "العربية"
-                    switcherButton.textContent = switcherButton.dataset.enText; 
-                    switcherButton.classList.remove('btn-primary');
-                    switcherButton.classList.add('btn-secondary');
-                    updateNavLinks('en'); 
+        if (htmlTag.lang === 'ar') {
+            arabicContent.forEach(el => el.classList.remove('d-none'));
+            englishContent.forEach(el => el.classList.add('d-none'));
+            switcherButton.textContent = 'English';
+            updateNavLinks('ar');
+        } else {
+            englishContent.forEach(el => el.classList.remove('d-none'));
+            arabicContent.forEach(el => el.classList.add('d-none'));
+            switcherButton.textContent = 'العربية';
+            updateNavLinks('en');
+        }
 
-                } else {
-                    // Switch to Arabic
-                    englishContent.classList.add('d-none');
-                    arabicContent.classList.remove('d-none');
-                    htmlTag.lang = 'ar';
-                    htmlTag.dir = 'rtl'; 
-                    // ✅ التصحيح: عندما تكون الصفحة عربية، يجب أن يظهر على الزر كلمة "English"
-                    switcherButton.textContent = switcherButton.dataset.arText; 
-                    switcherButton.classList.remove('btn-secondary');
-                    switcherButton.classList.add('btn-primary');
-                    updateNavLinks('ar'); 
-                }
-            };
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-             // Add event listener to the switcher button
-             switcherButton.addEventListener('click', switchLanguage);
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
 
-             // Initial setup: Ensure correct content and button text are shown on load
-             // This part determines the initial language based on the html lang attribute
-             if (htmlTag.lang === 'ar') {
-                  arabicContent.classList.remove('d-none');
-                  englishContent.classList.add('d-none');
-                  switcherButton.textContent = 'English'; // Button shows language to switch to
-                  // Ensure button has primary style initially if AR is default
-                  switcherButton.classList.add('btn-primary');
-                  updateNavLinks('ar'); // Set initial navbar links to Arabic
-             } else { // Assuming default is Arabic if not specified or 'en'
-                 englishContent.classList.remove('d-none');
-                 arabicContent.classList.add('d-none');
-                 switcherButton.textContent = 'العربية'; // Button shows language to switch to
-                  // Ensure button has secondary style initially if EN is default
-                 switcherButton.classList.add('btn-secondary');
-                  updateNavLinks('en'); // Set initial navbar links to English
-             }
+        const projectImages = document.querySelectorAll('.project-card .card-img-top');
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        projectImages.forEach(img => {
+            img.style.opacity = '0';
+            img.style.transform = 'translateY(20px)';
+            img.style.transition = 'all 0.6s ease';
+            observer.observe(img);
+        });
 
-              // Smooth scrolling for internal hash links on this page (if any are added)
-              document.querySelectorAll('.arabic-content a[href^="#"], .english-content a[href^="#"]').forEach(anchor => {
-                  anchor.addEventListener('click', function (e) {
-                      // Only prevent default if it's an internal hash link on this page (not external or to index.html)
-                      if (this.getAttribute('href').length > 1 && this.getAttribute('href').startsWith('#')) {
-                          e.preventDefault();
-                          const targetId = this.getAttribute('href');
-                          const targetElement = document.querySelector(targetId);
-                          if (targetElement) {
-                              targetElement.scrollIntoView({
-                                  behavior: 'smooth'
-                              });
-                          }
-                      }
-                  });
-              });
-
-// Intersection Observer for project images (added in this version)
-             const projectImages = document.querySelectorAll('.project-image');
-
-             if (projectImages.length > 0) {
-                 const observerOptions = {
-                     root: null, // viewport as the root
-                     rootMargin: '0px',
-                     threshold: 0.1 // Trigger when 10% of the image is visible
-                 };
-
-                 const observerCallback = (entries, observer) => {
-                     entries.forEach(entry => {
-                         if (entry.isIntersecting) {
-                             // العنصر أصبح مرئيًا
-                             entry.target.classList.remove('js-initial-hide-project'); // إزالة الفئة المخفية لتشغيل الظهور
-                             // observer.unobserve(entry.target); // يمكن إلغاء التعليق هنا إذا أردت التأثير لمرة واحدة فقط
-                         } else {
-                             // العنصر خرج من منطقة الرؤية، قم بإعادته إلى حالته الأولية ليظهر مرة أخرى عند التمرير إليه
-                             entry.target.classList.add('js-initial-hide-project');
-                         }
-                     });
-                 };
-
-                 const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-                 projectImages.forEach(img => {
-                     // طبق الفئة الأولية المخفية عند تحميل الصفحة لجميع الصور
-                     img.classList.add('js-initial-hide-project'); 
-                     observer.observe(img); // ابدأ مراقبة كل صورة
-                 });
-             }
-         });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href').length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if(target) target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
     </script>
 </body>
 </html>

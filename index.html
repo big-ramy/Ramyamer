@@ -4,187 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta property="og:title" content="رامي عامر | السيرة الذاتية والخبرات" />
-    <meta property="og:description" content="سيرة ذاتية تفاعلية تعرض خبرة تمتد لأكثر من 9 سنوات في القطاع المصرفي، المبيعات، وتطوير البرمجيات." />
+    <meta property="og:title" content="رامي عامر | خبير تطوير وإدارة المبيعات" />
+    <meta property="og:description" content="سيرة ذاتية تفاعلية - أكثر من 9 سنوات خبرة في تطوير المبيعات، التسويق الإستراتيجي، وحلول الأعمال الذكية." />
     <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
     <meta property="og:url" content="https://big-ramy.github.io/Ramyamer" />
     <meta property="og:type" content="profile" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="رامي عامر | السيرة الذاتية والخبرات">
-    <meta name="twitter:description" content="سيرة ذاتية تفاعلية تعرض خبرة تمتد لأكثر من 9 سنوات in the banking sector, sales, and software development.">
+    <meta name="twitter:title" content="رامي عامر | خبير تطوير وإدارة المبيعات">
+    <meta name="twitter:description" content="سيرة ذاتية تفاعلية - أكثر من 9 سنوات خبرة في تطوير المبيعات والتسويق الاستراتيجي.">
     <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
 
-    <meta property="og:title" content="Ramy Amer | Professional CV & Experience" />
-    <meta property="og:description" content="An interactive resume showcasing 9+ years of experience in the banking sector, sales, and software development." />
-    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-    <meta property="og:url" content="https://big-ramy.github.io/Ramyamer" />
-    <meta property="og:type" content="profile" />
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ramy Amer | Professional CV & Experience">
-    <meta name="twitter:description" content="An interactive resume showcasing 9+ years of experience in the banking sector, sales, and software development.">
-    <meta property="og:image" content="https://big-ramy.github.io/Ramyamer/favicon.png" />
-    
-    <title data-en="Ramy Hesham Amer" data-ar="رامي هشام عامر"></title>
+    <title data-en="Ramy Amer - Sales Development Expert" data-ar="رامي عامر - خبير تطوير وإدارة المبيعات"></title>
     <link rel="icon" href="favicon.png" type="image/png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         :root {
-            --primary-color: #0f2442; 
-            --secondary-color: #c5a059; 
-            --accent-color: #007bff; 
+            --primary-color: #0f2442;
+            --secondary-color: #c5a059;
+            --accent-color: #007bff;
             --light-bg: #f4f6f9;
             --text-dark: #1f2937;
             --text-light: #f3f4f6;
             --white: #ffffff;
             --glass-bg: rgba(255, 255, 255, 0.85);
             --glass-border: rgba(255, 255, 255, 0.2);
+            --gradient-primary: linear-gradient(135deg, #0f2442 0%, #1a3a6e 100%);
+            --gradient-gold: linear-gradient(135deg, #c5a059 0%, #d4a843 100%);
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Tajawal', sans-serif;
             color: var(--text-dark);
             background-color: var(--light-bg);
-            margin: 0;
-            padding: 0;
             overflow-x: hidden;
         }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--secondary-color); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #b8944a; }
 
         .english-content {
             font-family: 'Montserrat', sans-serif;
             direction: ltr;
             text-align: left;
         }
+        .arabic-content { direction: rtl; text-align: right; }
 
-        .arabic-content {
-            direction: rtl;
-            text-align: right;
-        }
-
-        /* المظهر الاحترافي لـ الهيدر والنافبار المتجاوب */
         .navbar {
             background: var(--glass-bg);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--glass-border);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-            padding: 0.8rem 0;
+            padding: 0.6rem 0;
             transition: all 0.4s ease;
         }
-
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
         .navbar-brand {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 800;
             color: var(--primary-color) !important;
             display: flex;
             align-items: center;
             gap: 10px;
+            transition: all 0.3s ease;
         }
-        
-        .brand-icon {
-            color: var(--secondary-color);
-            font-size: 1.4rem;
-        }
-
+        .navbar-brand:hover { transform: scale(1.02); }
+        .brand-icon { color: var(--secondary-color); font-size: 1.4rem; }
         .navbar-nav .nav-link {
             color: var(--text-dark) !important;
             font-weight: 600;
-            margin: 0 12px;
+            margin: 0 10px;
             position: relative;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
-
-        .navbar-nav .nav-link:hover {
-            color: var(--accent-color) !important;
-            transform: translateY(-2px);
-        }
-
+        .navbar-nav .nav-link:hover { color: var(--accent-color) !important; transform: translateY(-2px); }
         .navbar-nav .nav-link::after {
             content: '';
             position: absolute;
             width: 0;
             height: 3px;
-            bottom: -5px;
+            bottom: -3px;
             left: 50%;
             transform: translateX(-50%);
             background-color: var(--secondary-color);
             transition: width 0.3s ease;
             border-radius: 2px;
         }
-
-        .navbar-nav .nav-link:hover::after {
-            width: 100%;
-        }
-
-        /* الهمبرغر منيو الاحترافي المخصص للأجهزة الذكية */
-        .navbar-toggler {
-            border: none;
-            padding: 0;
-        }
-        .navbar-toggler:focus {
-            box-shadow: none;
-        }
-        .custom-toggler-icon {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            transition: transform 0.3s ease;
-        }
-        .navbar-toggler[aria-expanded="true"] .custom-toggler-icon {
-            transform: rotate(90deg);
-            color: var(--secondary-color);
-        }
-
+        .navbar-nav .nav-link:hover::after { width: 100%; }
+        .navbar-toggler { border: none; padding: 0; }
+        .navbar-toggler:focus { box-shadow: none; }
+        .custom-toggler-icon { color: var(--primary-color); font-size: 1.8rem; transition: transform 0.3s ease; }
+        .navbar-toggler[aria-expanded="true"] .custom-toggler-icon { transform: rotate(90deg); color: var(--secondary-color); }
         #language-switcher {
             font-weight: 700;
             border-radius: 8px;
-            padding: 0.5rem 1.4rem;
-            background: var(--primary-color);
+            padding: 0.5rem 1.2rem;
+            background: var(--gradient-primary);
             border: none;
             color: white;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
-        #language-switcher:hover {
-            transform: scale(1.05);
-            background: var(--secondary-color);
-        }
+        #language-switcher:hover { transform: scale(1.05); background: var(--gradient-gold); }
 
-        /* Hero Section المتجاوب والمميز بنمط تقني مدمج */
         .hero-section {
-            background: url('ramybackground-Recovered.webp') center center no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            position: relative;
-            min-height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            text-align: center;
-            padding: 100px 0 60px 0;
+    background: url('ramybackground-Recovered.webp') center 100% no-repeat;
+    background-size: contain;
+    background-color: #0b182b;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    padding: 120px 0 60px 0;
+    overflow: hidden;
+}
+        #particles-canvas {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 1;
+            pointer-events: none;
         }
-
         .hero-section::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(135deg, rgba(15, 36, 66, 0.9) 0%, rgba(11, 24, 43, 0.75) 100%);
+            background: linear-gradient(135deg, rgba(15, 36, 66, 0.5) 0%, rgba(24, 66, 128, 0.8) 100%);
             z-index: 1;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 950px;
-            padding: 0 20px;
-        }
-
+        .hero-content { position: relative; z-index: 3; max-width: 950px; padding: 0 20px; }
         .tech-badge {
             display: inline-block;
             font-family: 'JetBrains Mono', monospace;
@@ -193,69 +158,389 @@
             border: 1px solid rgba(197, 160, 89, 0.4);
             padding: 0.6rem 1.2rem;
             border-radius: 30px;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-bottom: 1.5rem;
             font-weight: 500;
+            animation: pulseGlow 2s ease-in-out infinite;
         }
-
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 10px rgba(197, 160, 89, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(197, 160, 89, 0.4); }
+        }
         .hero-section h1 {
-            font-size: 3.8rem;
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             letter-spacing: -1px;
         }
-
-        .hero-section h1 span {
-            color: var(--secondary-color);
-        }
-
+        .hero-section h1 span { color: var(--secondary-color); }
         .hero-section .lead {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 400;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             line-height: 1.7;
             color: #e5e7eb;
         }
-
-        /* بطاقات المهارات التسويقية والتقنية في الهيرو (تم إبعاد مهارة العقود كلياً هنا) */
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .hero-stat {
+            text-align: center;
+            padding: 15px 25px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        .hero-stat:hover { background: rgba(197, 160, 89, 0.15); transform: translateY(-5px); }
+        .hero-stat .number { font-size: 2rem; font-weight: 800; color: var(--secondary-color); }
+        .hero-stat .label { font-size: 0.9rem; color: #b0b8c5; margin-top: 5px; }
         .hero-skills-chips {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             margin-top: 2rem;
         }
-
         .skill-chip {
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 10px 22px;
+            padding: 8px 20px;
             border-radius: 8px;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 600;
             color: var(--text-light);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
         .skill-chip:hover {
             background: var(--secondary-color);
             color: var(--primary-color);
             transform: translateY(-4px);
             box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3);
         }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            animation: bounceDown 2s infinite;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        @keyframes bounceDown {
+            0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }
+            50% { transform: translateX(-50%) translateY(10px); opacity: 1; }
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-gold);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .timeline { position: relative; padding: 0; }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+            border-radius: 2px;
+        }
+        .english-content .timeline::before { right: auto; left: 20px; }
+        .timeline-item {
+            position: relative;
+            padding-right: 55px;
+            margin-bottom: 2rem;
+        }
+        .english-content .timeline-item { padding-right: 0; padding-left: 55px; }
+        .timeline-dot {
+            position: absolute;
+            right: 12px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 3px var(--secondary-color);
+        }
+        .english-content .timeline-dot { right: auto; left: 12px; }
+
+        .skill-bar { margin-bottom: 1.5rem; }
+        .skill-bar .info { display: flex; justify-content: space-between; margin-bottom: 5px; font-weight: 600; }
+        .skill-bar .bar {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill-bar .bar .fill {
+            height: 100%;
+            background: var(--gradient-gold);
+            border-radius: 5px;
+            transition: width 1.5s ease;
+            width: 0;
+        }
+
+        .cert-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .cert-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        .cert-card .card-body { padding: 1.5rem; }
+        .cert-card .icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            background: var(--gradient-primary);
+            color: var(--text-light);
+            padding: 4rem 0;
+        }
+        .contact-section a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-section a:hover { color: #d4a843; }
+        .contact-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .contact-card:hover { background: rgba(197, 160, 89, 0.15); transform: translateY(-5px); }
+        .contact-card i { font-size: 2rem; color: var(--secondary-color); margin-bottom: 1rem; }
+
+        footer {
+            background: #0a1628;
+            color: #8899aa;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        footer .social-links a {
+            color: #8899aa;
+            font-size: 1.3rem;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        footer .social-links a:hover { color: var(--secondary-color); transform: translateY(-3px); }
+
+        .chat-widget { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
+        .chat-box {
+            display: none;
+            width: 360px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            margin-bottom: 15px;
+            animation: slideUp 0.3s ease;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .chat-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .chat-header .status-dot {
+            width: 8px; height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .chat-body {
+            height: 320px;
+            overflow-y: auto;
+            background: #f8fafc;
+            padding: 1rem;
+        }
+        .chat-msg {
+            margin-bottom: 0.8rem;
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            animation: msgIn 0.3s ease;
+        }
+        @keyframes msgIn {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .chat-footer {
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            padding: 0.8rem;
+        }
+        .chat-footer .input-group { gap: 8px; }
+        .chat-footer input {
+            border-radius: 25px !important;
+            padding: 0.6rem 1rem;
+            border: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+        }
+        .chat-footer input:focus { box-shadow: none; border-color: var(--secondary-color); }
+        .chat-footer button {
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            background: var(--gradient-gold);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .chat-footer button:hover { transform: scale(1.1); }
+        .chat-toggle {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            border: 2px solid var(--secondary-color);
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chat-toggle:hover { transform: scale(1.1) rotate(10deg); }
+
+        .typing-indicator {
+            display: flex;
+            gap: 5px;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            border-top-right-radius: 0;
+            margin-bottom: 0.8rem;
+        }
+        .typing-indicator span {
+            width: 8px;
+            height: 8px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-8px); opacity: 1; }
+        }
 
         @media (max-width: 992px) {
-            .hero-section h1 { font-size: 3rem; }
-            .hero-section .lead { font-size: 1.25rem; }
+            .hero-section h1 { font-size: 2.8rem; }
+            .hero-section .lead { font-size: 1.2rem; }
         }
         @media (max-width: 768px) {
             .navbar { background: var(--white); }
-            .hero-section { min-height: 70vh; padding-top: 120px; }
-            .hero-section h1 { font-size: 2.4rem; }
-            .skill-chip { font-size: 0.85rem; padding: 8px 16px; }
+            .hero-section { min-height: 70vh; padding-top: 100px; background-attachment: scroll; }
+            .hero-section h1 { font-size: 2.2rem; }
+            .hero-stats { gap: 15px; }
+            .hero-stat { padding: 10px 15px; }
+            .hero-stat .number { font-size: 1.5rem; }
+            .chat-box { width: 300px; right: 0; }
+            .timeline::before { right: 15px; }
+            .timeline-item { padding-right: 45px; }
+            .timeline-dot { right: 7px; width: 14px; height: 14px; }
+            .english-content .timeline-item { padding-left: 45px; }
+            .english-content .timeline-dot { left: 7px; }
         }
+        @media (max-width: 576px) {
+            .hero-section h1 { font-size: 1.8rem; }
+            .chat-box { width: calc(100vw - 40px); right: 0; }
+            .chat-widget { right: 15px; bottom: 15px; }
+            .chat-toggle { width: 55px; height: 55px; font-size: 1.5rem; }
+        }
+        .bg-primary{
+    background: linear-gradient(135deg,#0b2545,#13315c) !important;
+    border: none;
+}
+
+.bg-warning{
+    background: linear-gradient(135deg,#8b6b1f,#c49b3a) !important;
+    color: #fff !important;
+    border: none;
+}
+
+.bg-success{
+    background: linear-gradient(135deg,#0f5132,#146c43) !important;
+    border: none;
+}
+
+.bg-info{
+    background: linear-gradient(135deg,#58151c,#842029) !important;
+    color: #fff !important;
+    border: none;
+}
+
+.badge{
+    padding: 12px 18px !important;
+    border-radius: 50px !important;
+    font-size: .95rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
     </style>
 </head>
 <body>
@@ -264,35 +549,21 @@
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <i class="fa-solid fa-bolt brand-icon"></i>
-                <span class="arabic-content">المهندس رامي عامر</span>
-                <span class="english-content d-none">Eng. Ramy Amer</span>
+                <span class="arabic-content">رامي عامر</span>
+                <span class="english-content d-none">Ramy Amer</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="fa-solid fa-bars-staggered custom-toggler-icon"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" data-en="About Me" data-ar="عني">عني</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience" data-en="Experience" data-ar="الخبرات العملية">الخبرات العملية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills" data-en="Skills" data-ar="المهارات">المهارات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education" data-en="Education" data-ar="المؤهلات العلمية">المؤهلات العلمية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificates" data-en="Certificates" data-ar="الشهادات والدورات">الشهادات والدورات</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="Portfolio.HTML" data-en="Portfolio" data-ar="معرض الأعمال">معرض الأعمال</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="Ramy C.V (2).pdf" target="_blank" data-en="Download CV" data-ar="تحميل السيرة الذاتية">تحميل السيرة الذاتية</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-en="About" data-ar="عني">عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-en="Experience" data-ar="الخبرات">الخبرات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-en="Skills" data-ar="المهارات">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education" data-en="Education" data-ar="المؤهلات">المؤهلات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates" data-en="Certificates" data-ar="الشهادات">الشهادات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Portfolio.HTML" data-en="Portfolio" data-ar="معرض الأعمال">معرض الأعمال</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ramy C.V (2).pdf" target="_blank" data-en="Download CV" data-ar="تحميل السيرة">تحميل السيرة</a></li>
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
                         <button id="language-switcher" data-en-text="العربية" data-ar-text="English">English</button>
                     </li>
@@ -302,398 +573,943 @@
     </nav>
 
     <section id="home" class="hero-section">
+        <canvas id="particles-canvas"></canvas>
         <div class="container">
             <div class="hero-content mx-auto" data-aos="zoom-in">
-                <div class="tech-badge" data-en="< Marketing Strategy & Sales AI Automation />" data-ar="< الإستراتيجيات التسويقية وأتمتة المبيعات بالذكاء الاصطناعي />">
-                    &lt; الإستراتيجيات التسويقية وأتمتة المبيعات بالذكاء الاصطناعي /&gt;
+                <div class="tech-badge" data-en="< Sales Development & Management Expert />" data-ar="< خبير تطوير وإدارة المبيعات />">
+                    &lt; خبير تطوير وإدارة المبيعات /&gt;
                 </div>
                 
-                <h1 class="arabic-content">المهندس رامي <span>عامر</span></h1>
-                <h1 class="english-content d-none">Eng. Ramy <span>Amer</span></h1>
+                <h1 class="arabic-content">رامي <span>عامر</span></h1>
+                <h1 class="english-content d-none">Ramy <span>Amer</span></h1>
                 
                 <p class="lead arabic-content">
-                    مدير تطوير الأعمال والأتمتة وخبير النمو والتسويق الرقمي المؤسسي.<br>
-                    أقود الخطط التسويقية المبتكرة المدمجة بحلول البرمجة وهندسة الأتمتة لتعظيم انتشار الشركات ومضاعفة معدلات البيع.
+                    خبير تطوير وإدارة المبيعات | قائد استراتيجيات النمو والتسويق الرقمي.<br>
+                    أمتلك أكثر من 9 سنوات من الخبرة في قيادة فرق المبيعات، تطوير الخطط التسويقية، وتوظيف أحدث التقنيات لتحقيق مضاعفة في الإيرادات وفتح أسواق جديدة.
                 </p>
                 <p class="lead english-content d-none">
-                    Business Development & Automation Manager | Corporate Growth & Digital Marketing Expert.<br>
-                    Driving innovative marketing strategies integrated with coding solutions and automation engineering to maximize business reach and multiply sales velocity.
+                    Sales Development & Management Expert | Growth & Digital Marketing Strategist.<br>
+                    9+ years of experience leading sales teams, developing marketing strategies, and leveraging cutting-edge technology to drive revenue growth and expand into new markets.
                 </p>
 
-                <div class="hero-skills-chips arabic-content">
-                    <div class="skill-chip"><i class="fa-solid fa-bullseye me-2"></i> إدارة التسويق الإستراتيجي</div>
-                    <div class="skill-chip"><i class="fa-solid fa-funnel-dollar me-2"></i> هندسة النمو ومضاعفة المبيعات</div>
-                    <div class="skill-chip"><i class="fa-solid fa-robot me-2"></i> أتمتة الأنظمة التسويقية الرقمية</div>
-                    <div class="skill-chip"><i class="fa-solid fa-laptop-code me-2"></i> برمجيات وحلول الأعمال الذكية</div>
+                <div class="hero-stats">
+                    <div class="hero-stat"><div class="number">9+</div><div class="label" data-en="Years Experience" data-ar="سنوات خبرة">سنوات خبرة</div></div>
+                    <div class="hero-stat"><div class="number">3.5M</div><div class="label" data-en="SAR Contract Signed" data-ar="ريال أكبر عقد">ريال أكبر عقد</div></div>
+                    <div class="hero-stat"><div class="number">300+</div><div class="label" data-en="Daily Messages" data-ar="رسالة يومياً">رسالة يومياً</div></div>
+                    <div class="hero-stat"><div class="number">100%</div><div class="label" data-en="Sales Growth" data-ar="نمو في المبيعات">نمو في المبيعات</div></div>
                 </div>
-                
+
+                <div class="hero-skills-chips arabic-content">
+                    <div class="skill-chip"><i class="fa-solid fa-bullseye me-2"></i> تطوير وإدارة المبيعات</div>
+                    <div class="skill-chip"><i class="fa-solid fa-chart-line me-2"></i> هندسة النمو والتوسع</div>
+                    <div class="skill-chip"><i class="fa-solid fa-robot me-2"></i> أتمتة أنظمة المبيعات</div>
+                    <div class="skill-chip"><i class="fa-solid fa-laptop-code me-2"></i> حلول الأعمال الذكية</div>
+                </div>
                 <div class="hero-skills-chips english-content d-none">
-                    <div class="skill-chip"><i class="fa-solid fa-bullseye me-2"></i> Strategic Marketing Management</div>
-                    <div class="skill-chip"><i class="fa-solid fa-funnel-dollar me-2"></i> Growth Engineering & Sales Multiplication</div>
-                    <div class="skill-chip"><i class="fa-solid fa-robot me-2"></i> Digital Marketing Automation</div>
-                    <div class="skill-chip"><i class="fa-solid fa-laptop-code me-2"></i> Intelligent Software & Business Solutions</div>
+                    <div class="skill-chip"><i class="fa-solid fa-bullseye me-2"></i> Sales Development & Management</div>
+                    <div class="skill-chip"><i class="fa-solid fa-chart-line me-2"></i> Growth Engineering</div>
+                    <div class="skill-chip"><i class="fa-solid fa-robot me-2"></i> Sales Automation Systems</div>
+                    <div class="skill-chip"><i class="fa-solid fa-laptop-code me-2"></i> Intelligent Business Solutions</div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            <i class="fa-solid fa-chevron-down"></i>
         </div>
     </section>
 
     <main class="container my-5">
-        <div class="bg-white p-4 p-md-5 mx-auto rounded-4 shadow-lg" style="max-width: 210mm;" data-aos="fade-up">
+        <div class="bg-white p-4 p-md-5 mx-auto rounded-4 shadow-lg" style="max-width: 210mm;">
 
             <div class="arabic-content">
                 
                 <section id="about" class="py-4 border-bottom">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-user-tie me-2 text-warning"></i> نبذة عني</h2>
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-user-tie text-warning me-2"></i> نبذة عني</h2>
+                    </div>
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center mb-4 mb-md-0">
-                            <img src="ramyamerfor.webp" class="img-fluid rounded-circle border border-4 border-primary shadow-sm" style="width: 200px; height: 200px; object-fit: cover;" id="arabic-profile-img" alt="رامي عامر">
+                            <img src="ramyamerfor.webp" class="img-fluid rounded-3 border border-4 border-primary shadow-sm" style="max-width: 220px; object-fit: cover;" alt="رامي عامر">
                         </div>
                         <div class="col-md-8">
                             <p class="fs-6 lh-lg text-secondary">
-                                أنا محترف لدي أكثر من تسع سنوات من الخبرة في القطاع المصرفي والتجزئة، والآن في إدارة التسويق وتطوير الأعمال. عملت في أدوار مختلفة مثل أمين صندوق، بائع، مشرف، وممثل مبيعات. لدي سجل حافل بتحقيق أهداف المبيعات، وتقديم خدمة عملاء ممتازة، وإدارة الفرق. اكتسبت مهارات ومعرفة في منتجات القروض وبطاقات الائتمان، وأنا بارع في مهارات الحاسوب، تطوير المواقع والأتمتة باستخدام الذكاء الاصطناعي، واستغلال التقنيات الحديثة لمضاعفة المبيعات. كما يمكنني الكتابة بسرعة باللغة العربية بمعدل 40 كلمة في الدقيقة.
+                                محترف خبرة في <strong>تطوير المبيعات وإدارة المبيعات</strong> لأكثر من 9 سنوات في القطاعات المصرفية، التجزئة، المقاولات، والتطوير العقاري. أجمع بين الخبرة الميدانية في قيادة فرق المبيعات وإدارة حسابات العملاء الكبرى، وبين الابتكار التقني في أتمتة أنظمة البيع والتسويق باستخدام الذكاء الاصطناعي.
                             </p>
-                            <h4 class="mt-4 text-dark fw-bold">الهدف الوظيفي</h4>
+                            <p class="fs-6 lh-lg text-secondary">
+                                سجلي المهني يشمل إدارة حملات تسويقية شاملة، التفاوض وإبرام عقادات بملايين الريالات، تطوير أنظمة عقود إلكترونية ذكية، وبناء أدوات تواصل آلية مع العملاء. أؤمن بأن <strong>تقاطع المبيعات مع التكنولوجيا</strong> هو مفتاح النمو المتسارع في الأسواق التنافسية.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3 mt-3">
+    <span class="badge bg-primary p-2 px-3"><i class="fa-solid fa-check me-1"></i> إدارة المبيعات</span>
+    <span class="badge bg-warning text-dark p-2 px-3"><i class="fa-solid fa-check me-1"></i> تطوير الأعمال</span>
+    <span class="badge bg-success p-2 px-3"><i class="fa-solid fa-check me-1"></i> أتمتة المبيعات</span>
+    <span class="badge bg-info p-2 px-3"><i class="fa-solid fa-check me-1"></i> التسويق الإستراتيجي</span>
+</div>
+                            <h4 class="mt-4 text-dark fw-bold">الهدف المهني</h4>
                             <p class="text-secondary lh-lg">
-                                الحصول على منصب مليء بالتحديات والمجزية في قطاع تطوير الأعمال والمبيعات حيث يمكنني الاستفادة من مهاراتي وخبرتي في التسويق، خدمة العملاء، الإدارة، والحلول التقنية المبتكرة.
+                                الحصول على منصب قيادي في <strong>تطوير وإدارة المبيعات</strong> حيث يمكنني توظيف خبراتي التسويقية والتقنية لقيادة فرق المبيعات، تصميم استراتيجيات نمو مبتكرة، وتحقيق نتائج استثنائية في الإيرادات والتوسع السوقي.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 <section id="experience" class="py-5 border-bottom">
-                    <h2 class="text-primary fw-bold mb-5 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-briefcase me-2 text-warning"></i> الخبرة العملية والإنجازات</h2>
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-briefcase text-warning me-2"></i> الخبرة العملية والإنجازات</h2>
+                    </div>
                     
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right">
-                        <div class="card-body border-end border-4 border-primary rounded pe-4">
-                            <h4 class="card-title fw-bold text-dark">مؤسسة أوكرة للمقاولات العامة والصناعة</h4>
-                            <h6 class="text-primary fw-bold mb-2">مدير تسويق <span class="text-muted fw-normal">| أكتوبر 2025 – حتى الآن</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>إدارة وتوجيه الحملات التسويقية لتوسيع الحصة السوقية في قطاع صناعة الأثاث والتوريدات الفندقية والمقاولات.</li>
-                                <li>استغلال تقنيات الذكاء الاصطناعي المتقدمة في صياغة عقود قانونية محكمة وخالية تماماً من الثغرات لحماية مصالح المؤسسة.</li>
-                                <li><strong>إنجاز استثنائي:</strong> بفضل المهارة التسويقية وتوظيف العقود الذكية، نجحت في اقتناص وتوقيع عقد ضخم بقيمة <strong>3.5 مليون ريال سعودي</strong> مع شركة <strong>لمار الأولى للإستثمار والتطوير العقاري</strong>.</li>
-                            </ul>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h4 class="fw-bold text-dark">مؤسسة أوكرة للمقاولات العامة والصناعة</h4>
+                                        <span class="badge bg-warning text-dark">أكتوبر 2025 – حتى الآن</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">مدير تسويق</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>قيادة استراتيجية التسويق الشاملة وتوجيه الحملات لتوسيع الحصة السوقية في قطاع صناعة الأثاث والتوريدات الفندقية والمقاولات.</li>
+                                        <li>بناء وتطوير أنظمة عقود ذكية بتقنيات الذكاء الاصطناعي لصياغة عقود قانونية محكمة خالية من الثغرات، مما عزز ثقة العملاء واختصار وقت الصياغة.</li>
+                                        <li class="fw-bold text-dark mt-2"><i class="fa-solid fa-trophy text-warning me-2"></i> إنجاز: توقيع عقد بقيمة <span class="text-primary">3.5 مليون ريال</span> مع شركة لمار الأولى للإستثمار والتطوير العقاري باستخدام التسويق الذكي والعقود المبرمجة بالذكاء الاصطناعي.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="100">
-                        <div class="card-body border-end border-4 border-warning rounded pe-4">
-                            <h5 class="card-title fw-bold text-dark">شركة منازل العصرية للتطوير والاستثمار العقاري</h5>
-                            <h6 class="text-primary fw-bold mb-2">أخصائي تمويل ومتابعة <span class="text-muted fw-normal">| سبتمبر 2023 – حتى الآن</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>عملت في مشروع درة المدينة التابع لوزارة الإسكان، وأنشأت جداول الحجوزات وربطتها بالبنوك لتنفيذ طلبات التمويل العقاري.</li>
-                                <li>إصدار العقود بين المستفيدين والشركة، وإنشاء نموذج للعقد الإلكتروني عبر إضافة البيانات برمجياً.</li>
-                                <li>أرسلت أكثر من 300 رسالة تسويقية يومياً عبر واتساب بذكاء، مما وفر الوقت وحقق زيادة في المبيعات بنسبة <strong>100%</strong> مقارنة بالعام السابق في 5 أشهر فقط.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">شركة منازل العصرية للتطوير والاستثمار العقاري</h5>
+                                        <span class="badge bg-warning text-dark">سبتمبر 2023 – يونيو 2025</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">أخصائي تمويل ومتابعة</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>إدارة حجوزات مشروع درة المدينة (وزارة الإسكان) وربطها بالبنوك لتنفيذ التمويل العقاري للمستفيدين من الدعم السكني، ومتابعتها حتى الموافقة النهائية.</li>
+                                        <li>إنشاء نموذج عقود إلكترونية عبر برمجة إضافة بيانات الوحدات والمستفيدين تلقائياً في العقود والجداول، مما وفر وقتاً وجهداً كبيرين.</li>
+                                        <li><i class="fa-solid fa-chart-line text-success me-2"></i> <strong>إنجاز:</strong> أتمتة إرسال 300+ رسالة تسويقية يومياً عبر واتساب، محققاً زيادة في المبيعات بنسبة <span class="text-primary fw-bold">100%</span> في 5 أشهر فقط.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="200">
-                        <div class="card-body border-end border-4 border-secondary rounded pe-4">
-                            <h5 class="card-title fw-bold text-dark">بنك الإمارات دبي الوطني</h5>
-                            <h6 class="text-primary fw-bold mb-2">ممثل مبيعات <span class="text-muted fw-normal">| يونيو 2021 – يونيو 2023</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>الترويج لمنتجات التمويل وبطاقات الائتمان للجهات الحكومية والخاصة والمستشفيات.</li>
-                                <li>التواصل اليومي وإرسال عروض ترويجية لأكثر من 300 عميل يومياً وإكمال الطلبات للحصول على الموافقات النهائية.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">بنك الإمارات دبي الوطني</h5>
+                                        <span class="badge bg-warning text-dark">يونيو 2021 – يونيو 2023</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">ممثل مبيعات</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>زيارة الجهات الحكومية والشركات الخاصة والمستشفيات للترويج لمنتجات التمويل وبطاقات الائتمان، وبناء شبكة علاقات واسعة.</li>
+                                        <li>إرسال 300+ رسالة يومياً عبر واتساب وإكمال طلبات العملاء ومستنداتهم حتى مرحلة الموافقة النهائية.</li>
+                                        <li><i class="fa-solid fa-bullseye text-warning me-2"></i> <strong>إنجاز:</strong> تحقيق أعلى معدلات تحويل في الفريق عبر المتابعة المنهجية والتواصل المستمر.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="300">
-                        <div class="card-body border-end border-4 border-secondary rounded pe-4">
-                            <h5 class="card-title fw-bold text-dark">لاند مارك العربية (هوم سنتر)</h5>
-                            <h6 class="text-primary fw-bold mb-2">مشرف <span class="text-muted fw-normal">| مارس 2017 – يونيو 2021</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>الإشراف على الأقسام ومراقبة أداء المبيعات من خلال التقارير اليومية وأنظمة الكاشير.</li>
-                                <li>إجراء اجتماعات وتدريبات يومية مع الموظفين لرفع مستوى المبيعات وبيع المنتجات المتقاطعة (Cross-selling).</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">لاند مارك العربية (هوم سنتر)</h5>
+                                        <span class="badge bg-warning text-dark">مارس 2017 – يونيو 2021</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">مشرف</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>الإشراف على جميع الأقسام وضمان توافر المنتجات لزيادة المبيعات، وإرسال طلبات المستودع واستلام وجرد المنتجات.</li>
+                                        <li>مراقبة أداء المبيعات عبر التقارير اليومية وتحليل البيانات لتحديد اتجاهات وفرص التحسين.</li>
+                                        <li>عقد اجتماعات وتدريبات يومية مع الموظفين على البيع المتقاطع (Cross-selling) مما رفع متوسط قيمة الفاتورة.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right" data-aos-delay="400">
-                        <div class="card-body border-end border-4 border-secondary rounded pe-4">
-                            <h5 class="card-title fw-bold text-dark">هايبر بنده</h5>
-                            <h6 class="text-primary fw-bold mb-2">بائع إلكترونيات <span class="text-muted fw-normal">| يناير 2015 – ديسمبر 2016</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>تقديم وشرح أحدث المنتجات الإلكترونية للعملاء بناءً على اهتماماتهم واقتراح منتجات إضافية.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">هايبر بنده</h5>
+                                        <span class="badge bg-warning text-dark">يناير 2015 – ديسمبر 2016</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">بائع إلكترونيات</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>استقبال العملاء وتقديم أحدث المنتجات الإلكترونية التي تتناسب مع اهتماماتهم وشرح الميزات والفوائد.</li>
+                                        <li>اقتراح منتجات إضافية تكمل مشتريات العملاء، ومرافقتهم للكاشير لضمان تجربة شراء متكاملة.</li>
+                                        <li><i class="fa-solid fa-star text-warning me-2"></i> تحقيق أعلى معدلات رضا عملاء في القسم من خلال خدمة استشارية دقيقة.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="450">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">هايبر بنده</h5>
+                                        <span class="badge bg-warning text-dark">يناير 2014 – ديسمبر 2014</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">أمين صندوق</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>استلام الودائع النقدية وتشغيل آلة تسجيل النقد واستقبال العملاء بترحيب واحترافية.</li>
+                                        <li>حساب المشتريات وتحصيل المدفوعات وموازنة درج النقد في نهاية اليوم وتقديم التقارير.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="skills" class="py-5">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-gears me-2 text-warning"></i> المهارات</h2>
-                    <div class="row">
-                        <div class="col-md-6 mb-3" data-aos="zoom-in"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-bullseye text-secondary me-2"></i> الإدارة والتسويق الإستراتيجي</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="100"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-comments-dollar text-secondary me-2"></i> المبيعات المباشرة والتفاوض</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="200"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-laptop-code text-secondary me-2"></i> الذكاء الاصطناعي وتطوير المواقع</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="300"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-users text-secondary me-2"></i> خدمة العملاء وإدارة العلاقات</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="400"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-keyboard text-secondary me-2"></i> سرعة الطباعة (40 كلمة/دقيقة)</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="500"><div class="p-3 bg-light rounded shadow-sm fw-bold border-end border-3 border-primary"><i class="fa-solid fa-brain text-secondary me-2"></i> التحليل وحل المشكلات المعقدة</div></div>
+                <section id="skills" class="py-5 border-bottom">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-gears text-warning me-2"></i> المهارات الأساسية</h2>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6" data-aos="zoom-in">
+                            <div class="skill-bar">
+                                <div class="info"><span>تطوير وإدارة المبيعات</span><span>95%</span></div>
+                                <div class="bar"><div class="fill" data-width="95"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-bar">
+                                <div class="info"><span>التسويق الإستراتيجي</span><span>90%</span></div>
+                                <div class="bar"><div class="fill" data-width="90"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-bar">
+                                <div class="info"><span>أتمتة أنظمة المبيعات</span><span>88%</span></div>
+                                <div class="bar"><div class="fill" data-width="88"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-bar">
+                                <div class="info"><span>خدمة العملاء وإدارة العلاقات</span><span>92%</span></div>
+                                <div class="bar"><div class="fill" data-width="92"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-bar">
+                                <div class="info"><span>الذكاء الاصطناعي وتطوير المواقع</span><span>85%</span></div>
+                                <div class="bar"><div class="fill" data-width="85"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-bar">
+                                <div class="info"><span>التفاوض والتحليل وحل المشكلات</span><span>90%</span></div>
+                                <div class="bar"><div class="fill" data-width="90"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-3" data-aos="flip-up">
+                            <div class="p-3 bg-light rounded-3 shadow-sm h-100 border-bottom border-4 border-primary">
+                                <i class="fa-solid fa-bullseye text-secondary fs-2 mb-2"></i>
+                                <h6 class="fw-bold">إدارة فرق المبيعات</h6>
+                                <small class="text-secondary">قيادة وتدريب وتحفيز فرق المبيعات لتحقيق الأهداف</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3" data-aos="flip-up" data-aos-delay="100">
+                            <div class="p-3 bg-light rounded-3 shadow-sm h-100 border-bottom border-4 border-warning">
+                                <i class="fa-solid fa-comments-dollar text-secondary fs-2 mb-2"></i>
+                                <h6 class="fw-bold">التفاوض وإبرام العقود</h6>
+                                <small class="text-secondary">خبرة في التفاوض على عقادات بملايين الريالات</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3" data-aos="flip-up" data-aos-delay="200">
+                            <div class="p-3 bg-light rounded-3 shadow-sm h-100 border-bottom border-4 border-success">
+                                <i class="fa-solid fa-chart-pie text-secondary fs-2 mb-2"></i>
+                                <h6 class="fw-bold">تحليل السوق والبيانات</h6>
+                                <small class="text-secondary">استخدام البيانات لاتخاذ قرارات تسويقية ذكية</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="py-5 border-bottom">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-graduation-cap text-warning me-2"></i> المؤهلات العلمية</h2>
+                    </div>
+                    <div class="card border-0 shadow-sm" data-aos="fade-up">
+                        <div class="card-body p-4 border-end border-4 border-primary rounded">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon-box bg-warning bg-opacity-10 p-3 rounded-3">
+                                    <i class="fa-solid fa-school text-warning fs-2"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-dark mb-1">الثانوية العامة</h5>
+                                    <p class="text-secondary mb-0">مدرسة ثانوية - مصر | 2003 - 2004</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="certificates" class="py-5">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-certificate text-warning me-2"></i> الشهادات والدورات</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="cert-card">
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+                                    <h6 class="fw-bold text-dark">أساسيات الخدمات المصرفية للأفراد (الإصدار 2)</h6>
+                                    <p class="text-secondary small mb-0">الأكاديمية المالية السعودية. إتقان تقديم الخدمات المصرفية، إصدار البطاقات، إدارة الحسابات وتقديم القروض.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-card">
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <h6 class="fw-bold text-dark">مكافحة غسيل الأموال وتمويل الإرهاب</h6>
+                                    <p class="text-secondary small mb-0">بنك الإمارات دبي الوطني. تدريب شامل على كشف الأنشطة غير المشروعة والامتثال للقوانين المالية.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="cert-card">
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <h6 class="fw-bold text-dark">الكفاءة في التدريب داخل صالة العرض</h6>
+                                    <p class="text-secondary small mb-0">لاند مارك العربية. تدريب وتوجيه فرق المبيعات لتحسين الأداء ورفع مستوى رضا العملاء.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
 
-
             <div class="english-content d-none">
                 
                 <section id="about-en" class="py-4 border-bottom">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-user-tie me-2 text-warning"></i> About Me</h2>
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-user-tie text-warning me-2"></i> About Me</h2>
+                    </div>
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center mb-4 mb-md-0">
-                            <img src="ramyamerfor.webp" class="img-fluid rounded-circle border border-4 border-primary shadow-sm" style="width: 200px; height: 200px; object-fit: cover;" id="english-profile-img" alt="Ramy Amer">
+                            <img src="ramyamerfor.webp" class="img-fluid rounded-3 border border-4 border-primary shadow-sm" style="max-width: 220px; object-fit: cover;" alt="Ramy Amer">
                         </div>
                         <div class="col-md-8">
                             <p class="fs-6 lh-lg text-secondary">
-                                I am a professional with more than nine years of experience in the banking and retail sector, and now in Marketing and Business Development. I have worked in various roles such as cashier, salesperson, supervisor, and sales representative. I have acquired skills and knowledge in different loan products, and I am proficient in computer skills, websites development by AI, and leveraging automation to multiply sales. I can also type fast in Arabic at 40 words per minute.
+                                A seasoned <strong>Sales Development & Management</strong> professional with 9+ years of experience across banking, retail, contracting, and real estate development. I combine hands-on expertise in leading sales teams and managing key accounts with technical innovation in automating sales and marketing systems using artificial intelligence.
                             </p>
-                            <h4 class="mt-4 text-dark fw-bold">Objective</h4>
+                            <p class="fs-6 lh-lg text-secondary">
+                                My track record includes managing comprehensive marketing campaigns, negotiating multi-million-riyal contracts, developing smart electronic contract systems, and building automated client communication tools. I firmly believe that the <strong>intersection of sales and technology</strong> is the key to accelerated growth in competitive markets.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3 mt-3">
+                                <span class="badge bg-primary p-2 px-3"><i class="fa-solid fa-check me-1"></i> Sales Management</span>
+                                <span class="badge bg-warning text-dark p-2 px-3"><i class="fa-solid fa-check me-1"></i> Business Development</span>
+                                <span class="badge bg-success p-2 px-3"><i class="fa-solid fa-check me-1"></i> Sales Automation</span>
+                                <span class="badge bg-info p-2 px-3"><i class="fa-solid fa-check me-1"></i> Strategic Marketing</span>
+                            </div>
+                            <h4 class="mt-4 text-dark fw-bold">Career Objective</h4>
                             <p class="text-secondary lh-lg">
-                                To obtain a challenging and rewarding position in business development and sales where I can utilize my skills in marketing, customer service, management, and innovative tech solutions.
+                                To secure a leadership role in <strong>Sales Development & Management</strong> where I can leverage my marketing and technical expertise to lead sales teams, design innovative growth strategies, and deliver exceptional results in revenue generation and market expansion.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 <section id="experience-en" class="py-5 border-bottom">
-                    <h2 class="text-primary fw-bold mb-5 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-briefcase me-2 text-warning"></i> Work Experience</h2>
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-briefcase text-warning me-2"></i> Work Experience</h2>
+                    </div>
                     
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left">
-                        <div class="card-body border-start border-4 border-primary rounded ps-4">
-                            <h4 class="card-title fw-bold text-dark">Ukra Contracting & Industry</h4>
-                            <h6 class="text-primary fw-bold mb-2">Marketing Manager <span class="text-muted fw-normal">| Oct 2025 – Present</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>Directing marketing campaigns to expand market share in the furniture manufacturing and hotel supplies sector.</li>
-                                <li>Leveraging advanced AI technologies to draft tight, loophole-free legal contracts to protect the institution's interests.</li>
-                                <li><strong>Exceptional Achievement:</strong> Successfully negotiated and signed a massive contract worth <strong>3.5 Million SAR</strong> with <strong>Lamar Al Oula for Real Estate Investment and Development</strong>, using marketing acumen and AI-drafted smart contracts.</li>
-                            </ul>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h4 class="fw-bold text-dark">Ukra Contracting & Industry</h4>
+                                        <span class="badge bg-warning text-dark">Oct 2025 – Present</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">Marketing Manager</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>Leading comprehensive marketing strategy and campaigns to expand market share in furniture manufacturing and hotel supplies.</li>
+                                        <li>Building AI-powered smart contract systems for drafting legally robust contracts, enhancing client trust and reducing drafting time.</li>
+                                        <li class="fw-bold text-dark mt-2"><i class="fa-solid fa-trophy text-warning me-2"></i> Achievement: Signed a landmark <span class="text-primary">3.5 Million SAR</span> contract with Lamar Al Oula for Real Estate Investment using AI-driven marketing and smart contracts.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="100">
-                        <div class="card-body border-start border-4 border-warning rounded ps-4">
-                            <h5 class="card-title fw-bold text-dark">MODERN HOMES REAL ESTATE DEVELOPMENT AND INVESTMENT</h5>
-                            <h6 class="text-primary fw-bold mb-2">Finance and Follow-up Specialist <span class="text-muted fw-normal">| Sep 2023 – Present</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>Worked in the Durrat Al-Madina project, created reservation schedules and linked them with banks for real estate financing.</li>
-                                <li>Created a model for electronic contracts by programmatically adding unit and beneficiary data.</li>
-                                <li>Automated sending 300+ WhatsApp messages daily, achieving a <strong>100%</strong> sales increase compared to the previous year in just 5 months.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">MODERN HOMES REAL ESTATE</h5>
+                                        <span class="badge bg-warning text-dark">Sep 2023 – JUN 2025</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">Finance & Follow-up Specialist</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>Managed bookings for Durrat Al-Madina (Ministry of Housing), coordinating with banks for real estate financing until final approval.</li>
+                                        <li>Created an automated e-contract model by programmatically adding unit and beneficiary data, saving significant time and effort.</li>
+                                        <li><i class="fa-solid fa-chart-line text-success me-2"></i> <strong>Achievement:</strong> Automated 300+ daily WhatsApp marketing messages, achieving <span class="text-primary fw-bold">100%</span> sales growth in just 5 months.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="200">
-                        <div class="card-body border-start border-4 border-secondary rounded ps-4">
-                            <h5 class="card-title fw-bold text-dark">EMIRATES NBD BANK</h5>
-                            <h6 class="text-primary fw-bold mb-2">Sales Representative <span class="text-muted fw-normal">| Jun 2021 – Jun 2023</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>Promoted financing products and credit cards to government agencies and private companies.</li>
-                                <li>Sent over 300 messages daily via WhatsApp with offers, completing requests and securing final approvals.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">EMIRATES NBD BANK</h5>
+                                        <span class="badge bg-warning text-dark">Jun 2021 – Jun 2023</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">Sales Representative</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>Visited government entities, hospitals, and private companies to promote financing products and credit cards, building a wide network.</li>
+                                        <li>Sent 300+ daily WhatsApp messages and completed customer applications and documents through final approval.</li>
+                                        <li><i class="fa-solid fa-bullseye text-warning me-2"></i> <strong>Achievement:</strong> Highest conversion rates in the team through systematic follow-up.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="300">
-                        <div class="card-body border-start border-4 border-secondary rounded ps-4">
-                            <h5 class="card-title fw-bold text-dark">LANDMARK ARABIA (HOME CENTRE)</h5>
-                            <h6 class="text-primary fw-bold mb-2">Supervisor <span class="text-muted fw-normal">| Mar 2017 – Jun 2021</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>Supervised departments and monitored sales performance through daily management reports.</li>
-                                <li>Conducted daily trainings to help staff achieve higher sales through cross-selling.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">LANDMARK ARABIA (HOME CENTRE)</h5>
+                                        <span class="badge bg-warning text-dark">Mar 2017 – Jun 2021</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">Supervisor</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>Supervised all departments, ensuring product availability, sending warehouse requests, receiving and inventorying stock.</li>
+                                        <li>Monitored sales performance through daily reports and analyzed data to identify trends and improvement opportunities.</li>
+                                        <li>Conducted daily training on cross-selling techniques, increasing average transaction value.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="400">
-                        <div class="card-body border-start border-4 border-secondary rounded ps-4">
-                            <h5 class="card-title fw-bold text-dark">HYPER PANDA</h5>
-                            <h6 class="text-primary fw-bold mb-2">Electronics Salesperson <span class="text-muted fw-normal">| Jan 2015 – Dec 2016</span></h6>
-                            <ul class="text-secondary lh-lg mt-3">
-                                <li>Explained product features and benefits, suggesting additional complementary products.</li>
-                            </ul>
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">HYPER PANDA</h5>
+                                        <span class="badge bg-warning text-dark">Jan 2015 – Dec 2016</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">Electronics Salesperson</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>Welcomed customers, presented latest electronics matching their interests, explained features and benefits.</li>
+                                        <li>Suggested complementary products and accompanied customers to checkout for a complete experience.</li>
+                                        <li><i class="fa-solid fa-star text-warning me-2"></i> Achieved highest customer satisfaction ratings in the department.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="450">
+                            <div class="timeline-dot"></div>
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                        <h5 class="fw-bold text-dark">HYPER PANDA</h5>
+                                        <span class="badge bg-warning text-dark">Jan 2014 – Dec 2014</span>
+                                    </div>
+                                    <h6 class="text-primary fw-bold mb-3">Cashier</h6>
+                                    <ul class="text-secondary lh-lg">
+                                        <li>Received cash deposits, operated the cash register, and greeted customers professionally.</li>
+                                        <li>Calculated purchases, collected payments, balanced the cash drawer, and submitted reports.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="skills-en" class="py-5">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-gears me-2 text-warning"></i> Skills</h2>
-                    <div class="row">
-                        <div class="col-md-6 mb-3" data-aos="zoom-in"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-bullseye text-secondary me-2"></i> Strategic Marketing & Management</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="100"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-comments-dollar text-secondary me-2"></i> Direct Sales & Negotiation</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="200"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-laptop-code text-secondary me-2"></i> AI & Web Development</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="300"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-users text-secondary me-2"></i> Customer Service & Relations</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="400"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-keyboard text-secondary me-2"></i> Fast Arabic Typing (40 WPM)</div></div>
-                        <div class="col-md-6 mb-3" data-aos="zoom-in" data-aos-delay="500"><div class="p-3 bg-light rounded shadow-sm fw-bold border-start border-3 border-primary"><i class="fa-solid fa-brain text-secondary me-2"></i> Analytical & Problem Solving</div></div>
+                <section id="skills-en" class="py-5 border-bottom">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-gears text-warning me-2"></i> Core Skills</h2>
                     </div>
-                </section>
-            
-                <section id="education" class="py-5 border-bottom">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-graduation-cap me-2 text-warning"></i> المؤهلات</h2>
-                    <div class="card border-0 shadow-sm" data-aos="fade-up">
-                        <div class="card-body border-end border-4 border-primary rounded pe-4">
-                            <h5 class="fw-bold text-dark">الثانوية العامة</h5>
-                            <p class="text-secondary mb-0">مدرسة ثانوية من مصر | 2003 - 2004</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6" data-aos="zoom-in">
+                            <div class="skill-bar">
+                                <div class="info"><span>Sales Development & Management</span><span>95%</span></div>
+                                <div class="bar"><div class="fill" data-width="95"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="skill-bar">
+                                <div class="info"><span>Strategic Marketing</span><span>90%</span></div>
+                                <div class="bar"><div class="fill" data-width="90"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-bar">
+                                <div class="info"><span>Sales Systems Automation</span><span>88%</span></div>
+                                <div class="bar"><div class="fill" data-width="88"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-bar">
+                                <div class="info"><span>Customer Service & CRM</span><span>92%</span></div>
+                                <div class="bar"><div class="fill" data-width="92"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-bar">
+                                <div class="info"><span>AI & Web Development</span><span>85%</span></div>
+                                <div class="bar"><div class="fill" data-width="85"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-bar">
+                                <div class="info"><span>Negotiation & Problem Solving</span><span>90%</span></div>
+                                <div class="bar"><div class="fill" data-width="90"></div></div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="certificates" class="py-5">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-certificate me-2 text-warning"></i> الشهادات والدورات</h2>
-                    <ul class="list-group list-group-flush" data-aos="fade-up">
-                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
-                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> أساسيات الخدمات المصرفية للأفراد (الإصدار 2)</h6>
-                            <p class="text-secondary lh-lg mb-0">الأكاديمية المالية السعودية. تؤكد إتقان تقديم الخدمات المصرفية، إصدار البطاقات، إدارة الحسابات وتقديم القروض.</p>
-                        </li>
-                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
-                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> مكافحة غسيل الأموال وتمويل الإرهاب</h6>
-                            <p class="text-secondary lh-lg mb-0">بنك الإمارات دبي الوطني. إتمام التقييم والتدريب على سياسات كشف الأنشطة غير المشروعة والامتثال للقوانين المالية.</p>
-                        </li>
-                        <li class="list-group-item bg-transparent border-0 px-0">
-                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> الكفاءة في التدريب داخل صالة العرض</h6>
-                            <p class="text-secondary lh-lg mb-0">لاند مارك العربية. إثبات القدرة والخبرة على تدريب وتوجيه فرق المبيعات لتحسين الأداء ورفع مستوى رضا العملاء.</p>
-                        </li>
-                    </ul>
-                </section>
-
-            </div> <div class="english-content d-none">
-                
                 <section id="education-en" class="py-5 border-bottom">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-25"><i class="fa-solid fa-graduation-cap me-2 text-warning"></i> Education</h2>
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-graduation-cap text-warning me-2"></i> Education</h2>
+                    </div>
                     <div class="card border-0 shadow-sm" data-aos="fade-up">
-                        <div class="card-body border-start border-4 border-primary rounded ps-4">
-                            <h5 class="fw-bold text-dark">Secondary School</h5>
-                            <p class="text-secondary mb-0">Graduated from Egypt | 2003 - 2004</p>
+                        <div class="card-body p-4 border-start border-4 border-primary rounded">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="icon-box bg-warning bg-opacity-10 p-3 rounded-3">
+                                    <i class="fa-solid fa-school text-warning fs-2"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold text-dark mb-1">Secondary School</h5>
+                                    <p class="text-secondary mb-0">Graduated from Egypt | 2003 - 2004</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section id="certificates-en" class="py-5">
-                    <h2 class="text-primary fw-bold mb-4 pb-2 border-bottom border-2 w-50"><i class="fa-solid fa-certificate me-2 text-warning"></i> Certificates</h2>
-                    <ul class="list-group list-group-flush" data-aos="fade-up">
-                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
-                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> Retail Banking Basics (Version 2)</h6>
-                            <p class="text-secondary lh-lg mb-0">Saudi Financial Academy. Certified in managing accounts, loans, and providing exceptional retail banking services.</p>
-                        </li>
-                        <li class="list-group-item bg-transparent border-0 px-0 mb-3">
-                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> Anti-Money Laundering (AML)</h6>
-                            <p class="text-secondary lh-lg mb-0">Emirates NBD Bank. Completed comprehensive training on detecting and preventing illicit financial activities.</p>
-                        </li>
-                        <li class="list-group-item bg-transparent border-0 px-0">
-                            <h6 class="fw-bold text-primary"><i class="fa-solid fa-check-circle text-secondary me-2"></i> Showroom Training Proficiency</h6>
-                            <p class="text-secondary lh-lg mb-0">Landmark Arabia. Certified in coaching and guiding sales teams to enhance performance and customer satisfaction.</p>
-                        </li>
-                    </ul>
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-certificate text-warning me-2"></i> Certificates</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="cert-card">
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+                                    <h6 class="fw-bold text-dark">Retail Banking Basics (V2)</h6>
+                                    <p class="text-secondary small mb-0">Saudi Financial Academy. Certified in managing accounts, loans, and retail banking services.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-card">
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <h6 class="fw-bold text-dark">Anti-Money Laundering (AML)</h6>
+                                    <p class="text-secondary small mb-0">Emirates NBD Bank. Training on detecting and preventing illicit financial activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="cert-card">
+                                <div class="card-body">
+                                    <div class="icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <h6 class="fw-bold text-dark">Showroom Training Proficiency</h6>
+                                    <p class="text-secondary small mb-0">Landmark Arabia. Coaching sales teams to enhance performance and customer satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                
-            </div> </div>
-    </main> <footer class="text-center py-4 text-secondary bg-white border-top">
+            </div>
+
+        </div>
+    </main>
+
+    <style>
+        .contact-card{
+    background: rgba(16, 24, 40, 0.85);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(212,175,55,.2);
+    border-radius: 24px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: all .4s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        #f4e4a6,
+        #d4af37
+    );
+}
+
+.contact-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(212,175,55,.6);
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.contact-card > i{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #d4af37;
+    background: rgba(212,175,55,.08);
+    border: 2px solid rgba(212,175,55,.25);
+    transition: all .4s ease;
+}
+
+.contact-card:hover > i{
+    transform: scale(1.08);
+    background: #d4af37;
+    color: #0b182b;
+}
+
+.contact-card a:not(.btn){
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.contact-card a:not(.btn):hover{
+    color: #f4e4a6;
+}
+.contact-card .btn{
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 10px 24px !important;
+    font-weight: 600;
+    letter-spacing: .3px;
+    transition: .35s ease;
+}
+
+.contact-card .btn-success,
+.contact-card .btn-warning,
+.contact-card .btn-primary{
+    background: linear-gradient(
+        135deg,
+        #b8860b,
+        #d4af37,
+        #f4e4a6
+    ) !important;
+
+    color: #0b182b !important;
+}
+
+.contact-card .btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(212,175,55,.35);
+}
+
+.contact-card h6{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+    </style>
+    <section class="contact-section">
         <div class="container">
-            <p class="mb-0 fw-bold">
+            <div class="section-header">
+                <h2 class="text-white" style="color: white !important;"><i class="fa-solid fa-address-card text-warning me-2"></i> <span class="arabic-content">تواصل معي</span><span class="english-content d-none">Get In Touch</span></h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-6" data-aos="flip-up">
+                    <div class="contact-card">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h6 class="text-white fw-bold">واتساب</h6>
+                        <a href="https://wa.me/966557957877" target="_blank">+966 55 795 7877</a>
+                        <div class="mt-2"><a href="https://wa.me/966557957877" target="_blank" class="btn btn-success btn-sm rounded-pill px-3"><i class="fa-brands fa-whatsapp me-1"></i> <span class="arabic-content">راسلني مباشرة</span><span class="english-content d-none">Chat Now</span></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6" data-aos="flip-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h6 class="text-white fw-bold">البريد الإلكتروني</h6>
+                        <a href="mailto:ramyheshamamer@gmail.com">ramyheshamamer@gmail.com</a>
+                        <div class="mt-2"><a href="mailto:ramyheshamamer@gmail.com" class="btn btn-warning btn-sm rounded-pill px-3"><i class="fa-regular fa-envelope me-1"></i> <span class="arabic-content">أرسل بريداً</span><span class="english-content d-none">Send Email</span></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6" data-aos="flip-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h6 class="text-white fw-bold">LinkedIn</h6>
+                        <a href="https://www.linkedin.com/in/ramy-h-amer/" target="_blank">/in/ramy-h-amer</a>
+                        <div class="mt-2"><a href="https://www.linkedin.com/in/ramy-h-amer/" target="_blank" class="btn btn-primary btn-sm rounded-pill px-3"><i class="fa-brands fa-linkedin me-1"></i> <span class="arabic-content">تواصل عبر LinkedIn</span><span class="english-content d-none">Connect on LinkedIn</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links mb-3">
+                <a href="https://wa.me/966557957877" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/ramy-h-amer/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:ramyheshamamer@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/big-ramy" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="mb-1 fw-bold">
                 &copy; <span id="currentYear"></span> 
-                <span class="arabic-content">رامي عامر. جميع الحقوق محفوظة. تم التطوير باستخدام أحدث التقنيات والذكاء الاصطناعي.</span>
-                <span class="english-content d-none">Eng. Ramy Amer. All rights reserved. Developed with modern web tech & AI.</span>
+                <span class="arabic-content">رامي عامر. جميع الحقوق محفوظة.</span>
+                <span class="english-content d-none">Ramy Amer. All rights reserved.</span>
             </p>
+            <small class="arabic-content">تم التطوير بتقنيات حديثة مدعومة بالذكاء الاصطناعي</small>
+            <small class="english-content d-none">Built with modern web technologies & AI</small>
         </div>
     </footer>
 
-    <div class="chat-widget" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000;">
-        <div class="chat-box shadow-lg rounded-4 overflow-hidden" id="chatBox" style="display: none; width: 340px; background: #fff; border: 1px solid #e5e7eb;">
-            <div class="chat-header d-flex justify-content-between align-items-center p-3" style="background: var(--primary-color); color: white;">
+    <div class="chat-widget">
+        <div class="chat-box shadow-lg" id="chatBox">
+            <div class="chat-header">
                 <div class="d-flex align-items-center gap-2">
                     <i class="fa-solid fa-robot fs-4 text-warning"></i>
                     <div>
-                        <h6 class="mb-0 fw-bold arabic-content">مساعد رامي الذكي</h6>
-                        <h6 class="mb-0 fw-bold english-content d-none">Ramy's AI Assistant</h6>
-                        <small style="font-size: 0.75rem; color: #cbd5e1;">Online (Gemini Ready)</small>
+                        <h6 class="mb-0 fw-bold arabic-content">المساعد الذكي</h6>
+                        <h6 class="mb-0 fw-bold english-content d-none">AI Assistant</h6>
+                        <small><span class="status-dot"></span> <span class="arabic-content">متصل</span><span class="english-content d-none">Online</span></small>
                     </div>
                 </div>
-                <i class="fa-solid fa-chevron-down" style="cursor:pointer;" onclick="toggleChat()"></i>
+                <i class="fa-solid fa-chevron-down" style="cursor:pointer; font-size:1.2rem;" onclick="toggleChat()"></i>
             </div>
             
-            <div class="chat-body p-3" style="height: 280px; overflow-y: auto; background: #f8fafc;">
-                <div class="chat-msg mb-3 p-3 shadow-sm" style="background: white; border-radius: 12px; border-top-right-radius: 0; font-size: 0.9rem;">
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg" style="background: white; border-top-right-radius: 0;">
                     <span class="arabic-content text-dark lh-lg">
-                        مرحباً! 👋 أنا المساعد الافتراضي للمهندس رامي. يسعدني إخبارك أن المهندس رامي ليس فقط خبيراً في المبيعات وتطوير الأعمال، بل يمتلك مشاريع تقنية ضخمة (n8n, Python, API) تحقق معدلات مبيعات مضاعفة وتواصل دائم ومؤتمت مع العملاء باحترافية عالية.<br><br>كيف يمكنني مساعدتك؟ (الربط مع جيميناي سيتم تفعيله قريباً).
+                        👋 مرحباً! أنا المساعد الذكي لـ <strong>رامي عامر</strong>.<br><br>
+                        يمكنني مساعدتك في:<br>
+                        • الاستفسار عن الخبرات والمؤهلات المهنية<br>
+                        • حجز موعد مقابلة مع رامي<br>
+                        • الإجابة على أسئلة المقابلات الوظيفية بالنيابة عنه<br>
+                        • استقبال عروض العمل والتوظيف<br><br>
+                        كيف أقدر أخدمك اليوم؟
                     </span>
                     <span class="english-content d-none text-dark lh-lg">
-                        Hello! 👋 I am Eng. Ramy's virtual assistant. Did you know he is not just a sales expert, but also builds powerful tech projects (n8n, Python, APIs) to multiply sales and automate client communications?<br><br>How can I assist you today? (Gemini API integration coming soon).
+                        👋 Hello! I'm the AI assistant for <strong>Ramy Amer</strong>.<br><br>
+                        I can help you with:<br>
+                        • Inquiries about experience and qualifications<br>
+                        • Scheduling interviews with Ramy<br>
+                        • Answering job interview questions on his behalf<br>
+                        • Receiving job offers and opportunities<br><br>
+                        How can I assist you today?
                     </span>
                 </div>
             </div>
             
-            <div class="chat-footer p-2" style="background: white; border-top: 1px solid #e5e7eb;">
-                <div class="input-group">
-                    <input type="text" class="form-control border-0 bg-light rounded-pill px-3" placeholder="اكتب رسالتك..." style="font-size: 0.9rem; box-shadow: none;">
-                    <button class="btn btn-primary rounded-circle ms-2" style="width: 40px; height: 40px; padding: 0;">
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
+            <div class="chat-footer">
+                <div class="d-flex gap-2">
+                    <input type="text" id="chatInput" class="form-control" placeholder="اكتب رسالتك..." style="border-radius: 25px; padding: 0.6rem 1rem; border: 1px solid #e5e7eb;">
+                    <button id="chatSendBtn" class="btn"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>
         
-        <button class="btn rounded-circle shadow-lg d-flex align-items-center justify-content-center" onclick="toggleChat()" style="width: 65px; height: 65px; background: var(--primary-color); border: 2px solid var(--secondary-color); color: white; font-size: 1.8rem; transition: transform 0.3s ease;">
-            <i class="fa-solid fa-comment-dots"></i>
+        <button class="chat-toggle" onclick="toggleChat()">
+            <i class="fa-solid fa-comment-dots" id="chatToggleIcon"></i>
         </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/chatbot.js"></script>
     
     <script>
-        // 1. تفعيل حركات الظهور الاحترافية (AOS)
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true, // الحركة تحدث مرة واحدة عند النزول
-            offset: 50
-        });
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 50 });
 
-        // 2. تحديث السنة تلقائياً في الفوتر
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // 3. منطق تغيير اللغة (العربية / الإنجليزية)
         const langBtn = document.getElementById('language-switcher');
         const arElements = document.querySelectorAll('.arabic-content');
         const enElements = document.querySelectorAll('.english-content');
         
+        function updateNavbarLanguage(lang) {
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                const ar = link.getAttribute('data-ar');
+                const en = link.getAttribute('data-en');
+                if (lang === 'ar' && ar) link.textContent = ar;
+                else if (lang === 'en' && en) link.textContent = en;
+            });
+            document.querySelectorAll('.hero-stat .label').forEach(label => {
+                const ar = label.getAttribute('data-ar');
+                const en = label.getAttribute('data-en');
+                if (lang === 'ar' && ar) label.textContent = ar;
+                else if (lang === 'en' && en) label.textContent = en;
+            });
+            document.querySelectorAll('.tech-badge').forEach(el => {
+                const ar = el.getAttribute('data-ar');
+                const en = el.getAttribute('data-en');
+                if (lang === 'ar' && ar) el.innerHTML = ar;
+                else if (lang === 'en' && en) el.innerHTML = en;
+            });
+            document.querySelectorAll('[data-en-text]').forEach(el => {
+                const ar = el.getAttribute('data-ar-text');
+                const en = el.getAttribute('data-en-text');
+                if (lang === 'ar' && ar) el.textContent = ar;
+                else if (lang === 'en' && en) el.textContent = en;
+            });
+        }
+
         langBtn.addEventListener('click', () => {
             const isAr = document.documentElement.lang === 'ar';
             
             if(isAr) {
-                // التحويل إلى الإنجليزية
                 document.documentElement.lang = 'en';
                 document.documentElement.dir = 'ltr';
-                langBtn.textContent = langBtn.getAttribute('data-en-text') || 'العربية';
+                langBtn.textContent = 'العربية';
                 arElements.forEach(el => el.classList.add('d-none'));
                 enElements.forEach(el => el.classList.remove('d-none'));
+                updateNavbarLanguage('en');
             } else {
-                // التحويل إلى العربية
                 document.documentElement.lang = 'ar';
                 document.documentElement.dir = 'rtl';
-                langBtn.textContent = langBtn.getAttribute('data-ar-text') || 'English';
+                langBtn.textContent = 'English';
                 enElements.forEach(el => el.classList.add('d-none'));
                 arElements.forEach(el => el.classList.remove('d-none'));
+                updateNavbarLanguage('ar');
             }
             
-            // إعادة إنعاش الحركات لتتناسب مع الاتجاه الجديد
-            setTimeout(() => {
-                AOS.refresh();
-            }, 100);
+            setTimeout(() => { AOS.refresh(); }, 100);
         });
 
-        // 4. دالة فتح وإغلاق ويدجت الدردشة
+        updateNavbarLanguage('ar');
+
+        let chatOpen = false;
         function toggleChat() {
             const chatBox = document.getElementById('chatBox');
-            if(chatBox.style.display === 'none' || chatBox.style.display === '') {
+            const icon = document.getElementById('chatToggleIcon');
+            chatOpen = !chatOpen;
+            if(chatOpen) {
                 chatBox.style.display = 'block';
-                // تفعيل تأثير دخول سريع للدردشة
-                chatBox.animate([
-                    { transform: 'translateY(20px)', opacity: 0 },
-                    { transform: 'translateY(0)', opacity: 1 }
-                ], { duration: 300, easing: 'ease-out' });
+                icon.className = 'fa-solid fa-xmark';
             } else {
                 chatBox.style.display = 'none';
+                icon.className = 'fa-solid fa-comment-dots';
             }
         }
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const skillBars = document.querySelectorAll('.skill-bar .fill');
+        const animateSkills = () => {
+            skillBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                if(width) {
+                    const rect = bar.getBoundingClientRect();
+                    if(rect.top < window.innerHeight - 50 && rect.bottom > 0) {
+                        bar.style.width = width + '%';
+                    }
+                }
+            });
+        };
+        window.addEventListener('scroll', animateSkills);
+        window.addEventListener('load', animateSkills);
+
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = canvas.parentElement.offsetWidth;
+            canvas.height = canvas.parentElement.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if(this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(197, 160, 89, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for(let i = 0; i < 80; i++) particles.push(new Particle());
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            
+            for(let i = 0; i < particles.length; i++) {
+                for(let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if(dist < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(197, 160, 89, ${0.1 * (1 - dist / 120)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initChat();
+        });
+
     </script>
 </body>
 </html>

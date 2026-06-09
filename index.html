@@ -123,19 +123,34 @@
         #language-switcher:hover { transform: scale(1.05); background: var(--gradient-gold); }
 
         .hero-section {
-    background: url('ramybackground-Recovered.webp') center center no-repeat;
-    background-size: contain;
+    background-image: url('ramybackground-Recovered.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-color: #0b182b;
-    background-attachment: fixed;
+
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: var(--text-light);
     text-align: center;
-    padding: 120px 0 60px 0;
+
+    padding: 120px 0 60px;
     overflow: hidden;
+}
+
+/* الأجهزة اللوحية والجوال */
+@media (max-width: 991px) {
+    .hero-section {
+        min-height: 100vh;
+        background-position: center top;
+        background-attachment: scroll;
+        padding-top: 100px;
+    }
 }
         #particles-canvas {
             position: absolute;

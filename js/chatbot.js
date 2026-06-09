@@ -1,5 +1,5 @@
-const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${APP_CONFIG.gemini.model}:generateContent?key=${APP_CONFIG.gemini.apiKey}`;
-
+const GEMINI_API_URL =
+'https://dhfxhlpomlhbnwqgrrob.supabase.co/functions/v1/chatbot';
 const SYSTEM_PROMPT = `أنت مساعد ذكي يمثل {name} ({engName})، {title}.
 
 **قواعد الرد:**
@@ -98,10 +98,14 @@ async function sendMessage(userMessage) {
 
     try {
         const response = await fetch(GEMINI_API_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+             method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': APP_CONFIG.supabase.anonKey,
+                'Authorization': `Bearer ${APP_CONFIG.supabase.anonKey}`
+            },
             body: JSON.stringify(requestBody)
-        });
+        })
 
         const data = await response.json();
 

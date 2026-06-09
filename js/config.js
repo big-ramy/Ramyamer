@@ -5,9 +5,9 @@ const APP_CONFIG = {
         projectId: 'dhfxhlpomlhbnwqgrrob'
     },
     gemini: {
-        apiKey: 'AIzaSyCF3JbIoqHtZCaEsEk5pejJBwLOPIR_MTc',
-        model: 'gemini-2.0-flash'
+        model: 'gemini-2.5-flash'
     },
+    
     bot: {
         name: 'رامي عامر',
         engName: 'Ramy Amer',

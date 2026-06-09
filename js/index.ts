@@ -1,30 +1,41 @@
-import { GoogleGenerativeAI } from "npm:@google/generative-ai";
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers":
+    "authorization, x-client-info, apikey, content-type",
+};
 
 Deno.serve(async (req) => {
 
+  if (req.method === "OPTIONS") {
+    return new Response("ok", {
+      headers: corsHeaders,
+    });
+  }
+
   try {
 
-    const { message } = await req.json();
+    const body = await req.json();
 
     const apiKey = Deno.env.get("GEMINI_API_KEY");
 
-    const genAI = new GoogleGenerativeAI(apiKey!);
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      }
+    );
 
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash"
-    });
-
-    const result = await model.generateContent(message);
-
-    const response = await result.response;
+    const data = await response.json();
 
     return new Response(
-      JSON.stringify({
-        success: true,
-        reply: response.text()
-      }),
+      JSON.stringify(data),
       {
         headers: {
+          ...corsHeaders,
           "Content-Type": "application/json"
         }
       }
@@ -34,16 +45,17 @@ Deno.serve(async (req) => {
 
     return new Response(
       JSON.stringify({
-        success: false,
         error: error.message
       }),
       {
         status: 500,
         headers: {
+          ...corsHeaders,
           "Content-Type": "application/json"
         }
       }
     );
+
   }
 
 });

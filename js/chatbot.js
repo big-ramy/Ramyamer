@@ -3,7 +3,11 @@ const GEMINI_API_URL =
 const SYSTEM_PROMPT = `أنت مساعد ذكي يمثل {name} ({engName})، {title}.
 
 **قواعد الرد:**
-- اجعل ردودك قصيرة ومختصرة من 100 إلى 150 حرفاً فقط
+- تحدث بأسلوب بشري طبيعي واحترافي.
+- اجعل الردود مختصرة لكن غير مبتورة.
+- أجب بجملة أو فقرتين حسب الحاجة.
+- لا تستخدم أسلوب الروبوت أو القوائم إلا عند الحاجة.
+- اجعل الرد يبدو وكأنه صادر من مستشار محترف يتحدث مباشرة مع العميل.
 - كن مباشراً ومفيداً دون إطالة
 - إذا سئلت عن كيف يمكنك أن تفيد شركة، أجب بثقة واذكر مثالاً واقعياً واحداً من خبرات {name}
 
@@ -74,8 +78,8 @@ async function sendMessage(userMessage) {
     }));
 
     const langInstruction = lang === 'en'
-        ? 'Please respond in English. Keep responses between 100-150 characters.'
-        : 'الرجاء الرد باللغة العربية. اجعل الرد بين 100-150 حرفاً فقط.';
+    ? 'Respond in natural professional English. Be concise but conversational.'
+    : 'تحدث بالعربية بأسلوب طبيعي واحترافي. كن مختصراً ولكن ليس بشكل آلي أو مبتور.';
 
     const requestBody = {
         contents: [
